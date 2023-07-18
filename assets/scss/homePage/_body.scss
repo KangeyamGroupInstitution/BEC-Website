@@ -1,0 +1,158 @@
+@use "../abstract/color" as*;
+main{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    align-items: center;     
+    .clg-info1{
+        width:100%;
+        height: 200px;
+    }
+    @media (max-width:700px) {
+      .clg-info1{
+        height: 160px;
+      }
+    }
+}
+.clg-info{
+  padding-top: 300px;
+  padding-bottom: 40px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  background-color:white;
+  z-index: -2;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  .wrapperC {
+    padding-top: 200px;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-elementC {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    display: block;
+    height: 98%;
+    width: 98%;
+    margin: auto;
+    align-self: center;
+    background: #fff;
+    z-index: 1;
+    padding: 20px 40px;
+    background-color: map-get($map: $bc-colors, $key:"model1" );
+    overflow-y: scroll;
+    
+}
+.borderC {
+  position: absolute;
+  display: block;
+  top: -50%;
+  left: -50%;
+  z-index: -9;
+  display: block;
+  height: 200%;
+  width: 200%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  background: linear-gradient(to right, #2B9D6B 20%, black 40%,red 50%, red 55%,black 70%, #fff 100%);
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+@media (max-width:1400px) {
+  .wrapperC {
+    width: 800px;
+    height: 400px;
+  }
+}
+@media (max-width:1000px) {
+  .wrapperC {
+    width: 95%;
+    height: 400px;
+  }
+}
+@media (max-width:800px) {
+  .wrapperC {
+    width: 100%;
+    height: 350px;
+  }
+  
+}
+@media (max-width:500px) {
+  .wrapperC {
+    width: 97%;
+   height: 500px;
+  }
+}
+  @keyframes shine {
+to {
+  background-position: 200% center;
+}
+
+}
+}
+.main-elementC{
+  h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: underline;
+    color: map-get($map: $theme-colors, $key:"text1" );
+  }
+  p{
+    color: map-get($map: $theme-colors, $key:"light" );
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: map-get($map: $theme-colors, $key:"text1" );
+  }
+  
+}
+
+
+.clg-info.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Example styles */
+body {
+  height: 2000px;
+}
+
+.section {
+  height: 500px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+@media (max-width:1400px) {
+  .clg-info{
+    padding-top: 350px;
+  }
+}
+@media (max-width:1000px) {
+  .clg-info{
+    padding-top: 250px;
+  }
+}
+@media (max-width:700px) {
+  .clg-info{
+    padding-top: 170px;
+  }
+}
+@media (max-width:500px) {
+  .clg-info{
+    padding-top: 100px;
+  }
+}
+  
+  
