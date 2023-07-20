@@ -41,6 +41,7 @@ main{
     height: 85vh;
     z-index: 0;
     top: 90px;
+    background-color: #f2f2f2;
     
  }
 .slide{
@@ -154,17 +155,32 @@ main{
   .empty-card{
     height:50vh;
   }
-  @media (max-width:1500px) {
+  @media (max-width:1800px) {
   .carousel-container{
-    height: 65vh;
+    height: 90vh;
   }
   .con{
     height: 685px;
   }
   }
-  @media (max-width:1000px) {
+  @media (max-width:1500px) {
+ 
+  .con{
+    height: 685px;
+  }
+  }
+  @media (max-width:1300px) {
+  .carousel-container{
+    height: 75vh;
+  }
+  .con{
+    height: 685px;
+  }
+  }
+  @media (max-width:1100px) {
     .carousel-container{
-      height: 50vh;
+      height: 65vh;
+      margin-top: 10px;
     }
     .con{
       height: 550px;
@@ -172,11 +188,14 @@ main{
     .con svg{
       top: 540px;
     }
-    .carousel-container{
-      height: 65vh;
-    }
+  
     .empty-card{
       height:45vh;
+    }
+  }
+  @media (max-width:950px) {
+    .carousel-container{
+      height: 55vh;
     }
   }
   @media (max-width:850px) {

@@ -186,7 +186,7 @@ body {
 }
 @media (max-width: 480px) {
   .navbar nav {
-    background-image: url(/public/img/backgrond/2713234.png);
+    background-image: url(../img/backgrond/2713234.png);
     background-repeat: no-repeat;
     background-size: 450px;
   }
