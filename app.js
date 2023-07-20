@@ -14,6 +14,7 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 app.use(express.static(path.join(process.cwd(),'public')));
 
+app.set('view engine', 'ejs');
 
 app.use('/', homeRoutes);
 app.use('/about', aboutRoutes);
