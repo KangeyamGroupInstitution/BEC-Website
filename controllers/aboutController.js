@@ -5,60 +5,60 @@ class aboutControllers {
 
     static showBECPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about','bec.html');
+        const viewsPath = path.join(__dirname,'..','views','about','bec.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     static showManagementPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'management.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'management.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     static showCEOPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'ceo.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'ceo.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     static showPrincipalPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'principle.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'principle.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     
     static showAntiRagingPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'antiraging.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'antiraging.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
 
     static showMonitoringPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'monitoring.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'monitoring.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
 
     static showInternalPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'internel.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'internel.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     static showCodeOfConductPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'conduct.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'conduct.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
     static showEthicsPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','about', 'ethics.html');
+        const viewsPath = path.join(__dirname,'..','views','about', 'ethics.ejs');
         console.log(viewsPath);
-        res.sendFile(viewsPath);
+        res.render(viewsPath);
     }
 }
 
