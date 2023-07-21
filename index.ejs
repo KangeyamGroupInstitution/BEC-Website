@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="con">
@@ -30,7 +31,7 @@
    <%- include('views/navbar.ejs')%>
 
   <div class="slide">
-    <div class="carousel-container">
+    <div class="carousel-container" data-aos="zoom-out-up">
       <div class="mySlides animate">
         <img src="../img/homegallery/ArialView.jpg" alt="slide" />
         <div class="number">1 / 8</div>
@@ -86,22 +87,48 @@
     </div>
   </div>
   <main>
-    <div class="clg-info1"></div>
-    <div class="clg-info">
-      <div class="wrapperC">
-        <div class="borderC"></div>
-        <div class="main-elementC">
+    <div class="empty-card"></div>
+    <div class="builders-card-con">
+      <div class="shik" data-aos="zoom-in">
+        <div class="content">
           <h2>Builders Engineering College</h2>
-          <p>Builders Engineering College excels in academics, offering diverse engineering programs taught by highly qualified faculty members dedicated to imparting cutting-edge knowledge and practical skills.</p><br>
-          <p>The college provides state-of-the-art facilities, including well-equipped labs, modern classrooms, a comprehensive library, and advanced technology, ensuring an optimal learning environment.</p><br>
-          <p>Strong industry partnerships facilitate regular interactions, internships, and guest lectures, enabling students to stay updated with the latest industry practices and trends.</p><br>
+          <p>Builders Engineering College (BEC) is situated in a picturesque campus, boasting exceptional infrastructure and abundant amenities tailored for students' needs.</p><br>
+          <p>BEC paves the way for a comprehensive education that seamlessly integrates academic excellence with practical industry skills.</p><br>
+          <p>Studying at BEC is ideal for those with a desire to challenge existing norms and forge a new path for themselves. Each student is equipped with practical knowledge and hands-on experience, empowering them to make a meaningful impact in real-world scenarios.</p><br>
         </div>
       </div>
     </div>
+    <div class="num-card-con" data-aos="slide-right" data-aos-duration="300" id="countdownContainer">
+      <div class="num-card">
+        <div class="num-con">
+          <div class="number-field" id="number1">0</div>
+          <div class="num-text">Years Old</div>
+        </div>
+        <div class="num-con">
+          <div class="number-field" id="number2">0</div>
+          <div class="num-text">Awards</div>
+        </div>
+        <div class="num-con">
+          <div class="number-field" id="number3">0</div>
+          <div class="num-text">Teachers</div>
+        </div>
+        <div class="num-con">
+          <div class="number-field" id="number4">0</div>
+          <div class="num-text">Students</div>
+        </div>
+        <div class="num-con">
+          <div class="number-field" id="number5">0</div>
+          <div class="num-text">Laboratory</div>
+        </div>
+      
+    </div>
   </main>
 </div>
-<script src="/js/gal.js"></script>
+<script src="/js/home.js"></script>
 <script src="/js/nav.js"></script>
-<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
