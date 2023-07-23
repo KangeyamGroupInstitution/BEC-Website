@@ -93,3 +93,5 @@ const observer = new IntersectionObserver(checkIfVisible, { root: null, rootMarg
 const countdownContainer = document.getElementById("countdownContainer");
 
 observer.observe(countdownContainer);
+
+
