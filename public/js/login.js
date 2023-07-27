@@ -1,14 +1,10 @@
 document.getElementById("submitBtn").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Get the entered username and password
+    event.preventDefault(); 
     var username = document.getElementById("usernameInput").value;
     var password = document.getElementById("passwordInput").value;
 
-    // Perform password authentication
     if (username === "admin" && password === "admin1234") {
-      // Redirect to another HTML page
-      window.location.href = "admissinpage1.html";
+      window.location.href = "/admissionPage1";
     } else {
       alert("Incorrect username or password. Please try again.");
     }
@@ -23,7 +19,16 @@ document.addEventListener("DOMContentLoaded", function() {
     aboutDropdown.classList.toggle("show");
   });
 });
+let container = document.getElementById('container')
 
+toggle = () => {
+	container.classList.toggle('sign-in')
+	container.classList.toggle('sign-up')
+}
+
+setTimeout(() => {
+	container.classList.add('sign-in')
+}, 200)
 
 
   

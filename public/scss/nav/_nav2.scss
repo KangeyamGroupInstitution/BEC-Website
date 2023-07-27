@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    text-transform: capitalize;
+    
     text-decoration: none;
   }
   body{
@@ -43,6 +43,7 @@
   }
   .navbar nav ul{
     list-style-type: none;
+    
   }
   .navbar nav ul li{
     position: relative;
@@ -53,6 +54,7 @@
     padding: 5px;
     display: block;
     color:white;
+    text-transform: capitalize;
   }
   .navbar nav ul li a:hover{
     border-bottom: 1px solid black;
@@ -73,6 +75,7 @@
   }
   .navbar nav ul li ul li a:hover{
   border-bottom: none;
+  
   }
 
   .navbar nav ul li ul li ul{

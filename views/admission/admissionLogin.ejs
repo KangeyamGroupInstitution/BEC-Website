@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/admission.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/admissionLogin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
 <body>
-  <%- include('../navbar.ejs')%>
-   <div class="form">
-    <section class="container">
-      <div class="login-container">
-        <div class="circle circle-one"></div>
-        <div class="form-container">
-          <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
-          <h1 class="opacity">LOGIN</h1>
-          <form>
-            <input type="text" id="usernameInput" placeholder="USERNAME" />
-            <input type="password" id="passwordInput" placeholder="PASSWORD" />
-            <button id="submitBtn" class="opacity">SUBMIT</button>
-          </form>
-          <div class="register-forget opacity">
-            <a href="">REGISTER</a>
-            <a href="">FORGOT PASSWORD</a>
+  <!-- <%- include('../navbar.ejs')%> -->
+  <div id="container" class="container">
+    <div class="row">
+      <div class="col align-items-center flex-col sign-up">
+        <div class="form-wrapper align-items-center">
+          <div class="form sign-up">
+            <div class="input-group">
+              <i class='bx bxs-user'></i>
+              <input  type="text" placeholder="Username" autocapitalize="none">
+            </div>
+            <div class="input-group">
+              <i class='bx bx-mail-send'></i>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+              <i class='bx bx-mail-send'></i>
+              <input type="number" placeholder="Mobile Number">
+            </div>
+            <div class="input-group">
+              <i class='bx bxs-lock-alt'></i>
+              <input  placeholder="Password">
+            </div>
+            <div class="input-group">
+              <i class='bx bxs-lock-alt'></i>
+              <input id="password" type="password" placeholder="Confirm password">
+            </div>
+            <div class="input-group">
+              <i class='bx bxs-lock-alt'></i>
+              <input  type="text" placeholder="OTP">
+            </div>
+            <button>Sign up</button>
+            <p><span>Already have an account?</span>
+              <b onclick="toggle()" class="pointer">
+                Sign in here
+              </b>
+            </p>
           </div>
         </div>
-        <div class="circle circle-two"></div>
       </div>
-      <div class="theme-btn-container"></div>
-    </section>
-  </div>
-  
-  <script>
-    
-  </script>
-  
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave"></div>
-  </div>
-  
-  <script src="./assets/js/gal.js"></script>
-  <script src="./assets/js/nav.js"></script>
-  <script src="./assets/js/login.js"></script>
+     
+      <div class="col align-items-center flex-col sign-in">
+        <div class="form-wrapper align-items-center">
+          <div class="form sign-in">
+            <div class="input-group">
+              <i class='bx bxs-user'></i>
+              <input id="usernameInput" type="text" placeholder="Username">
+            </div>
+            <div class="input-group">
+              <i class='bx bxs-lock-alt'></i>
+              <input id="passwordInput" type="password" placeholder="Password">
+            </div>
+            <button id="submitBtn">
+              Sign in
+            </button>
+            <p>
+              <b>
+                Forgot password?
+              </b>
+            </p>
+            <p>
+              <span>
+                Don't have an account?
+              </span>
+              <b onclick="toggle()" class="pointer">
+                Sign up here
+              </b>
+            </p>
+          </div>
+        </div>
+        <div class="form-wrapper">
 
+        </div>
+      </div>
+    </div>
 
+    <div class="row content-row">
+
+      <div class="col align-items-center flex-col">
+        <div class="text sign-in">
+          <h2>
+            Welcome To Builders Engineering College
+          </h2>
+        </div>
+        <div class="img sign-in">
+
+        </div>
+      </div>
+
+      <div class="col align-items-center flex-col">
+        <div class="img sign-up">
+
+        </div>
+        <div class="text sign-up">
+          <h2>
+            Join with us
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/login.js"></script>
 </body>
 </html>
-
-        
