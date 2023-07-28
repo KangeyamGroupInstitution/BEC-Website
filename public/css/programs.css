@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  text-transform: capitalize;
   text-decoration: none;
 }
 
@@ -56,6 +55,7 @@ body {
   padding: 5px;
   display: block;
   color: white;
+  text-transform: capitalize;
 }
 
 .navbar nav ul li a:hover {

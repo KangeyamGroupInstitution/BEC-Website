@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission</title>
+    <link rel="stylesheet" href="../css/admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    
     <%- include('../navbar.ejs')%>
+<div class="admissin-con">
+   <div class="admissin-head-con">
+       <div class="admissin-head">Admission</div>
+   </div>
+   <div class="apply-btn-con">
+      <button class="apply-btn"><a href="/admissionLogin"><span class="apply-add">Apply Here</span></a></button>
+   </div>
+  <div class="departement-wise">
+      <div class="undergraduate">
+        <div class="ug-text" data-aos="zoom-out-up">Undergraduate Programs</div>
+        <div class="num-card-con" data-aos="slide-right" data-aos-duration="300" id="countdownContainer">
+          <div class="num-card">
+            <div class="num-con">
+              <div class="number-field-1" id="number1">0</div>
+              <div class="num-text">B.E-CIVIL</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-1" id="number2">0</div>
+              <div class="num-text">B.E-CSE</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-1" id="number3">0</div>
+              <div class="num-text">B.E-ECE</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-1" id="number4">0</div>
+              <div class="num-text">B.E-EEE</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-1" id="number5">0</div>
+              <div class="num-text">B.E-MECH</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-2" id="number6">0</div>
+              <div class="num-text3">B.Tech-AIDS</div>
+            </div>
+          </div>
+        </div>
+        <div class="ug-cards">
+          <img class="admission-svg" src="../img/svg/undraw_Educator_re_ju47 (1).png" alt="" width="50%">
+           <div class="builders-card-con">
+      <div class="shik" data-aos="slide-left">
+        <div class="content">
+            <h2>Under-graduate</h2>
+            <p>Duration of the Programme</p>
+            <p>B. E. / B. Tech : 4 Academic years comprising of 8 semesters</p>
+            <h2>Eligibility for B.E (Regular)</h2>
+            <p>Pass in the HSC (Academic: both +1 and +2) or its equivalent with a minimum average percentage in Mathematics, Physics and Chemistry. </p>
+            <h2>Eligibility for B.E (Lateral Entry - Direct II year)</h2>
+            <p>Pass in 3 year Diploma examination conducted by the State Board of Technical Education of respective states in the relevant subjects with a minimum percentage of marks given below.  </p>
+            <p>Pass in any recognized Bachelor’s Degree in Science of minimum 3 years duration with Mathematics as a subject. </p>
+        </div>
+        </div>
+    </div>
+        </div>
+        <div class="pg-text" data-aos="zoom-out-up">Postgraduate Programs</div>
+        <div class="num-card-con-2" data-aos="slide-left" id="countdownContainer2">
+          <div class="num-card">
+            <div class="num-con">
+              <div class="number-field-3" id="number7">0</div>
+              <div class="num-text2">MBA</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-3" id="number8">0</div>
+              <div class="num-text2">M.E-CEM</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-3" id="number9">0</div>
+              <div class="num-text2">M.E-STR</div>
+            </div>
+            <div class="num-con">
+              <div class="number-field-3" id="number10">0</div>
+              <div class="num-text2">M.E-CSE</div>
+            </div>
+          </div>
+        </div>
+        <div class="ug-cards">
+          <div class="builders-card-con">
+            <div class="shik" data-aos="slide-right">
+              <div class="content">
+                  <h2>Post-Graduate</h2>
+                  <p>Duration of the Programme</p>
+                  <p>M.E / MBA:2 Academic years comprising of 4 semesters </p>
+                  <h2>Eligibility for M.E</h2>
+                  <p>Pass in a recognized Bachelor’s Degree or equivalent in the relevant field and obtained at-least minimum percentage of marks given below in the qualifying degree examination.</p>
+                  <p class="p-left">B.E / B.Tech (OR)</p>
+                  <p class="p-left">10 + 2 + AMIE (or) 10 + 3 years diploma + AMIE</p>
+                  <h2 >Eligibility for MBA</h2>
+                  <p>Pass in a recognised Bachelor’s Degree of minimum 3 years duration and obtained at least minimum percentage of marks given below in the qualifying degree examination.</p>
+                  <p class="p-left">10+2+3/ 4/ 5 years pattern (OR)</p>
+                  <p class="p-left">10 + 3 years Diploma + 3 years pattern (OR)</p>
+                  <p class="p-left">B.E / B.Tech / B.Arch / B.Pharm (OR)</p>
+                  <p class="p-left">10 + 2 + AMIE (or) 10 + 3 years diploma + AMIE</p>
+                  </div>
+              </div>
+          </div>
+          <img class="admission-svg" src="../img/svg/undraw_Engineering_team_a7n2.png" alt="" width="50%">
+      </div>
+    </div>
+        </div>
+      </div>
+  </div>
+      
+</div>
+<%- include('../footer.ejs')%>
+
+    <script src="/js/admissin.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 </html>

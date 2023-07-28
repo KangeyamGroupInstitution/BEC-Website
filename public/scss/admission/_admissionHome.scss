@@ -1,0 +1,59 @@
+@use "../abstract/mixin" as *;
+@use "../cards/num-card-2" as *;
+@use "../cards/program-cards2" as *;
+@use "../abstract/color" as *;
+.admissin-con{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    .admissin-head{
+        @include head-text;
+        color: $primary-text-color;
+    }
+    .apply-btn-con , .departement-wise{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .departement-wise{
+        margin-top: 0px;
+    }
+   .undergraduate{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .ug-text{
+        @include head-text;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        color:$primary-text-color-hover;
+    }
+    .pg-text{
+        @include head-text;
+        margin-bottom: 50px;
+        margin-top: 70px;
+        color: $primary-text-color-hover;
+    }
+    .ug-cards{
+        display: flex;
+        column-gap: 30px;
+        margin-top: 30px;
+        width: 80%;
+        // margin-bottom: 30px;
+    }
+    .admission-svg{
+        animation: jump 1s ease  infinite alternate ;
+    }
+    @keyframes jump {
+        100%{
+            transform: translateY(-25px);
+        }
+    }
+ }
+
