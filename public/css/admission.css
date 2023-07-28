@@ -400,7 +400,7 @@ body {
   background-color: white;
   top: -50%;
   left: -50%;
-  background-image: linear-gradient(white, white), linear-gradient(rgb(5, 58, 117), #053a75), linear-gradient(#21836E, #21836E), linear-gradient(white, white);
+  background-image: linear-gradient(white, white), linear-gradient(rgb(5, 58, 117), #053a75), linear-gradient(#00BFA6, #00BFA6), linear-gradient(white, white);
   background-repeat: no-repeat;
   background-size: 40% 45%;
   background-position: 0 0, 100% 0, 0 100%, 100% 100%;
@@ -654,6 +654,7 @@ footer {
   .footer-con .address-content {
     margin-top: 8px;
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -675,6 +676,9 @@ footer {
     position: absolute;
     top: -40px;
     left: 50px;
+  }
+  .footer-con {
+    padding: 40px 30px 20px 30px;
   }
 }
 @media (max-width: 430px) {

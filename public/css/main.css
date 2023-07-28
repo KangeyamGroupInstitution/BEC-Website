@@ -745,7 +745,7 @@ main {
   color: gray;
   margin-top: 10px;
   font-size: 16px;
-  width: 350px;
+  width: 100%;
   padding-right: 10px;
   line-height: 25px;
 }
@@ -779,6 +779,14 @@ main {
 @media (max-width: 800px) {
   .program-cards-con {
     grid-template-columns: repeat(1, 350px);
+  }
+}
+@media (max-width: 350px) {
+  .program-cards-con {
+    grid-template-columns: repeat(1, 90%);
+  }
+  .program-cards {
+    height: 100%;
   }
 }
 .placement-btn {
@@ -1811,6 +1819,7 @@ footer {
   .footer-con .address-content {
     margin-top: 8px;
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -1832,6 +1841,9 @@ footer {
     position: absolute;
     top: -40px;
     left: 50px;
+  }
+  .footer-con {
+    padding: 40px 30px 20px 30px;
   }
 }
 @media (max-width: 430px) {
