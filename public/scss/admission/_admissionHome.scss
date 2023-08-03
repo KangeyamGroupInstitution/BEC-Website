@@ -31,7 +31,6 @@
     .ug-text{
         @include head-text;
         margin-bottom: 50px;
-        margin-top: 50px;
         color:$primary-text-color-hover;
     }
     .pg-text{
@@ -42,18 +41,54 @@
     }
     .ug-cards{
         display: flex;
-        column-gap: 30px;
         margin-top: 30px;
-        width: 80%;
-        // margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        row-gap:30px;
+        column-gap: 20px;
     }
     .admission-svg{
+        width: 750px;
         animation: jump 1s ease  infinite alternate ;
     }
     @keyframes jump {
         100%{
             transform: translateY(-25px);
         }
+    }
+    @media (max-width:1600px) {
+        .admission-svg{
+            width: 650px;
+        }
+    }
+    @media (max-width:1350px) {
+        .admission-svg{
+            width: 550px;
+            
+        }
+    }
+    @media (max-width:1150px) {
+        .ug-cards{
+            flex-direction: column;
+           
+        }
+        .admission-svg{
+            width: 750px;
+            
+        }
+    }
+    @media (max-width:750px) {
+        .admission-svg{
+            width:90%;
+            
+        }
+    }
+    @media (max-width:600px) {
+        .ug-text{
+            font-size: 24px;
+        }
+       
     }
  }
 

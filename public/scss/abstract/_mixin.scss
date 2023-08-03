@@ -13,9 +13,9 @@
 }
 
 @mixin head-text{
-    font-size: 32px;
+    font-size: 30px;
     font-family: $primary-text;
-    font-weight: 600;
-    color:$primary-light;
+    font-weight: 700;
+    color:$primary-text-color-hover;
     text-align: center;
 }

@@ -1,6 +1,6 @@
 let prevScrollPos = window.pageYOffset;
 const navbar = document.querySelector(".navbar");
-const scrollDistance = 200;
+const scrollDistance = 150;
 
 window.addEventListener("scroll", function() {
   const currentScrollPos = window.pageYOffset;

@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const shikElements = document.querySelectorAll('.shik');
+  const isScreenSmall = window.matchMedia("(max-width: 1150px)").matches;
+  shikElements.forEach(element => {
+    if (isScreenSmall) {
+      element.setAttribute('data-aos', 'zoom-in');
+    }
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const pgText= document.querySelectorAll('.num-card-con-2');
+  const ScreenSmall = window.matchMedia("(max-width: 1150px)").matches;
+  pgText.forEach(element => {
+    if (ScreenSmall) {
+      element.setAttribute('data-aos', 'slide-right');
+    }
+  });
+});
+
+
+
+
 function animateNumber(target, finalValue, duration) {
   let current = 0;
   const step = (finalValue - current) / (duration / 50);
@@ -77,3 +99,10 @@ const observer2 = new IntersectionObserver(checkIfVisible2, {
 });
 const countdownContainer2 = document.getElementById("countdownContainer2");
 observer2.observe(countdownContainer2);
+
+
+
+
+
+  
+

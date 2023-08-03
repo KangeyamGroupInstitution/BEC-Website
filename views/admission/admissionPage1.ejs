@@ -8,5 +8,128 @@
 </head>
 <body>
     <%- include('../navbar.ejs')%> 
+    <div class="page1-con">
+        <form action="admissionPage2.ejs">
+                 <img src="../img/logo/BEC - Header I 20.02.2023 I Samgraama.png" width="100%" class="img1">
+                       <img src="../images/logo/Header.png" width="100%" class="img2">
+                 <h1>Admission Form</h1>
+                 <h2>Personal Details</h2>
+                 <label for="name" id="name_l">Full Name<span class="a">(*)</span></label>
+                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                 
+                 <label for="father_name">Parent/Guardian Name<span class="a">(*)</span></label>
+                 <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required>
+                 
+                 <label for="dob">Date of Birth<span class="a">(*)</span></label>
+                 <input type="date" id="dob" name="dob" required>
+       
+                <label for="mail_id">Mail id<span class="a">(*)</span></label>
+                <input type="email" id="mail_id" name="address" placeholder="Enter your mail id" required>
+                <label for="aadhar">Aadhar No</label>
+                <input type="number" id="Aadhar" name="address" placeholder="Enter your mail id" >
+             
+            <div class="sel_address" id="invoice">
+                <label for="country" id="country">Select Country<span class="a">(*)</span></label>
+                <select name="state" id="countySel" size="1" required>
+                    <option value="" selected="selected">Select Country</option>
+                </select>
+            
+               <label for="State" id="State">Select State<span class="a">(*)</span></label>
+               <select name="countrya" id="stateSel" size="1" required>
+                    <option value="" selected="selected">Please select Country first</option>
+               </select>
+          
+               <label for="district" id="district">Select District<span class="a">(*)</span></label>
+               <select name="district" id="districtSel" size="1" required>
+                   <option value="" selected="selected">Please select State first</option>
+               </select>
+            </div>
+                 
+                  <label for="address">Address<span class="a">(*)</span></label>
+                  <input type="text" id="address" name="address" placeholder="Enter your address" required>
+       
+               <label for="pincode">Pincode<span class="a">(*)</span></label>
+               <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+       
+               <label for="parent_contact">Parent's Contact Number<span class="a">(*)</span></label>
+               <input type="tel" id="parent_contact" name="parent_contact" placeholder="Enter your parent's contact number" required maxlength="10">
+       
+               <label for="student_contact">Student's Contact Number<span class="a">(*)</span></label>
+               <input type="tel" id="student_contact" name="student_contact" placeholder="Enter your contact number" required maxlength="10">
+       
+               <label for="religion">Religion<span class="a">(*)</span></label>
+               <select name="religion" required>
+                 <option value="">Select Your religion</option>
+                 <option value="hinduism">Hinduism</option>
+                 <option value="buddhism">Buddhism</option>
+                 <option value="jainism">Jainism</option>
+                 <option value="sikhism">Sikhism</option>
+                 <option value="islam">Islam</option>
+                 <option value="christianity">Christianity</option>
+               </select>
+       
+               <label for="community">Community<span class="a">(*)</span></label>
+               <select id="community" name="community" required>
+                   <option value="">Select your community</option>
+                   <option value="OC">OC</option>
+                   <option value="BC">BC</option>
+                   <option value="BCM">BCM</option>
+                   <option value="MBC/DNC">MBC/DNC</option>
+                   <option value="SC(A)">SC(A)</option>
+                   <option value="SC">SC</option>
+                   <option value="ST">ST</option>
+               </select>
+       
+              
+               
+       
+              <label for="caste">Caste<span class="a">(*)</span></label>
+              <select name="caste" required>
+               <option>Select Your Cast</option>
+               <optgroup label="Hindu Castes">
+                 <option value="adidravidar">Adi Dravidar</option>
+                 <option value="arunthathiyar">Arunthathiyar</option>
+                 <option value="brahmin">Brahmin</option>
+                 <option value="chettiar">Chettiar</option>
+                 <option value="dalit">Dalit</option>
+                 <option value="gounder">Gounder</option>
+                 <option value="iyer">Iyer</option>
+                 <option value="iyengar">Iyengar</option>
+                 <option value="kongu vellalar">Kongu Vellalar</option>
+                 <option value="maravar">Maravar</option>
+                 <option value="mudaliar">Mudaliar</option>
+                 <option value="nadar">Nadar</option>
+                 <option value="pillai">Pillai</option>
+                 <option value="reddiar">Reddiar</option>
+                 <option value="sourashtra">Sourashtra</option>
+                 <option value="thevar">Thevar</option>
+                 <option value="vanniyar">Vanniyar</option>
+                 <option value="vannar">Vannar</option>
+                 <option value="vilakkithala nair">Vilakkithala Nair</option>
+               </optgroup>
+               <optgroup label="Muslim Castes">
+                 <option value="labbai">Labbai</option>
+                 <option value="lebbai">Lebbai</option>
+                 <option value="rawther">Rawther</option>
+                 <option value="maraicar">Maraicar</option>
+                 <option value="kaderi">Kaderi</option>
+                 <option value="shaik">Shaik</option>
+               </optgroup>
+               <optgroup label="Christian Castes">
+                 <option value="adidravidar christian">Adi Dravidar Christian</option>
+                 <option value="vanniyar christian">Vanniyar Christian</option>
+                 <option value="paravar">Paravar</option>
+                 <option value="mukkuvar">Mukkuvar</option>
+                 <option value="devendrakula vellalar christian">Devendrakula Vellalar Christian</option>
+                 <option value="nanjil vellalar christian">Nanjil Vellalar Christian</option>
+               </optgroup>
+               <option value="other">Other</option>
+             </select>
+             
+             <label>Other Cast</label>
+             <input class="other_cast" id="other_cast" type="text" placeholder="Kindly mention it">
+        </form>
+    </div>
+    <script src="/js/nav.js"></script>
 </body>
 </html>

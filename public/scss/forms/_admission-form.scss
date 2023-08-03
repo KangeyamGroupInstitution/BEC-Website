@@ -1,0 +1,235 @@
+.page1-con{
+  margin-top: 100px;
+}
+form {
+    margin: auto;
+    width: 70%;
+    /* border: 1px solid #ccc;
+    padding: 20px; */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Styles for the section headers */
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#014905;
+  }
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color:#014905;
+    text-align: center;
+
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color:#006006;
+    font-size: 22px;
+  }
+  
+  /* Styles for the labels and input fields */
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#006006;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .upload_marksheet{
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    border: 2px solid #2C3167;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  select {
+    margin-top: 5px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Styles for the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styles for the error message */
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  .next,.back,.but{
+    background-color:  #EAC668;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    
+    
+  }
+  .next:hover{
+    background-color:#2C3167;
+  }
+  .but:hover{
+    background-color: #2C3167;
+  }
+  .btn{
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    
+  }
+  .cut_off{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    text-align:left;
+  }
+  .diploma,.degree{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    text-align: left;
+
+  }
+  .btn1{
+    width: 100%;
+    justify-content:center;
+    position: relative;
+  }
+  .but{
+    position: relative;
+    left: 15%;
+    bottom: 85px;
+  }
+  .img2{
+    display: none;
+  }
+  .word{
+    position: relative;
+    bottom: 20px;
+  }
+  @media (max-width:1000px) {
+    .img1{
+      display: none;
+    }
+    .img2{
+      display: block;
+    }
+    form{
+      width: 80%;
+
+    }
+  }
+  @media (max-width:900px){
+    .cut_off{
+      grid-template-columns:repeat(4,1fr);
+      grid-template-areas: 
+      "p p c c"
+      "m m cu cu"
+      /* "m m m m"
+      "cu cu cu cu"; */;
+    }
+    .physics{
+      grid-area: p;
+    }
+    .chemistry{
+      grid-area: c;
+    }
+    .maths{
+      grid-area: m;
+    }
+    .percentage{
+      grid-area: cu;
+    }
+    .diploma,.degree{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      column-gap: 20px;
+      text-align: left;
+  
+    }
+    form{
+      width: 90%;
+    }
+  }
+  .error h6{
+    margin: 0;
+  }
+  .option{
+    display: inline-block;
+  }
+
+  main{
+    padding-top: 40px;
+  }
+  .admission{
+    background-color: #EAC668;
+  }
+  .home{
+    background-color: transparent;
+  }
+  .btns{
+    display: flex;
+    column-gap: 70%;
+    width: 100%;
+  }
+  .page{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #EBF5FB;
+  }
+  .page2,.page3{
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color:#E8F8F5 ;
+  }
+  .page3{
+    background-color: #FDF2E9;
+  }
+  .a{
+    color: red;
+  }
