@@ -6,6 +6,7 @@
 @use "../abstract/button" as*;
 @use "../homePage/alimini" as *;
 
+
 .builders-card-con  {
   width: 100%;
   justify-content: center;
@@ -49,12 +50,13 @@
     width: 70px;
     height: 70px;
     fill:$primary-light;
+    transition: width,height 0.2s ease ;
   }
+
   .home-item-con:hover .home-icon-list{
     width: 90px;
     height: 90px;
     fill: #0a3981;
-    transition-duration: 0.2s;
     cursor: pointer;
   }
 
@@ -598,8 +600,14 @@
 
 }
 
-
-
+/* code for trusty*/
+.trusty-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:300px 0;
+}
 
 /*code for common media*/
 @media (max-width:1400px) {

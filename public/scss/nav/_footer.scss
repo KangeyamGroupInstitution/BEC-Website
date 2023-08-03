@@ -66,6 +66,39 @@ footer{
     .f-icon{
         width: 30px;
         height: 30px;
+        cursor: pointer;
+        transition: width,height 0.35s ease ; 
+
+    }
+    .f-icon1:hover{
+        fill:#395693;
+        
+    }
+    .f-icon2:hover{
+        fill:#00acee;
+        
+    }
+    .f-icon3:hover{
+        fill: #0A66C2;
+        
+    }
+    .f-icon4:hover{
+        fill: #CD201F;
+        
+    }
+    .f-icon5:hover{
+        fill: #4fce5d;
+        
+    }
+    .f-icon6:hover{
+        background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+     box-shadow: 0px 3px 10px rgba(0,0,0,.25);     
+        
+    }
+    .f-icon6{
+        border-radius: 10px;     
+        overflow: hidden;
     }
     @media (max-width:1200px) {
         .address-map{

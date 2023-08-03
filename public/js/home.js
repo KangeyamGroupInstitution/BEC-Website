@@ -79,11 +79,11 @@ function animateNumber(target, finalValue, duration) {
 function checkIfVisible(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      animateNumber("number1", 18, 1000);
-      animateNumber("number2", 90, 1500);
-      animateNumber("number3", 200, 2000);
-      animateNumber("number4", 3500, 2500);
-      animateNumber("number5", 100, 3000);
+      animateNumber("number1", 14, 500);
+      animateNumber("number2", 90, 800);
+      animateNumber("number3", 200, 1500);
+      animateNumber("number4", 2500, 1700);
+      animateNumber("number5", 100,1000 );
       observer.unobserve(entry.target); 
     }
   });
@@ -115,7 +115,7 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000, 
+    delay: 5000, 
     disableOnInteraction: false, 
   },
   breakpoints:{
@@ -130,3 +130,23 @@ var swiper = new Swiper(".slide-content", {
     },
   },
 });
+
+
+// trusty slider
+
+function startFeatureAutoplay() {
+  const interval = 5000; 
+  let currentFeatureIndex = 1;
+
+  function switchToNextFeature() {
+    const features = document.querySelectorAll('.feature-inner-part');
+    const radios = document.querySelectorAll('input[name="select"]');
+
+    radios[currentFeatureIndex % features.length].checked = true;
+    currentFeatureIndex++;
+  }
+
+  setInterval(switchToNextFeature, interval);
+}
+
+window.addEventListener('load', startFeatureAutoplay);

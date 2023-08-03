@@ -7,7 +7,7 @@ $theme-colors:(
 $bc-colors:(
     "model1":#ffffff,
 );
-$drop-color:linear-gradient(90deg, rgba(5,58,117,1) 4%, rgba(25,116,173,1) 100%);
+$drop-color:linear-gradient(90deg, #001F4E 4%, rgba(25,116,173,1) 100%);
 $primary-text-color:#0a3981;
 $primary-nav-color:#001f4e;
 $primary-text-color-hover:#fb8c00;
@@ -19,3 +19,5 @@ $primary-text2:#9ccc65;
 $primary-text3:#ab47bc;
 $primary-text:'Belanosima', sans-serif;
 $content-text:'Ubuntu', sans-serif;
+$insta-color:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$placement-round:#7cb342;

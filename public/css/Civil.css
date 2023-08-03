@@ -66,7 +66,7 @@ body {
 .navbar nav ul li ul {
   display: none;
   position: absolute;
-  background: linear-gradient(90deg, rgb(5, 58, 117) 4%, rgb(25, 116, 173) 100%);
+  background: linear-gradient(90deg, #001F4E 4%, rgb(25, 116, 173) 100%);
   opacity: 0.9;
   border-radius: 5px;
   z-index: 999;
