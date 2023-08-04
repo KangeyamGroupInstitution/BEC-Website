@@ -3,7 +3,7 @@ import AccountModel from "../models/Account.js";
 import path from "path";
 import url from "url";
 
-var cookieData = false;  //Initally the session is false.
+var cookieData = false; //Initally the session is false.
 
 class admissionControllers {
   static showAdmissionForm = (req, res) => {
@@ -19,13 +19,12 @@ class admissionControllers {
     res.render(viewsPath);
   };
   static showAdmissionForm1 = (req, res) => {
-    
-    
-    if(cookieData == false){
-       cookieData = true;
-       res.send("<h1>since, you are a new user your session is undefined please visit</h1> <a href='/auth/login'>Login</a>");  
+    if (cookieData == false) {
+      cookieData = true;
+      res.send(
+        "<h1>since, you are a new user your session is undefined please visit</h1> <a href='/auth/login'>Login</a>"
+      );
     }
-    
 
     const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
     const viewsPath = path.join(
@@ -74,7 +73,6 @@ class admissionControllers {
     console.log(viewsPath);
     res.render(viewsPath);
   };
-  
 }
 
 export default admissionControllers;

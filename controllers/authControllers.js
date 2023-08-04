@@ -41,13 +41,9 @@ class authenticate {
         password: password,
       });
       const receivedData = await AccountModel.findOne({ username: username });
-      if(password == receivedData.password){
-        
-        
-            res.redirect('/admissionPage1');
-        
-      }
-      else{
+      if (password == receivedData.password) {
+        res.redirect("/admissionPage1");
+      } else {
         res.send("you have sign up failed");
       }
     } catch (err) {
