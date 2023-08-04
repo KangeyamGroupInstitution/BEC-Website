@@ -8,5 +8,6 @@ router.get('/admissionLogin', admissionControllers.showAdmissionLogin);
 router.get('/admissionPage1', admissionControllers.showAdmissionForm1);
 router.get('/admissionPage2', admissionControllers.showAdmissionForm2);
 router.get('/admissionPage3', admissionControllers.showAdmissionForm3);
+router.get('/views/admission/login', admissionControllers.showAdmissionForm3);
 
 export default router;
