@@ -3,16 +3,37 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 .form-con{
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-left:200px;
+}
+.form-con::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 300vw;  
+    right: 0;
+    background-color: rgb(7, 7, 85) ;
+    
+    animation: transe 1s ease-in-out  1 forwards ;
+    font-size: 50px;
+}
+@keyframes transe {
+    100%{
+        width: 60vw;
+        border-top-left-radius: max(50vw, 50vh);
+    }
 }
 form{
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	row-gap: 20px;
 	padding: 1rem;
@@ -20,15 +41,17 @@ form{
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform: scale(0);
-    transition: .5s ease-in-out;
-    transition-delay: 1s;
+    animation: scale 0.4s linear  1 1s forwards ;
     text-align: center;
+    margin-left: 10%;
 }
-form.show {
-    transform: scale(1);
-  }
- input {
-    width: 400px;
+@keyframes scale {
+    100%{
+        transform: scale(1);
+    }
+}
+ input{
+    width:400px;
     padding: 1rem 3rem;
     font-size: 1rem;
     background-color: rgb(223, 223, 228);
@@ -36,7 +59,23 @@ form.show {
     border: 0.125rem solid #fff;
     outline: none;
 }
+input , button{
+    filter: blur(5px);
+    animation: input 0.2s ease-in-out 1.4s 1 forwards ;
+}
+@keyframes input {
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0px);
+    }
+}
+.g-recaptcha{
+    width: 400px;
+    padding: 0 3rem;
 
+}
  input:focus {
     border: 0.125rem solid rgb(7, 7, 85);
 }
@@ -58,4 +97,78 @@ form a{
 }
 .signUp-text{
     color: gray;
+}
+.welcome-text{
+    width: 40%;
+    font-size: 60px;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    font-weight: 900;
+    color: #ffffff;
+}
+@media (max-width:1100px) {
+    form{
+        margin-right:20px;
+    }
+}
+@media (max-width:900px) {
+    input{
+        width: 100%;
+    }
+    form{
+        width: 45%;
+    }
+    .welcome-text{
+        font-size: 40px;
+        right: 10px;
+    }
+}
+@media (max-width:700px) {
+    .form-con{
+        justify-content: center;
+        align-items: end;
+       
+    }
+    .form-con::before{
+        height: 300vh;
+        width: 100vw;  
+        border-bottom-right-radius: max(0, 0);
+        border-top-left-radius: max(0, 0);
+        transform: translate(0, 0);
+        top: 0;
+    }
+    @keyframes transe {
+        100%{
+            width: 100vw;
+            height: 70vh;
+            border-top-left-radius: max(0, 0);
+            border-bottom-right-radius: max(70vw,70vh);
+        }
+    }
+    .welcome-text{
+        width: 70%;
+        font-size: 30px;
+        left: 20vw;
+        top: 3vh;
+    }
+    form{
+        margin: 0;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    input{
+        width: 100%;
+    }
+}
+@media (max-height:725px) {
+    .welcome-text{
+        width: 70%;
+        font-size: 24px;
+        left: 20vw;
+        top: 3vh;
+    }
+    form{
+        margin-bottom: 10px;
+    }
 }
