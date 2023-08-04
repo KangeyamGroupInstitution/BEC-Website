@@ -8,15 +8,15 @@
 </head>
 <body>
   <div class="form-con">
-    <form action="" id="login-form">
-      <input type="text" placeholder="username">
-      <input type="password" placeholder="password">
+    <form method="post" action="" id="login-form">
+      <input name="username" type="text" placeholder="username">
+      <input name="password" placeholder="password">
       <button>Sign-in</button>
       <div class="forgot-text">
         <a href="">Forgot password?</a>
       </div>
       <div class="signUp-text">
-        Don't have an account? <span><a href="sign-up.html"> Sign up here</a></span>
+        Don't have an account? <span><a href="/auth/signup"> Sign up here</a></span>
       </div>
     </form>
   </div>

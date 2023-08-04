@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  web:
+    image: bec-website  # Replace "my-node-app" with a meaningful name for your Docker image
+    ports:
+      - "3000:3000"  # Map port 3000 from the container to port 3000 on the host
+    restart: always  # Restart the container automatically if it stops
