@@ -51,6 +51,12 @@ class authenticate {
     }
     next();
   };
+
+  static forgetPassword = (req, res)=>{
+    const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+    const viewsPath = path.join(__dirname, "..", "views", "auth", "forget.ejs");
+    res.render(viewsPath);
+  }
 }
 
 export default authenticate;

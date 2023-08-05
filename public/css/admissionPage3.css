@@ -674,4 +674,39 @@ footer {
     top: -30px;
     left: 30px;
   }
-}/*# sourceMappingURL=admissionpage1.css.map */
+}
+.cut_off, .upload_marksheet, .diploma, .degree {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 20px;
+}
+.cut_off div, .upload_marksheet div, .diploma div, .degree div {
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.btn-cont .btn-1 {
+  width: 50%;
+  position: relative;
+  bottom: 73px;
+}
+.btn-cont button {
+  position: relative;
+  left: 45%;
+  transform: scale(0);
+  animation: scale 0.4s ease-in-out 1 forwards;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=admissionPage3.css.map */

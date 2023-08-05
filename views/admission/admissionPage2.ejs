@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admissionpage2.css">
+</head>
+<body>
+    <%- include('../navbar.ejs')%> 
+    <div class="admission-text">Admission Form</div>
+    <div class="page1-con">
+      
+        <form action="/admissionPage3">
+            <div class="p-text">Academic Details</div>
+            <label for="reg_no">Registration Number</label>
+          <input type="text" id="reg_no" name="regNum" placeholder="Enter your registration number" required>
+          
+          <label for="first_gen">First Generation Graduate?</label>
+          <label><input type="radio" id="yes" name="firstGeneration" value="yes" required>Yes</label>
+          <label><input type="radio" id="no" name="firstGeneration" value="no" required>No</label><hr>
+          
+             <div class="p-text">XII Cut-off Marks</div>
+        <div class="cut_off" >
+            <div class="physics error" >
+                <label for="phy_cut_off">Physics Marks</label>
+                <input type="number" id="phy" name="physicsMarks" placeholder="Enter your physics marks" required>
+            </div>
+            <div class="chemistry error">
+                <label for="che_cut_off">Chemistry Marks</label>
+                <input type="number" id="che" name="chemistryMarks" placeholder="Enter your chemistry marks" required>
+            </div>
+            <div class="maths error">
+                <label for="mat_cut_off">MathematicsMark</label>
+                <input type="number" id="mat" name="mathMarks" placeholder="Enter your mathematics marks" required>
+            </div>
+            <div class="percentage error">
+                <label for="total">Cut off</label>
+                <input type="number" id="cut_off" name="cutOffMarks" disabled required>
+            </div>
+            </div>
+            <hr>
+            <div class="p-text">Document Upload</div>
+            <div class="upload_marksheet">
+                <div>
+                    <label for="marksheet">Profile Photo</label>
+                    <input type="file" id="ProfilePhoto" name="ProfilePhoto">
+                </div>
+                <div>
+                    <label for="marksheet">Sslc Mark Sheet</label>
+                    <input type="file" id="SslcMarksheet" name="SslcMarksheet">
+                </div>
+                <div>
+                    <label for="marksheet">Hsc/Diploma Mark Sheet</label>
+                    <input type="file" id="HscMarksheet" name="HscMarksheet">
+                </div>
+                <div>
+                    <label for="marksheet">Income certificate</label>
+                    <input type="file" id="Incomecertificate" name="Incomecertificate">
+                </div>
+            </div><hr>
+            <div class="p-text">Diploma Details</div>
+          <div class="diploma">
+            <div class="branch">
+                <label forb="diploma_branch">Diploma Branch</label>
+                <select id="diploma_branch" name="diplomaBranch">
+                    <option value="select">Select</option>
+                    <option value="automobile_engineering">Diploma in Automobile Engineering</option>
+                    <option value="agricultural_engineering">Diploma in Agricultural Engineering</option>
+                    <option value="architecture_assistantship">Diploma in Architecture Assistantship</option>
+                    <option value="biomedical_biotechnology">Diploma in Biomedical Biotechnology</option>
+                    <option value="business_administration">Diploma in Business Administration</option>
+                    <option value="civil_engineering">Diploma in Civil Engineering</option>
+                    <option value="chemical_engineering">Diploma in Chemical Engineering</option>
+                    <option value="computer_engineering">Diploma in Computer Engineering</option>
+                    <option value="aeronautical_engineering">Diploma in Aeronautical Engineering</option>
+                    <option value="apparel_design">Diploma in Apparel Design</option>
+                    <option value="ceramic_technology">Diploma in Ceramic Technology</option>
+                    <option value="electrical_engineering">Diploma in Electrical Engineering</option>
+                    <option value="electronics_communication_engineering">Diploma in Electronics & Communication Engineering</option>
+                    <option value="electrical_telecommunication_engineering">Diploma in Electrical & Telecommunication Engineering</option>
+                    <option value="fashion_design">Diploma in Fashion Design</option>
+                    <option value="leather_technology">Diploma in Leather Technology</option>
+                    <option value="garment_technology">Diploma in Garment Technology</option>
+                    <option value="handloom_technology">Diploma in Handloom Technology</option>
+                    <option value="information_technology">Diploma in Information Technology</option>
+                    <option value="interior_decoration">Diploma in Interior Decoration</option>
+                    <option value="instrumentation_technology">Diploma in Instrumentation Technology</option>
+                    <option value="production_industrial_engineering">Diploma in Production & Industrial Engineering</option>
+                    <option value="leather_technology">Diploma in Leather Technology</option>
+                    <option value="library_information_science">Diploma in Library and Information Science</option>
+                    <option value="mechanical_engineering">Diploma in Mechanical Engineering</option>
+                    <option value="mechatronics">Diploma in Mechatronics</option>
+                    <option value="marine_engineering">Diploma in Marine Engineering</option>
+                    <option value="mechanical_engineering">Diploma in Mechanical Engineering</option>
+                    <option value="hotel_management">Diploma in Hotel Management</option>
+                    <option value="medical_lab_technology">Diploma in Medical Lab Technology</option>
+                    <option value="web_designing">Diploma in Web Designing</option>
+                    <option value="plastic_technology">Diploma in Plastic Technology</option>
+                    <option value="textile_technology_knitting">Diploma in Textile Technology (Knitting)</option>
+                    <option value="textile_technology_weaving">Diploma in Textile Technology (Weaving)</option>
+                    <option value="textile_technology_spinning">Diploma in Textile Technology (Spinning)</option>
+                    <option value="textile_design">Diploma in Textile Design</option>
+                    <option value="textile_processing">Diploma in Textile Processing</option>
+                    <option value="electrical_electronics_engineering">Diploma in Electrical and Electronics Engineering</option>
+                    <option value="electronics_communication_engineering">Diploma in Electronics & Communication Engineering</option>
+                    <option value="computer_science_engineering">Diploma in Computer Science and Engineering</option>
+                  </select>
+            </div>
+            <div class="percentage">
+                <label for="diploma_branch">Percentage </label>
+                <input type="number" id="diploma_branch" name="diplomaBranchName" placeholder="Enter your Percentage %">
+            </div>
+          </div><hr>
+          <div class="p-text">Degree Details</div>
+          <div class="degree">
+            <div class="branch">
+                <label for="degree_branch">Degree Branch</label>
+                <select id="degree_branch" name="degreeBranchName">
+                    <option value="">Select</option>
+                    <option value="B.E. (Aeronautical Engineering)">B.E. (Aeronautical Engineering)</option>
+                    <option value="B.E. (Aerospace Engineering)">B.E. (Aerospace Engineering)</option>
+                    <option value="B.E. (Agricultural and Irrigation Engineering)">B.E. (Agricultural and Irrigation Engineering)</option>
+                    <option value="B.E. (Agricultural Engineering)">B.E. (Agricultural Engineering)</option>
+                    <option value="B.E. (Aircraft Maintenance Engineering)">B.E. (Aircraft Maintenance Engineering)</option>
+                    <option value="B.E. (Applied Electronics & Instrumentation)">B.E. (Applied Electronics & Instrumentation)</option>
+                    <option value="B.E. (Architecture Engineering)">B.E. (Architecture Engineering)</option>
+                    <option value="B.E. (Automobile Engineering)">B.E. (Automobile Engineering)</option>
+                    <option value="B.E. (Bioinformatics)">B.E. (Bioinformatics)</option>
+                    <option value="B.E. (Biomedical Engineering)">B.E. (Biomedical Engineering)</option>
+                    <option value="B.E. (Biotechnology)">B.E. (Biotechnology)</option>
+                    <option value="B.E. (Ceramic Technology)">B.E. (Ceramic Technology)</option>
+                    <option value="B.E. (Ceramics & Cement Technology)">B.E. (Ceramics & Cement Technology)</option>
+                    <option value="B.E. (Chemical Engineering)">B.E. (Chemical Engineering)</option>
+                    <option value="B.E. (Civil Engineering)">B.E. (Civil Engineering)</option>
+                    <option value="B.E. (Computer Engineering)">B.E. (Computer Engineering)</option>
+                    <option value="B.E. (Computer Science and Engineering)">B.E. (Computer Science and Engineering)</option>
+                    <option value="B.E. (Computer Science)">B.E. (Computer Science)</option>
+                    <option value="B.E. (Construction Technology)">B.E. (Construction Technology)</option>
+                    <option value="B.E. (Electrical and Electronics Engineering)">B.E. (Electrical and Electronics Engineering)</option>
+                    <option value="B.E. (Electrical Engineering)">B.E. (Electrical Engineering)</option>
+                    <option value="B.E. (Electronics & Telecom Engineering)">B.E. (Electronics & Telecom Engineering)</option>
+                    <option value="B.E. (Electronics and Communication Engineering)">B.E. (Electronics and Communication Engineering)</option>
+                    <option value="B.E. (Electronics and Instrumentation Engineering)">B.E. (Electronics and Instrumentation Engineering)</option>
+                    <option value="B.E. (Electronics Engineering)">B.E. (Electronics Engineering)</option>
+                    <option value="B.E. (Environmental Engineering)">B.E. (Environmental Engineering)</option>
+                    <option value="B.E. (Fashion Technology)">B.E. (Fashion Technology)</option>
+                    <option value="B.E. (Food Technology)">B.E. (Food Technology)</option>
+                    <option value="B.E. (Genetic Engineering)">B.E. (Genetic Engineering)</option>
+                    <option value="B.E. (Geo Informatics)">B.E. (Geo Informatics)</option>
+                    <option value="B.E. (Hons.) Chemical Engineering">B.E. (Hons.) Chemical Engineering</option>
+                    <option value="B.E. (Hons.) Civil Engineering">B.E. (Hons.) Civil Engineering</option>
+                    <option value="B.E. (Hons.) Computer Science">B.E. (Hons.) Computer Science</option>
+                    <option value="B.E. (Hons.) Electrical and Electronics Engineering">B.E. (Hons.) Electrical and Electronics Engineering</option>
+                    <option value="B.E. (Hons.) Electronics and Instrumentation Engineering">B.E. (Hons.) Electronics and Instrumentation Engineering</option>
+                    <option value="B.E. (Hons.) Mechanical Engineering">B.E. (Hons.) Mechanical Engineering</option>
+                    <option value="B.E. (Industrial & Production Engineering)">B.E. (Industrial & Production Engineering)</option>
+                    <option value="B.E. (Industrial Engineering & Management)">B.E. (Industrial Engineering & Management)</option>
+                    <option value="B.E. (Industrial Engineering)">B.E. (Industrial Engineering)</option>
+                    <option value="B.E. (Information Science & Engineering)">B.E. (Information Science & Engineering)</option>
+                    <option value="B.E. (Information Technology)">B.E. (Information Technology)</option>
+                    <option value="B.E. (Instrumentation & Control Engineering)">B.E. (Instrumentation & Control Engineering)</option>
+                    <option value="B.E. (Instrumentation Engineering)">B.E. (Instrumentation Engineering)</option>
+                    <option value="B.E. (Irrigation and Water Management)">B.E. (Irrigation and Water Management)</option>
+                    <option value="B.E. (Manufacturing Engineering)">B.E. (Manufacturing Engineering)</option>
+                    <option value="B.E. (Marine Electrical and Electronics Engineering)">B.E. (Marine Electrical and Electronics Engineering)</option>
+                    <option value="B.E. (Marine Engineering)">B.E. (Marine Engineering)</option>
+                    <option value="B.E. (Material Science and Engineering)">B.E. (Material Science and Engineering)</option>
+                    <option value="B.E. (Mechanical Engineering)">B.E. (Mechanical Engineering)</option>
+                    <option value="B.E. (Mechatronics Engineering)">B.E. (Mechatronics Engineering)</option>
+                    <option value="B.E. (Medical Electronics)">B.E. (Medical Electronics)</option>
+                    <option value="B.E. (Metallurgical Engineering)">B.E. (Metallurgical Engineering)</option>
+                    <option value="B.E. (Mining Engineering)">B.E. (Mining Engineering)</option>
+                    <option value="B.E. (Naval Architecture and Offshore Engineering)">B.E. (Naval Architecture and Offshore Engineering)</option>
+                    <option value="B.E. (Petrochemical Engineering)">B.E. (Petrochemical Engineering)</option>
+                    <option value="B.E. (Petroleum Engineering)">B.E. (Petroleum Engineering)</option>
+                    <option value="B.E. (Plastic Technology)">B.E. (Plastic Technology)</option>
+                    <option value="B.E. (Polymer Engineering)">B.E. (Polymer Engineering)</option>
+                    <option value="B.E. (Power Electronics)">B.E. (Power Electronics)</option>
+                    <option value="B.E. (Printing Technology)">B.E. (Printing Technology)</option>
+                    <option value="B.E. (Production & Industrial Engineering)">B.E. (Production & Industrial Engineering)</option>
+                    <option value="B.E. (Production Engineering)">B.E. (Production Engineering)</option>
+                    <option value="B.E. (Robotics)">B.E. (Robotics)</option>
+                    <option value="B.E. (Rubber Technology)">B.E. (Rubber Technology)</option>
+                    <option value="B.E. (Software Engineering)">B.E. (Software Engineering)</option>
+                    <option value="B.E. (Space Technology)">B.E. (Space Technology)</option>
+                    <option value="B.E. (Telecommunication Engineering)">B.E. (Telecommunication Engineering)</option>
+                    <option value="B.E. (Textile Technology)">B.E. (Textile Technology)</option>
+                    <option value="B.E. (Transportation Engineering)">B.E. (Transportation Engineering)</option>
+                    <option value="B.E. (Welding Technology)">B.E. (Welding Technology)</option>
+                    <option value="B.E.(Hons.) Manufacturing Engineering">B.E.(Hons.) Manufacturing Engineering</option>
+                  </select>
+            </div>
+            <div class="percentage">
+                <label for="degree_branch_p">Percentage </label>
+                <input type="number" id="degree_branch_p" name="degreeBranchPercentage"  placeholder="Enter your Percentage %">
+            </div>
+          </div><hr>
+          <label for="institute_name">Name of Institution</label>
+          <input type="text" id="institute_name" name="instituteName" placeholder="Enter the name of your school/polytechnic/college" required>
+          
+          <label for="medium">Medium of Instruction</label>
+          <select id="medium" name="mediumOfInstruction" required>
+            <option value="">Select the medium of instruction</option>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="empty"></div>
+            <div class="btn" >
+                <button class="next" type="submit">
+                  <span class="circle1"></span>
+                  <span class="circle2"></span>
+                  <span class="circle3"></span>
+                  <span class="circle4"></span>
+                  <span class="circle5"></span>
+                  <span class="text">Next</span>
+              </button>
+               </div>
+               
+        </form>
+        
+    </div>
+    <div class="btn-cont">
+        <div class="btn-1">
+            <a href="admissionPage1">
+                <button class="next">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">Back</span>
+                </button>
+            </a>
+           </div>
+    </div>
+    <%- include('../footer.ejs')%> 
+    <script src="/js/nav.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background: $primary-text-color;
+    background: $form-blue;
     font-family: $primary-text;
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -116,3 +116,58 @@
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
+
+   .next {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 3.5em;
+    border: none;
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .next span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 35px;
+    background-color:$form-green;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .next span:nth-child(6) {
+    position: relative;
+  }
+  
+  .next span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .next span:nth-child(2) {
+    transform: translate(-8em, 1.3em);
+  }
+  
+  .next span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .next span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .next span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .next:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    

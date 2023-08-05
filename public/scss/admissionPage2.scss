@@ -1,0 +1,41 @@
+@use "./nav/nav2";
+@use "./forms/admission-form";
+@use "./abstract/color";
+@use "./nav/footer";
+
+.cut_off , .upload_marksheet ,.diploma,.degree{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+    row-gap: 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+        position:static;
+    }
+}
+.btn-cont{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+   
+    
+    .btn-1{
+        width: 50%;
+         position:relative;
+         bottom:73px;
+
+       }
+       button{
+        position: relative;
+        left: 45%;
+        transform: scale(0);
+        animation: scale 0.4s ease-in-out   1 forwards ;
+       }
+       @keyframes scale {
+        100%{
+            transform: scale(1);
+        }
+      }
+}

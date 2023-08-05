@@ -143,6 +143,17 @@ footer{
     left: 50px;
     
 }
+.btn-con{
+    position: absolute;
+    top: 0;
+    right:0;
+    button{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius:20px;
+    }
+}
 @media (max-width:1000px) {
     .footer-con{
         flex-direction: column;
@@ -157,7 +168,7 @@ footer{
         
     }
     .footer-con{
-        padding: 40px 30px 20px 30px;
+        padding: 50px 30px 20px 30px;
     }
 }
 @media (max-width:430px) {
