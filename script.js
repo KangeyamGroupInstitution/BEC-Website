@@ -1,19 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var aboutLink = document.querySelector('li[onclick="about"] > a');
-  var aboutDropdown = document.querySelector('.about');
+  const animatedElement = document.getElementById("animatedElement");
+  const section = document.querySelector(".section");
+  let isInViewport = false;
 
-  aboutLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    aboutDropdown.classList.toggle("show");
+  function checkVisibility() {
+    const rect = section.getBoundingClientRect();
+    isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function animateElement() {
+    if (isInViewport) {
+      animatedElement.style.opacity = "1";
+      animatedElement.style.transform = "translate(-50%, -50%) scale(1)";
+    } else {
+      animatedElement.style.opacity = "0";
+      animatedElement.style.transform = "translate(-50%, -50%) scale(0)";
+    }
+  }
+
+  // Check visibility on page load
+  checkVisibility();
+  animateElement();
+
+  // Listen for scroll events
+  window.addEventListener("scroll", function() {
+    checkVisibility();
+    animateElement();
   });
 });
-let container = document.getElementById('container')
-
-toggle = () => {
-	container.classList.toggle('sign-in')
-	container.classList.toggle('sign-up')
-}
-
-setTimeout(() => {
-	container.classList.add('sign-in')
-}, 200)

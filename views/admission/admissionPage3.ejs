@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admissionpage3.css">
+</head>
+<body>
+    <%- include('../navbar.ejs')%> 
+    <div class="admission-text">Admission Form</div>
+    <div class="page1-con">
+      
+        <form action="/admissionPage3">
+            <div class="p-text">Program Choice</div>
+          <p>Select the program(s) you wish to apply for:</p>
+          
+          <div class="p-text">Undergraduate Programs</div>
+          <label><input type="radio" name="programName" value="BE Civil" required> BE Civil Engineering</label><br>
+          <label><input type="radio" name="programName" value="B.E. Electrical & Electronics Engineering (EEE)" required> B.E. Electrical & Electronics Engineering</label><br>
+          <label><input type="radio" name="programName" value="B.E. Computer Science and Engineering (CSE)" required> B.E. Computer Science and Engineering</label><br>
+          <label><input type="radio" name="programName" value="B.E. Mechanical Engineering (Mech)" required> B.E. Mechanical Engineering </label><br>
+          <label><input type="radio" name="programName" value="B.E. Electronics and Communication Engineering (ECE)" required> B.E. Electronics and Communication Engineering</label><br>
+          <label><input type="radio" name="programName" value="B.Tech Artificial Intelligence and Data Science (AI&DS)" required> B.Tech Artificial Intelligence and Data Science</label><br>
+          
+          <div class="p-text">Postgraduate Programs</div>
+          <label><input type="radio" name="programName" value="M.E. Construction Engineering and Management (CEM)" required> M.E. Construction Engineering and Management</label><br>
+          <label><input type="radio" name="programName" value="M.E. Structural Engineering (Stru. Eng)" required> M.E. Structural Engineering</label><br>
+          <label><input type="radio" name="programName" value="M.E. Computer Science and Engineering (CSE)" required> M.E. Computer Science and Engineering</label><br>
+          <label><input type="radio" name="programName" value="MBA" required> MBA</label><br>
+          
+          <div class="p-text">How did you hear about our institution?</div>
+          <label><input type="checkbox" name="AdvertisementMedium" value="Website"> Website</label><br>
+          <label><input type="checkbox" name="AdvertisementMedium" value="Social Media"> Social Media</label><br>
+          <label><input type="checkbox" name="AdvertisementMedium" value="Print Advertisements"> Print Advertisements</label><br>
+          <label><input type="checkbox" name="AdvertisementMedium" value="Friends or Family"> Friends or Family</label><br>
+          <label><input type="checkbox" name="AdvertisementMedium" value="Other"> Other</label><br>
+          <label for="other_source">If Other, kindly mention:</label>
+          <input type="text" id="other_source" name="otherSource">
+            <div class="btn" >
+                <button class="next" type="submit">
+                  <span class="circle1"></span>
+                  <span class="circle2"></span>
+                  <span class="circle3"></span>
+                  <span class="circle4"></span>
+                  <span class="circle5"></span>
+                  <span class="text">Next</span>
+              </button>
+               </div>
+               
+        </form>
+        
+    </div>
+    <div class="btn-cont">
+        <div class="btn-1">
+            <a href="admissionPage2">
+                <button class="next">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">Back</span>
+                </button>
+            </a>
+           </div>
+    </div>
+    <%- include('../footer.ejs')%> 
+    <script src="/js/nav.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>

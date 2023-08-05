@@ -1,235 +1,124 @@
-.page1-con{
+@use "../abstract/color" as *;
+@use "../abstract/button" as *;
+.admission-text{
   margin-top: 100px;
+  text-align: center;
+  color: $form-blue;
+  font-family: $primary-text;
+  font-size: 30px;
+  font-weight: 900;
 }
-form {
-    margin: auto;
-    width: 70%;
-    /* border: 1px solid #ccc;
-    padding: 20px; */
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+.page1-con{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-text{
+  color: $form-green;
+  font-family: $primary-text;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 900;
+}
+form{
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  box-shadow: $white-shadow;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transform: scale(0);
+  animation: scale 0.4s ease-in-out   1 forwards ;
+}
+@keyframes scale {
+  100%{
+      transform: scale(1);
   }
+}
+form::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: -4;
+  background-color: $form-blue;
+  animation: top 0.6s ease-in-out  1 forwards ;
+}
+@keyframes top {
+  100%{
+    border-bottom-left-radius:100%;
+    width: 30%;
+    height: 40%;
+  }
+}
+.empty{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $form-blue;
+  z-index: -4;
   
-  /* Styles for the section headers */
-  h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color:#014905;
+  animation:bottom 0.6s ease-in-out  1 forwards  ;
+}
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 30%;
+    height: 40%;
   }
-  h1 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color:#014905;
-    text-align: center;
+}
 
-  }
-  
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color:#006006;
-    font-size: 22px;
-  }
-  
-  /* Styles for the labels and input fields */
-  label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color:#006006;
-  }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="number"],
-  input[type="date"],
-  input[type="email"],
-  select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  .upload_marksheet{
-    width: 100%;
-    height: 80px;
-    padding: 12px;
-    border: 2px solid #2C3167;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  select {
-    margin-top: 5px;
-  }
-  
-  input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  /* Styles for the submit button */
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Styles for the error message */
-  .error {
-    color: red;
-    margin-bottom: 10px;
-  }
-  .next,.back,.but{
-    background-color:  #EAC668;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
+input , select {
+  padding: 1rem 3rem;
+    font-size: 1rem;
+    background-color: rgb(223, 223, 228);
+    border-radius: .5rem;
+    border: 0.125rem solid #fff;
+    outline: none;
     
-    
+}
+input , select ,label{
+  filter: blur(5px);
+  animation: input 0.2s ease-in-out 0.4s 1 forwards ;
+}
+@keyframes input {
+  100%{
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0);
   }
-  .next:hover{
-    background-color:#2C3167;
-  }
-  .but:hover{
-    background-color: #2C3167;
-  }
-  .btn{
-    width: 100%;
-    justify-content: end;
-    display: flex;
-    
-  }
-  .cut_off{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    text-align:left;
-  }
-  .diploma,.degree{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    text-align: left;
+}
+select:focus{
+  border: 0.125rem solid $form-green;
+}
+input:focus {
+  border: 0.125rem solid $form-green;
+}
+label{
+  font-family: $primary-text;
+  color: $form-yellow;
+  font-size: 16px;
+  font-weight: 700;
+}
+.a{
+  display: none;
+}
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+option {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 18px;
+}
 
-  }
-  .btn1{
-    width: 100%;
-    justify-content:center;
-    position: relative;
-  }
-  .but{
-    position: relative;
-    left: 15%;
-    bottom: 85px;
-  }
-  .img2{
-    display: none;
-  }
-  .word{
-    position: relative;
-    bottom: 20px;
-  }
-  @media (max-width:1000px) {
-    .img1{
-      display: none;
-    }
-    .img2{
-      display: block;
-    }
-    form{
-      width: 80%;
-
-    }
-  }
-  @media (max-width:900px){
-    .cut_off{
-      grid-template-columns:repeat(4,1fr);
-      grid-template-areas: 
-      "p p c c"
-      "m m cu cu"
-      /* "m m m m"
-      "cu cu cu cu"; */;
-    }
-    .physics{
-      grid-area: p;
-    }
-    .chemistry{
-      grid-area: c;
-    }
-    .maths{
-      grid-area: m;
-    }
-    .percentage{
-      grid-area: cu;
-    }
-    .diploma,.degree{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      column-gap: 20px;
-      text-align: left;
-  
-    }
-    form{
-      width: 90%;
-    }
-  }
-  .error h6{
-    margin: 0;
-  }
-  .option{
-    display: inline-block;
-  }
-
-  main{
-    padding-top: 40px;
-  }
-  .admission{
-    background-color: #EAC668;
-  }
-  .home{
-    background-color: transparent;
-  }
-  .btns{
-    display: flex;
-    column-gap: 70%;
-    width: 100%;
-  }
-  .page{
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #EBF5FB;
-  }
-  .page2,.page3{
-    margin-top: 40px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color:#E8F8F5 ;
-  }
-  .page3{
-    background-color: #FDF2E9;
-  }
-  .a{
-    color: red;
-  }

@@ -8,12 +8,11 @@
 </head>
 <body>
     <%- include('../navbar.ejs')%> 
+    <div class="admission-text">Admission Form</div>
     <div class="page1-con">
-        <form action="admissionPage2.ejs">
-                 <img src="../img/logo/BEC - Header I 20.02.2023 I Samgraama.png" width="100%" class="img1">
-                       <img src="../images/logo/Header.png" width="100%" class="img2">
-                 <h1>Admission Form</h1>
-                 <h2>Personal Details</h2>
+      
+        <form action="/admissionPage2" class="form1">
+          <div class="p-text">Personal Details</div>
                  <label for="name" id="name_l">Full Name<span class="a">(*)</span></label>
                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                  
@@ -25,26 +24,26 @@
        
                 <label for="mail_id">Mail id<span class="a">(*)</span></label>
                 <input type="email" id="mail_id" name="address" placeholder="Enter your mail id" required>
-                <label for="aadhar">Aadhar No</label>
-                <input type="number" id="Aadhar" name="address" placeholder="Enter your mail id" >
+                <label for="aadhar">Aadhar Number</label>
+                <input type="number" id="Aadhar" name="address" placeholder="Enter your Aadhar number" >
              
             <div class="sel_address" id="invoice">
-                <label for="country" id="country">Select Country<span class="a">(*)</span></label>
-                <select name="state" id="countySel" size="1" required>
-                    <option value="" selected="selected">Select Country</option>
-                </select>
-            
-               <label for="State" id="State">Select State<span class="a">(*)</span></label>
-               <select name="countrya" id="stateSel" size="1" required>
-                    <option value="" selected="selected">Please select Country first</option>
-               </select>
-          
-               <label for="district" id="district">Select District<span class="a">(*)</span></label>
-               <select name="district" id="districtSel" size="1" required>
-                   <option value="" selected="selected">Please select State first</option>
-               </select>
+                
             </div>
-                 
+            <label for="country" id="country">Select Country<span class="a">(*)</span></label>
+            <select name="state" id="countySel" size="1" required>
+                <option value="" selected="selected">Select Country</option>
+            </select>
+        
+           <label for="State" id="State">Select State<span class="a">(*)</span></label>
+           <select name="countrya" id="stateSel" size="1" required>
+                <option value="" selected="selected">Please select Country first</option>
+           </select>
+      
+           <label for="district" id="district">Select District<span class="a">(*)</span></label>
+           <select name="district" id="districtSel" size="1" required>
+               <option value="" selected="selected">Please select State first</option>
+           </select>
                   <label for="address">Address<span class="a">(*)</span></label>
                   <input type="text" id="address" name="address" placeholder="Enter your address" required>
        
@@ -61,7 +60,7 @@
                <select name="religion" required>
                  <option value="">Select Your religion</option>
                  <option value="hinduism">Hinduism</option>
-                 <option value="buddhism">Buddhism</option>
+                 <option class="hind" value="buddhism">Buddhism</option>
                  <option value="jainism">Jainism</option>
                  <option value="sikhism">Sikhism</option>
                  <option value="islam">Islam</option>
@@ -128,8 +127,22 @@
              
              <label>Other Cast</label>
              <input class="other_cast" id="other_cast" type="text" placeholder="Kindly mention it">
+             <div class="empty"></div>
+             <div class="btn">
+              <button class="next"  type="submit">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+                <span class="circle5"></span>
+                <span class="text">Next</span>
+            </button>
+             </div>
         </form>
+        
     </div>
+    <%- include('../footer.ejs')%> 
     <script src="/js/nav.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 </html>

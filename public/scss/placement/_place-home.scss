@@ -2,6 +2,7 @@
 @use "../abstract/mixin" as *;
 @use "../cards/program-Training-cards" as *;
 @use "../homePage/alimini" as *;
+@use "../abstract/button" as*;
 .placement-text{
     margin-top: 100px;
     text-align: center;

@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/public/css/sign-up.css">
+  <link rel="stylesheet" href="/css/sign-up.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="form-con">
+    <div class="welcome-text">
+      "Create your account and join our community!"
+    </div>
     <form method="post" action="" id="signup-form">
       <input name="username" type="text" placeholder="username">
       <input name="email" type="email" placeholder="email">
@@ -16,11 +20,13 @@
       <input type="password" placeholder="Confirm password">
       <input type="text" placeholder="otp">
       <button>Sign-up</button>
+ 
       <div class="signUp-text">
-        Already have an account?<span><a id="login" href="login.html">Sign in here</a></span>
+        Already have an account?<span><a id="login" href="/auth/login">Log-in here</a></span>
       </div>
     </form>
   </div>
-  <script src="/public/js/login.js"></script>
+    
+    
 </body>
 </html>
