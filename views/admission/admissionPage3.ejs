@@ -12,6 +12,7 @@
     <div class="page1-con">
       
         <form action="/admissionPage3">
+
             <div class="p-text">Program Choice</div>
           <p>Select the program(s) you wish to apply for:</p>
           
@@ -37,8 +38,9 @@
           <label><input type="checkbox" name="AdvertisementMedium" value="Other"> Other</label><br>
           <label for="other_source">If Other, kindly mention:</label>
           <input type="text" id="other_source" name="otherSource">
+          <div class="empty"></div>
             <div class="btn" >
-                <button class="next" type="submit">
+                <button class="next-page" type="submit">
                   <span class="circle1"></span>
                   <span class="circle2"></span>
                   <span class="circle3"></span>
@@ -47,14 +49,11 @@
                   <span class="text">Next</span>
               </button>
                </div>
-               
+                
         </form>
-        
-    </div>
-    <div class="btn-cont">
-        <div class="btn-1">
+        <div class="btn-cont">
             <a href="admissionPage2">
-                <button class="next">
+                <button class="next-page">
                     <span class="circle1"></span>
                     <span class="circle2"></span>
                     <span class="circle3"></span>
@@ -63,8 +62,9 @@
                     <span class="text">Back</span>
                 </button>
             </a>
-           </div>
     </div>
+    </div>
+    
     <%- include('../footer.ejs')%> 
     <script src="/js/nav.js"></script>
     <script src="/js/form.js"></script>

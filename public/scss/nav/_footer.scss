@@ -140,7 +140,7 @@ footer{
     width: 150px;
     position:absolute;
     top: -60px;
-    left: 50px;
+    left: 10px;
     
 }
 .btn-con{
@@ -164,19 +164,20 @@ footer{
         width: 100px;
         position:absolute;
         top: -40px;
-        left: 50px;
         
     }
     .footer-con{
         padding: 50px 30px 20px 30px;
     }
+    .footer-con{
+        margin-top: 100px;
+    }
 }
 @media (max-width:430px) {
     .footer-img{
-        width: 70px;
+        width: 80px;
         position:absolute;
         top: -30px;
-        left: 30px;
         
     }
 }

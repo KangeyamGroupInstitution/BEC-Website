@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .p-text{
   color: $form-green;
@@ -22,7 +23,6 @@
   font-weight: 900;
 }
 form{
-  position: relative;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -48,13 +48,17 @@ form::before{
   top: 0;
   z-index: -4;
   background-color: $form-blue;
+  border-top-right-radius: 10px;
   animation: top 0.6s ease-in-out  1 forwards ;
+
 }
 @keyframes top {
   100%{
     border-bottom-left-radius:100%;
-    width: 30%;
-    height: 40%;
+    width: 40%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
   }
 }
 .empty{
@@ -65,19 +69,22 @@ form::before{
   bottom: 0;
   background-color: $form-blue;
   z-index: -4;
-  
+  border-bottom-left-radius: 10px;
   animation:bottom 0.6s ease-in-out  1 forwards  ;
+  
 }
 @keyframes bottom {
   100%{
     border-top-right-radius: 100%;
-    width: 30%;
-    height: 40%;
+    width: 40%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
   }
 }
 
 input , select {
-  padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
     background-color: rgb(223, 223, 228);
     border-radius: .5rem;
@@ -97,14 +104,14 @@ input , select ,label{
   }
 }
 select:focus{
-  border: 0.125rem solid $form-green;
+  border: 0.125rem solid $form-blue;
 }
 input:focus {
-  border: 0.125rem solid $form-green;
+  border: 0.125rem solid $form-blue;
 }
 label{
   font-family: $primary-text;
-  color: $form-yellow;
+  color: $form-blue;
   font-size: 16px;
   font-weight: 700;
 }
@@ -121,4 +128,116 @@ option {
   color: #333;
   font-size: 18px;
 }
-
+p{
+  color: $primary-text-color-hover;
+  font-size: 18px;
+  font-family: $primary-text;
+  font-weight: 600;
+}
+.btn-cont{
+  position: absolute;
+  left: 21.7%;
+  bottom: 30px;
+}
+@media (max-width:1500px) {
+  form{
+    width: 70%;
+  }
+  .btn-cont{
+    left: 17.2%;
+    bottom: 30px;
+}
+}
+@media (max-width:1150px) {
+  form{
+    width: 95%;
+  }
+  .btn-cont{
+    left: 7%;
+    bottom: 30px;
+}
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 50%;
+      height: 30%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 50%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+}
+@media (max-width:800px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 25%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 25%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+.btn-cont{
+  left: 7%;
+}
+}
+@media (max-width:600px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 20%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 20%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+}
+@media (max-width:450px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 12%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 12%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+.btn-cont{
+  left: 10%;
+}
+}

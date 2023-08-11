@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placement</title>
-    <%- include('../fev.ejs')%>
+    <%- include('../head.ejs')%>
     <link rel="stylesheet" href="/css/placement.css">
     <link rel="stylesheet" href="/css/aluminies.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
+</head>
 <body>
   <%- include('../navbar.ejs')%>
   
@@ -544,9 +541,7 @@
   <%- include('../footer.ejs')%>
   <script src="/js/aluminies.js"></script>
   <script src="/js/placement.js"></script>
-  <script src="/js/nav.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script> AOS.init();</script>
+  <%- include('../foot.ejs')%>
 </body>
 </html>
 
