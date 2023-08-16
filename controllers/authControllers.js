@@ -15,6 +15,12 @@ class authenticate {
     res.render(viewsPath);
     next();
   };
+  static forgotPassword = (req, res, next) => {
+    const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+    const viewsPath = path.join(__dirname, "..", "views", "auth", "forget.ejs");
+    res.render(viewsPath);
+    next();
+  };
   static createAccount = async (req, res, next) => {
     try {
       const account = new AccountModel({
@@ -25,6 +31,12 @@ class authenticate {
       });
 
       await account.save();
+      res.cookie(req.body.username, req.body.password),
+        {
+          maxAge: new Date().setHours(100),
+          Domain: "localhost:3000/home",
+          url: "/createAccount",
+        };
       res.redirect("/");
     } catch (err) {
       console.log(err);
@@ -33,6 +45,7 @@ class authenticate {
   };
 
   static logUser = async (req, res, next) => {
+    
     try {
       const { username, password } = req.body;
       console.log(username);
@@ -42,7 +55,7 @@ class authenticate {
       });
       const receivedData = await AccountModel.findOne({ username: username });
       if (password == receivedData.password) {
-        res.redirect("/admissionPage1");
+        res.redirect("auth/profiles");
       } else {
         res.send("you have sign up failed");
       }
@@ -51,12 +64,6 @@ class authenticate {
     }
     next();
   };
-
-  static forgetPassword = (req, res)=>{
-    const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-    const viewsPath = path.join(__dirname, "..", "views", "auth", "forget.ejs");
-    res.render(viewsPath);
-  }
 }
 
 export default authenticate;
