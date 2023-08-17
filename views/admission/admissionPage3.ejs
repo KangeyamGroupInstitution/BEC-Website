@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/admissionpage3.css">
-</head>
-<body>
-    <%- include('../navbar.ejs')%> 
+    <link rel="stylesheet" href="/css/admissionpage3.css" />
+  </head>
+  <body>
+    <%- include('../navbar.ejs')%>
     <div class="admission-text">Admission Form</div>
     <div class="page1-con">
       
-        <form action="/admissionPage3">
-
+        <form method="post">
             <div class="p-text">Program Choice</div>
           <p>Select the program(s) you wish to apply for:</p>
           
@@ -38,9 +37,8 @@
           <label><input type="checkbox" name="AdvertisementMedium" value="Other"> Other</label><br>
           <label for="other_source">If Other, kindly mention:</label>
           <input type="text" id="other_source" name="otherSource">
-          <div class="empty"></div>
             <div class="btn" >
-                <button class="next-page" type="submit">
+                <button class="next" type="submit">
                   <span class="circle1"></span>
                   <span class="circle2"></span>
                   <span class="circle3"></span>
@@ -49,11 +47,14 @@
                   <span class="text">Next</span>
               </button>
                </div>
-                
+               
         </form>
-        <div class="btn-cont">
+        
+    </div>
+    <div class="btn-cont">
+        <div class="btn-1">
             <a href="admissionPage2">
-                <button class="next-page">
+                <button class="next">
                     <span class="circle1"></span>
                     <span class="circle2"></span>
                     <span class="circle3"></span>
@@ -62,11 +63,11 @@
                     <span class="text">Back</span>
                 </button>
             </a>
+           </div>
     </div>
-    </div>
-    
-    <%- include('../footer.ejs')%> 
+    <%- include('../footer.ejs')%>
+
     <script src="/js/nav.js"></script>
     <script src="/js/form.js"></script>
-</body>
+  </body>
 </html>

@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/admissionpage1.css">
-</head>
-<body>
-    <%- include('../navbar.ejs')%> 
+    <link rel="stylesheet" href="/css/admissionpage1.css" />
+  </head>
+  <body>
+    <%- include('../navbar.ejs')%>
     <div class="admission-text">Admission Form</div>
     <div class="page1-con">
       
-        <form action="/admissionPage2" class="form1">
+        <form method="post" class="form1">
           <div class="p-text">Personal Details</div>
                  <label for="name" id="name_l">Full Name<span class="a">(*)</span></label>
-                 <input type="text" id="name" name="name" placeholder="Enter your full name" required maxlength="7">
+                 <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
                  
                  <label for="father_name">Parent/Guardian Name<span class="a">(*)</span></label>
-                 <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required>
+                 <input type="text" id="father_name" name="parentname" placeholder="Enter your father's name" required>
                  
                  <label for="dob">Date of Birth<span class="a">(*)</span></label>
-                 <input type="date" id="dob" name="dob" required>
+                 <input type="date" id="dob" name="dateofbirth" required>
        
                 <label for="mail_id">Mail id<span class="a">(*)</span></label>
-                <input type="email" id="mail_id" name="address" placeholder="Enter your mail id" required>
+                <input type="email" id="mail_id" name="email" placeholder="Enter your mail id" required>
                 <label for="aadhar">Aadhar Number</label>
-                <input type="number" id="Aadhar" name="address" placeholder="Enter your Aadhar number" >
+                <input type="number" id="Aadhar" name="aadharnumber" placeholder="Enter your Aadhar number" >
              
             <div class="sel_address" id="invoice">
                 
             </div>
             <label for="country" id="country">Select Country<span class="a">(*)</span></label>
-            <select name="state" id="countySel" size="1" required>
+            <select name="country" id="countySel" size="1" required>
                 <option value="" selected="selected">Select Country</option>
             </select>
         
            <label for="State" id="State">Select State<span class="a">(*)</span></label>
-           <select name="countrya" id="stateSel" size="1" required>
+           <select name="state" id="stateSel" size="1" required>
                 <option value="" selected="selected">Please select Country first</option>
            </select>
       
@@ -51,10 +51,10 @@
                <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
        
                <label for="parent_contact">Parent's Contact Number<span class="a">(*)</span></label>
-               <input type="tel" id="parent_contact" name="parent_contact" placeholder="Enter your parent's contact number" required maxlength="10">
+               <input type="tel" id="parent_contact" name="parentContactNumber" placeholder="Enter your parent's contact number" required maxlength="10">
        
                <label for="student_contact">Student's Contact Number<span class="a">(*)</span></label>
-               <input type="tel" id="student_contact" name="student_contact" placeholder="Enter your contact number" required maxlength="10">
+               <input type="tel" id="student_contact" name="studentContactNumber" placeholder="Enter your contact number" required maxlength="10">
        
                <label for="religion">Religion<span class="a">(*)</span></label>
                <select name="religion" required>
@@ -126,10 +126,10 @@
              </select>
              
              <label>Other Cast</label>
-             <input class="other_cast" id="other_cast" type="text" placeholder="Kindly mention it">
+             <input name="otherCaste" class="other_cast" id="other_cast" type="text" placeholder="Kindly mention it">
              <div class="empty"></div>
              <div class="btn">
-              <button class="next-page"  type="submit">
+              <button class="next"  type="submit">
                 <span class="circle1"></span>
                 <span class="circle2"></span>
                 <span class="circle3"></span>
@@ -141,8 +141,8 @@
         </form>
         
     </div>
-    <%- include('../footer.ejs')%> 
+    <%- include('../footer.ejs')%>
     <script src="/js/nav.js"></script>
     <script src="/js/form.js"></script>
-</body>
+  </body>
 </html>
