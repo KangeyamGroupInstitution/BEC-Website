@@ -6,8 +6,6 @@ class homeControllers {
     const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
     const viewsPath = path.join(__dirname, "..", "index.ejs");
     console.log(viewsPath);
-    res.cookie('username','bishal');
-    res.cookie('password', 'bishal');
     res.render(viewsPath);
   };
   static showHomePage = (req, res) => {

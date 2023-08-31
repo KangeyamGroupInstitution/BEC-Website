@@ -4,14 +4,12 @@ const AdmissionSchema = new mongoose.Schema({
     type: String,
     trim: true,
     uppercase: true,
-    
     default: "",
   },
   parentname: {
     type: String,
     trim: true,
     uppercase: true,
-   
     default: "",
   },
   dateofbirth: {
@@ -19,7 +17,6 @@ const AdmissionSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    
     trim: true,
   },
   aadharnumber: {
@@ -28,13 +25,11 @@ const AdmissionSchema = new mongoose.Schema({
   country: {
     type: String,
     trim: true,
-    
     uppercase: true,
   },
   state: {
     type: String,
     trim: true,
-    
     uppercase: true,
   },
   district: {
@@ -80,9 +75,9 @@ const AdmissionSchema = new mongoose.Schema({
     require: true,
     uppercase: true,
     trim: true,
-    default: "no entry"
+    default: "no entry",
   },
-  isfirstGeneration:{
+  isfirstGeneration: {
     type: Boolean,
     default: false,
   },
@@ -98,7 +93,7 @@ const AdmissionSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
-  cutOffMarks:{
+  cutOffMarks: {
     type: Number,
     default: 0,
   },
@@ -126,9 +121,9 @@ const AdmissionSchema = new mongoose.Schema({
     default: "no entry",
   },
   mediumOfInstruction: {
-     type: String,
-     uppercase: true,
-     default: "no entry", 
+    type: String,
+    uppercase: true,
+    default: "no entry",
   },
   progamName: {
     type: String,
@@ -141,7 +136,7 @@ const AdmissionSchema = new mongoose.Schema({
   otherSource: {
     type: String,
     uppercase: true,
-  }
+  },
 });
 
 const AdmissionModel = new mongoose.model("admission", AdmissionSchema);
