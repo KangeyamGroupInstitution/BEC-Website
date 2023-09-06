@@ -17,6 +17,9 @@ const AccountSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  otp: {
+    type: Number,
+  },
   join: {
     type: Date,
     default: Date.now,
