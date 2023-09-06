@@ -211,21 +211,49 @@ body {
   width: 100%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .container1 {
   position: relative;
   margin-top: 78px;
   width: 100%;
-  height: 700px;
-  background-color: white;
+  height: 750px;
 }
 
 .container1 .heading1 {
   position: absolute;
-  margin-left: 53%;
-  margin-top: 6%;
+  margin-left: 43%;
+  margin-top: 2%;
   color: #1E2337;
+  animation: rubberBand 3s linear;
 }
 
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 .container1 .con1 {
   position: absolute;
   height: 400px;
@@ -241,7 +269,7 @@ body {
   width: 400px;
   height: 400px;
   margin-left: 60%;
-  margin-top: 10%;
+  margin-top: 2%;
   animation: civ 1.5s linear infinite;
 }
 
@@ -261,14 +289,14 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 6.5%;
-  margin-left: 7%;
+  margin-left: 3%;
   width: 45%;
+  height: 400px;
 }
 
 .container1 .genesis .card1 {
   position: relative;
-  width: 95%;
+  width: 100%;
   color: #1E2337;
   overflow: hidden;
   background-color: white;
@@ -282,13 +310,13 @@ body {
 }
 
 .container1 .genesis .card1 p {
-  font-size: 0.95rem;
+  font-size: 15.2px;
   text-align: center;
 }
 
 .container1 .con2 {
-  position: relative;
-  top: 65%;
+  position: absolute;
+  top: 95%;
   left: 7%;
   width: 200px;
   height: 200px;
@@ -302,28 +330,29 @@ body {
   padding: 16px;
   background-color: white;
   color: #1E2337;
-  position: relative;
+  position: absolute;
   width: 200px;
+  height: 200px;
   line-height: 30px;
   border-radius: 10px;
-  top: 34.5%;
-  left: 7%;
+  top: 94.5%;
+  left: 7.2%;
 }
 
 .container1 .vision:hover {
-  top: 33.5%;
+  top: 94.2%;
   left: 7.5%;
 }
 
 .container1 .con3 {
-  position: relative;
+  position: absolute;
   left: 28%;
   width: 220px;
   height: 200px;
   background-color: black;
   opacity: 0.3;
   border-radius: 10px;
-  top: 6.5%;
+  top: 95%;
 }
 
 .container1 .mission {
@@ -331,32 +360,48 @@ body {
   padding: 13px;
   background-color: white;
   color: #1E2337;
-  position: relative;
+  position: absolute;
   width: 220px;
+  height: 200px;
   line-height: 24px;
   border-radius: 10px;
-  top: -24.7%;
-  left: 28%;
+  top: 94.5%;
+  left: 28.2%;
 }
 
 .container1 .mission:hover {
-  top: -25.7%;
+  top: 94.2%;
   left: 28.5%;
 }
 
 .container2 {
-  background-color: white;
-  height: 700px;
+  width: 100%;
   position: relative;
+  height: 700px;
 }
 
 .container2 .con1 {
   padding: 16px;
   position: relative;
   color: white;
-  width: 31%;
-  height: 280px;
+  width: 435px;
+  height: 295px;
   left: 10%;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
+  background-repeat: no-repeat;
+  background-size: 15% 18%, 15% 18%;
+  background-position: 0 0, 100% 100%;
+}
+
+.container2 .con2 {
+  padding: 16px;
+  position: relative;
+  color: #1E2337;
+  width: 435px;
+  height: 295px;
+  top: 100px;
+  left: 55%;
   border-radius: 10px;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
   background-repeat: no-repeat;
@@ -366,11 +411,19 @@ body {
 
 .container2 .beciv {
   padding: 16px;
-  position: relative;
   color: #1E2337;
   width: 405px;
-  left: 10.5%;
-  top: -39%;
+  height: 266px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container2 .meciv {
+  padding: 16px;
+  color: #1E2337;
+  width: 405px;
   height: 266px;
   border-radius: 10px;
   background-color: white;
@@ -400,45 +453,16 @@ span.text {
   font-size: 1em;
 }
 
-.heading {
+.container2 .beciv .heading, .container2 .meciv .heading {
   text-align: center;
-}
-
-.container2 .con2 {
-  padding: 16px;
-  position: relative;
-  color: #1E2337;
-  width: 31%;
-  height: 280px;
-  top: -20%;
-  left: 55%;
-  border-radius: 10px;
-  background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
-  background-repeat: no-repeat;
-  background-size: 15% 18%, 15% 18%;
-  background-position: 0 0, 100% 100%;
-}
-
-.container2 .meciv {
-  padding: 16px;
-  position: relative;
-  color: #1E2337;
-  width: 405px;
-  left: 55.5%;
-  top: -59%;
-  height: 266px;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container2 .con3 {
   position: relative;
-  top: -175%;
+  top: -740px;
   left: 50%;
-  width: 600px;
-  height: 450px;
+  width: 605px;
+  height: 455px;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
   border-radius: 10px;
   animation: con3 1s linear infinite;
@@ -446,9 +470,7 @@ span.text {
 
 .container2 .con4 {
   border-radius: 10px;
-  top: -238.5%;
-  left: 50.5%;
-  position: relative;
+  margin-left: 5px;
   width: 600px;
   height: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -464,48 +486,35 @@ span.text {
 
 @keyframes con3 {
   0% {
-    top: -175%;
+    top: -740px;
   }
   50% {
-    top: -173%;
+    top: -730px;
   }
   100% {
-    top: -175%;
+    top: -740px;
   }
 }
-.container2 .con4 ul {
+.container2 .con4 ul, .container2 .con6 ul {
   padding: 10px;
 }
 
 .container2 .con5 {
   position: relative;
-  top: -235%;
-  left: 3%;
-  width: 600px;
-  height: 58%;
+  top: -700px;
+  left: 6%;
+  width: 605px;
+  height: 405px;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
   border-radius: 10px;
   animation: con5 1s linear infinite;
 }
 
-@keyframes con5 {
-  0% {
-    top: -235%;
-  }
-  50% {
-    top: -233%;
-  }
-  100% {
-    top: -235%;
-  }
-}
 .container2 .con6 {
   border-radius: 10px;
-  top: -292%;
-  left: 3.5%;
-  position: relative;
+  margin-left: 5px;
   width: 600px;
-  height: 58%;
+  height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   color: #1E2337;
@@ -517,33 +526,29 @@ span.text {
   line-height: 27px;
 }
 
-.container2 .con6 ul {
-  padding: 10px;
+@keyframes con5 {
+  0% {
+    top: -700px;
+  }
+  50% {
+    top: -690px;
+  }
+  100% {
+    top: -700px;
+  }
 }
-
 .container3 {
-  margin-top: 5%;
+  position: relative;
   width: 100%;
-  height: 900px;
 }
 
 .container3 .con1 {
   position: absolute;
   height: 500px;
   width: 90%;
-  margin-left: 5%;
-  margin-top: 2%;
-  background: url("/public/img/common/download.jpeg");
+  justify-content: center;
+  margin-top: 20px;
   color: rgb(159, 93, 58);
-}
-
-.container3 .img1 {
-  position: absolute;
-  width: 450px;
-  height: 500px;
-  margin-left: 60%;
-  margin-top: 1%;
-  animation: civ 1.5s linear infinite;
 }
 
 .container3 .text1 {
@@ -551,13 +556,18 @@ span.text {
   position: relative;
   top: 9%;
   left: 9%;
-  width: 45%;
+  width: 500px;
   font-size: 20px;
   line-height: 30px;
   padding: 20px;
   color: rgb(159, 93, 58);
 }
 
+@media (max-width: 700px) {
+  .container3 .text1 {
+    width: 600px;
+  }
+}
 .container3 .text1 ul li {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -568,19 +578,54 @@ span.text {
 }
 
 .container3 .row {
+  margin-top: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container3 .gold {
   display: flex;
   flex-direction: row;
 }
 
 .container3 .con2 {
-  width: 400px;
+  width: 300px;
   height: 400px;
   position: relative;
   border-radius: 10px;
-  margin-top: 14%;
-  margin-left: 3%;
+  margin-top: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
 }
 
+@media (max-width: 1270px) {
+  .container3 .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container3 .con2 {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+@media (max-width: 890px) {
+  .container3 .con2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 793px) {
+  .container3 .gold {
+    display: flex;
+    flex-direction: column;
+  }
+  .container3 .con2 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 .container3 .con2::before {
   content: "";
   z-index: -1;
@@ -588,7 +633,6 @@ span.text {
   inset: 0;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
   transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
 }
 
 .container3 .con2 .card1 {
@@ -665,7 +709,7 @@ span.text {
   position: relative;
   color: #1E2337;
   width: 1015px;
-  height: 310px;
+  height: 340px;
   left: 10%;
   border-radius: 10px;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
@@ -677,11 +721,9 @@ span.text {
 .container3 .con4 {
   padding: 20px;
   position: relative;
-  width: 1000px;
-  height: 293px;
+  width: 980px;
+  height: 305px;
   background-color: white;
-  left: 10.5%;
-  top: -33.5%;
   line-height: 30px;
 }
 
@@ -694,12 +736,12 @@ span.text {
 }
 
 .container3 .con5 {
-  top: -25%;
+  margin-top: 50px;
   padding: 16px;
   position: relative;
   color: #1E2337;
   width: 1015px;
-  height: 400px;
+  height: 415px;
   left: 10%;
   border-radius: 10px;
   background: linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%), linear-gradient(0deg, rgb(159, 93, 58) 0%, rgb(249, 169, 108) 53%, rgb(159, 93, 58) 100%);
@@ -711,11 +753,9 @@ span.text {
 .container3 .con6 {
   padding: 20px;
   position: relative;
-  width: 1000px;
+  width: 980px;
   height: 382px;
   background-color: white;
-  left: 10.5%;
-  top: -68.5%;
   line-height: 30px;
 }
 
@@ -728,41 +768,42 @@ span.text {
 }
 
 .container4 {
-  margin-top: 70%;
+  margin-top: 100px;
 }
 
 .container4 h1 {
   margin-left: 10%;
+  text-align: left;
 }
 
-.hod {
+.container4 .hod {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
 }
 
-.staffs1 {
+.container4 .staffs1 {
   display: flex;
 }
 
-.staffs2 {
+.container4 .staffs2 {
   display: flex;
 }
 
-.staffs3 {
+.container4 .staffs3 {
   display: flex;
 }
 
-.staffs4 {
+.container4 .staffs4 {
   display: flex;
 }
 
-.staffs5 {
+.container4 .staffs5 {
   display: flex;
 }
 
-.container {
+.container4 .container {
   position: relative;
   width: 1100px;
   display: flex;
@@ -771,7 +812,7 @@ span.text {
   padding: 30px;
 }
 
-.container .card {
+.container4 .container .card {
   position: relative;
   max-width: 255px;
   height: 250px;
@@ -783,29 +824,30 @@ span.text {
   border-radius: 15px;
 }
 
-figcaption {
+.container4 figcaption {
+  margin-top: 10px;
   text-align: center;
 }
 
-.container .card:hover {
+.container4 .container .card:hover {
   height: 320px;
   margin-top: 0%;
 }
 
-.container .card .image {
+.container4 .container .card .image {
   z-index: 1;
   width: 250px;
   margin: 30px 10px;
   padding: 20px 15px;
 }
 
-.container .card figure img {
+.container4 .container .card figure img {
   width: 200px;
   height: 250px;
   border-radius: 15px;
 }
 
-.container .card .content {
+.container4 .container .card .content {
   top: -140px;
   padding: 10px 15px;
   color: #111;
@@ -815,30 +857,30 @@ figcaption {
   transition: 0.3s ease-in-out;
 }
 
-.container .card:hover .content {
+.container4 .container .card:hover .content {
   visibility: visible;
   opacity: 1;
   transition-delay: 0.2s;
 }
 
-.reveal {
+.container4 .reveal {
   position: relative;
   opacity: 0;
 }
 
-.reveal.active {
+.container4 .reveal.active {
   opacity: 1;
 }
 
-.active.fade-bottom {
+.container4 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
 
-.active.fade-left {
+.container4 .active.fade-left {
   animation: fade-left 1s ease-in;
 }
 
-.active.fade-right {
+.container4 .active.fade-right {
   animation: fade-right 1s ease-in;
 }
 
@@ -872,7 +914,30 @@ figcaption {
     opacity: 1;
   }
 }
+@media (max-width: 1261px) {
+  .container4 {
+    margin-top: 1400px;
+  }
+}
+@media (max-width: 1020px) {
+  .container4 {
+    margin-top: 1500px;
+  }
+}
+@media (max-width: 827px) {
+  .container4 {
+    margin-top: 1600px;
+  }
+}
+@media (max-width: 794px) {
+  .container4 {
+    margin-top: 2650px;
+  }
+}
 @media (max-width: 720px) {
+  .container4 {
+    margin-top: 2750px;
+  }
   .staffs1 {
     display: flex;
     flex-direction: column;
@@ -907,5 +972,488 @@ figcaption {
     align-items: center;
     justify-content: center;
     margin-top: 25px;
+  }
+}
+@media (max-width: 585px) {
+  .container4 {
+    margin-top: 2800px;
+  }
+}
+@media (max-width: 500px) {
+  .container4 {
+    margin-top: 2950px;
+  }
+}
+@media (max-width: 467px) {
+  .container4 {
+    margin-top: 3100px;
+  }
+}
+@media (max-width: 405px) {
+  .container4 {
+    margin-top: 3200px;
+  }
+}
+@media (max-width: 385px) {
+  .container4 {
+    margin-top: 3300px;
+  }
+}
+@media (max-width: 1332px) {
+  .container1 .con1 {
+    height: 450px;
+  }
+  .container1 .img1 {
+    margin-top: 8%;
+  }
+  .container1 .genesis {
+    margin-left: 2%;
+    width: 55%;
+    height: 400px;
+  }
+  .container1 .con3 {
+    left: 45%;
+    width: 240px;
+  }
+  .container1 .mission {
+    width: 240px;
+    line-height: 25.5px;
+    left: 45.2%;
+  }
+  .container1 .mission:hover {
+    left: 45.5%;
+  }
+  .container2 {
+    height: 800px;
+  }
+  .container2 .con1 {
+    top: 50px;
+    left: 10%;
+  }
+  .container2 .con2 {
+    top: 250px;
+    left: 55%;
+  }
+  .container2 .beciv {
+    width: 405px;
+    height: 266px;
+  }
+  .container2 .meciv {
+    width: 405px;
+    height: 266px;
+  }
+  .container2 .con3 {
+    top: -620px;
+    left: 50%;
+  }
+  .container2 .con4 {
+    margin-left: 5px;
+  }
+  @keyframes con3 {
+    0% {
+      top: -620px;
+    }
+    50% {
+      top: -610px;
+    }
+    100% {
+      top: -620px;
+    }
+  }
+  .container2 .con5 {
+    top: -600px;
+    left: 6%;
+  }
+  .container2 .con6 {
+    margin-left: 5px;
+  }
+  @keyframes con5 {
+    0% {
+      top: -600px;
+    }
+    50% {
+      top: -590px;
+    }
+    100% {
+      top: -600px;
+    }
+  }
+}
+@media (max-width: 1152px) {
+  .container1 {
+    height: 800px;
+  }
+  .container1 .img1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 10%;
+  }
+  .container1 .con1 {
+    margin-top: 10%;
+  }
+  .container1 .heading1 {
+    margin-top: 5%;
+  }
+  .container2 .con1 {
+    left: 5%;
+  }
+  .container2 .con2 {
+    left: 60%;
+  }
+  .container2 .con3 {
+    left: 45%;
+  }
+  .container2 .con5 {
+    left: 3%;
+  }
+}
+@media (max-width: 845px) {
+  .container1 {
+    height: 1100px;
+  }
+  .container1 .genesis {
+    margin-left: 3%;
+    width: 95%;
+  }
+  .container1 .img1 {
+    width: 400px;
+    height: 400px;
+    margin-left: 18%;
+    margin-top: 600px;
+  }
+  .container1 .con1 {
+    margin-top: 10%;
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .container1 .heading1 {
+    margin-top: 5%;
+  }
+  .container1 .heading1 {
+    margin-left: 38%;
+  }
+  .container1 .con2 {
+    left: 2%;
+  }
+  .container1 .vision {
+    left: 2.2%;
+  }
+  .container1 .vision:hover {
+    left: 2.5%;
+  }
+  .container1 .con3 {
+    left: 58%;
+  }
+  .container1 .mission {
+    left: 58.2%;
+  }
+  .container1 .mission:hover {
+    left: 58.5%;
+  }
+  .container2 {
+    height: 1300px;
+  }
+  .container2 .con1 {
+    top: 30px;
+    left: 3%;
+  }
+  .container2 .con2 {
+    top: -250px;
+    left: 60%;
+  }
+  .container2 .con3 {
+    top: -200px;
+    left: 20%;
+  }
+  @keyframes con3 {
+    0% {
+      top: -200px;
+    }
+    50% {
+      top: -190px;
+    }
+    100% {
+      top: -200px;
+    }
+  }
+  .container2 .con5 {
+    top: -150px;
+    left: 20%;
+  }
+  @keyframes con5 {
+    0% {
+      top: -150px;
+    }
+    50% {
+      top: -140px;
+    }
+    100% {
+      top: -150px;
+    }
+  }
+}
+@media (max-width: 613px) {
+  .container1 {
+    height: 1060px;
+  }
+  .container1 .img1 {
+    margin-left: 10%;
+  }
+  .container1 .heading1 {
+    margin-left: 33%;
+  }
+  .container1 .con1 {
+    margin-top: 12%;
+    height: 400px;
+    width: 94%;
+    margin-left: 3%;
+  }
+  .container1 .con2 {
+    top: 96%;
+    left: 2%;
+  }
+  .container1 .vision {
+    top: 95.5%;
+    left: 2.2%;
+  }
+  .container1 .vision:hover {
+    top: 95.2%;
+    left: 2.5%;
+  }
+  .container1 .con3 {
+    top: 96%;
+    left: 48%;
+  }
+  .container1 .mission {
+    top: 95.5%;
+    left: 48.2%;
+  }
+  .container1 .mission:hover {
+    top: 95.2%;
+    left: 48.5%;
+  }
+  .container2 {
+    height: 1700px;
+  }
+  .container2 .con1 {
+    top: 30px;
+    left: 10%;
+  }
+  .container2 .con2 {
+    top: 80px;
+    left: 10%;
+  }
+  .container2 .con3 {
+    top: 150px;
+    left: 5%;
+    width: 505px;
+    height: 555px;
+  }
+  .container2 .con4 {
+    width: 500px;
+    height: 550px;
+  }
+  @keyframes con3 {
+    0% {
+      top: 150px;
+    }
+    50% {
+      top: 160px;
+    }
+    100% {
+      top: 150px;
+    }
+  }
+  .container2 .con5 {
+    top: 200px;
+    left: 5%;
+    width: 505px;
+    height: 395px;
+  }
+  .container2 .con6 {
+    width: 500px;
+    height: 390px;
+  }
+  @keyframes con5 {
+    0% {
+      top: 200px;
+    }
+    50% {
+      top: 210px;
+    }
+    100% {
+      top: 200px;
+    }
+  }
+}
+@media (max-width: 490px) {
+  .container1 {
+    height: 1300px;
+  }
+  .container1 .heading1 {
+    margin-left: 27%;
+  }
+  .container1 .con1 {
+    height: 450px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  .container1 .img1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 3%;
+    margin-top: 950px;
+  }
+  .container1 .genesis {
+    margin-top: 7%;
+    margin-left: 3%;
+    width: 95%;
+    height: 400px;
+  }
+  .container1 .con2 {
+    top: 105%;
+    left: 20%;
+  }
+  .container1 .vision {
+    top: 104.5%;
+    left: 20.2%;
+  }
+  .container1 .vision:hover {
+    top: 104.2%;
+    left: 20.5%;
+  }
+  .container1 .con3 {
+    left: 15%;
+    top: 160%;
+  }
+  .container1 .mission {
+    top: 159.5%;
+    left: 15.2%;
+  }
+  .container1 .mission:hover {
+    top: 159.2%;
+    left: 15.5%;
+  }
+  .container2 {
+    height: 1850px;
+  }
+  .container2 .con1 {
+    top: 30px;
+    left: 10%;
+  }
+  .container2 .con2 {
+    top: 80px;
+    left: 10%;
+  }
+  .container2 .con3 {
+    top: 150px;
+    left: 5%;
+    width: 425px;
+    height: 645px;
+  }
+  .container2 .con4 {
+    width: 420px;
+    height: 640px;
+  }
+  .container2 .con5 {
+    top: 200px;
+    left: 5%;
+    width: 425px;
+    height: 415px;
+  }
+  .container2 .con6 {
+    width: 420px;
+    height: 410px;
+  }
+}
+@media (max-width: 380px) {
+  .container1 {
+    margin-top: 100px;
+    height: 1400px;
+  }
+  .container1 .heading1 {
+    margin-left: 17%;
+  }
+  .container1 .con1 {
+    height: 560px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  .container1 .img1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 6%;
+    margin-top: 1050px;
+  }
+  .container1 .genesis {
+    margin-top: 20%;
+    margin-left: 3%;
+    width: 95%;
+    height: 400px;
+  }
+  .container1 .con2 {
+    top: 105%;
+    left: 15%;
+  }
+  .container1 .vision {
+    top: 104.5%;
+    left: 15.2%;
+  }
+  .container1 .vision:hover {
+    top: 104.2%;
+    left: 15.5%;
+  }
+  .container1 .con3 {
+    left: 10%;
+    top: 145%;
+  }
+  .container1 .mission {
+    top: 144.5%;
+    left: 10.2%;
+  }
+  .container1 .mission:hover {
+    top: 144.2%;
+    left: 10.5%;
+  }
+  .container2 .con1 {
+    top: 30px;
+    left: 1%;
+  }
+  .container2 .con2 {
+    top: 80px;
+    left: 1%;
+  }
+  .container2 .con3 {
+    left: 1%;
+  }
+  .container2 .con5 {
+    left: 1%;
+  }
+}
+@media (max-width: 350px) {
+  .container1 {
+    height: 1450px;
+  }
+  .container1 .heading1 {
+    margin-top: 3%;
+    margin-left: 25%;
+  }
+  .container1 .genesis {
+    margin-top: 95px;
+    margin-left: 3%;
+    width: 95%;
+    height: 400px;
+  }
+  .container1 .con1 {
+    height: 600px;
+    margin-left: 20%;
+  }
+  .container1 .img1 {
+    margin-top: 1100px;
   }
 }/*# sourceMappingURL=Civil.css.map */

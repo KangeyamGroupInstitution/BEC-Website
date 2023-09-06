@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('../head.ejs')%>
     <link rel="stylesheet" href="/css/AI&DS.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <%- include('../navbar.ejs')%>
-        <script src="/assets/js/nav.js"></script>
+  <div class="departement-con">
+    <h2>Artificial Intelligence & Data Science</h2>
+    <div class="departement-con-info">
+      <img class="head-img" src="/img/departement/aids/undraw_artificial_intelligence_re_enpp.svg" alt="">
+      <div class="head-con">
+        <div class="head-text">
+          Genesis
+        </div>
+        <div class="head-content">  
+          The Department of Artificial Intelligence & Data Science, started in the year 2021, offers B.Tech  Artificial Intelligence & Data Science to meet the challenges of higher education, research and innovation in key areas of Data Science and AI. The department aims to develop AI and Data Science engineers who are innovative and entrepreneurial to become global leaders in research and technology. 
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('../footer.ejs')%>
+  <%- include('../foot.ejs')%>
     
 </body>
 </html>
