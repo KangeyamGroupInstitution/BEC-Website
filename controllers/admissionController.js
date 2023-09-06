@@ -23,6 +23,7 @@ class admissionControllers {
   };
   static showAdmissionForm1 = (req, res) => {
     const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
     const viewsPath = path.join(
       __dirname,
       "..",
