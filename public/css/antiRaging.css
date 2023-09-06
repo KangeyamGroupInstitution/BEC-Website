@@ -199,4 +199,495 @@ body {
   .navbar nav ul li ul li {
     border-top: none;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.anti-ragging-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.anti-ragging-page .anti-ragging-policy {
+  margin-top: 100px;
+  padding: 0 50px;
+  width: 70%;
+}
+.anti-ragging-page .anti-ragging-policy .heading {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.anti-ragging-page .anti-ragging-policy .para {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  color: #757575;
+}
+@media (max-width: 800px) {
+  .anti-ragging-page .anti-ragging-policy {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .anti-ragging-page .anti-ragging-policy {
+    padding: 20px;
+    width: 100%;
+  }
+  .anti-ragging-page .anti-ragging-policy .heading {
+    font-size: 18px;
+  }
+  .anti-ragging-page .anti-ragging-policy .para {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+.anti-ragging-page .forms-of-ragging {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+.anti-ragging-page .forms-of-ragging .f-r {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #757575;
+}
+.anti-ragging-page .forms-of-ragging .f-r:hover {
+  color: #fb8c00;
+}
+.anti-ragging-page .forms-of-ragging .f-r .svg-tick {
+  box-shadow: 1px 1px 5px rgb(155, 154, 154);
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+.anti-ragging-page .forms-of-ragging .f-r .svg-tick:hover {
+  background-color: #efefef;
+}
+.anti-ragging-page .forms-of-ragging .f-r .svg-tick:hover .svg {
+  stroke: #fb8c00;
+  fill: #efefef;
+}
+.anti-ragging-page .forms-of-ragging .f-r .svg-tick .svg {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  stroke: #757575;
+  fill: white;
+}
+.anti-ragging-page .forms-of-ragging .f-r .svg-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.anti-ragging-page .forms-of-ragging .grid2 {
+  animation: bounce 2s linear infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+.anti-ragging-page .forms-of-ragging .grid2 img {
+  margin-top: 100px;
+  width: 400px;
+}
+@media (max-width: 800px) {
+  .anti-ragging-page .forms-of-ragging {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .anti-ragging-page .forms-of-ragging h1 {
+    font-size: 20px;
+  }
+  .anti-ragging-page .forms-of-ragging .f-r {
+    gap: 20px;
+  }
+  .anti-ragging-page .forms-of-ragging .f-r .svg-tick {
+    padding: 4px;
+  }
+  .anti-ragging-page .forms-of-ragging .f-r .svg-tick .svg {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .anti-ragging-page .forms-of-ragging .f-r .svg-name {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .anti-ragging-page .forms-of-ragging .grid2 img {
+    margin-top: 50px;
+    width: 200px;
+  }
+}
+.anti-ragging-page .possible-punishment {
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p:hover svg .circle {
+  stroke: #757575;
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p:hover .svg-name {
+  color: #001f4e;
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p svg {
+  border-radius: 50%;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p svg .circle {
+  fill: none;
+  stroke: rgb(7, 7, 85);
+}
+.anti-ragging-page .possible-punishment .p-p-grid1 .p-p .svg-name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  flex-wrap: wrap;
+  color: #0a3981;
+}
+@media (max-width: 800px) {
+  .anti-ragging-page .possible-punishment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  .anti-ragging-page .possible-punishment .svg-name {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .anti-ragging-page .possible-punishment {
+    padding: 0px;
+    width: 85%;
+  }
+  .anti-ragging-page .possible-punishment .p-p-grid1 h1 {
+    font-size: 20px;
+  }
+  .anti-ragging-page .possible-punishment .p-p-grid1 .p-p {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .anti-ragging-page .possible-punishment .p-p-grid1 .p-p svg {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .anti-ragging-page .possible-punishment .p-p-grid1 .p-p .svg-name {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+.anti-ragging-page .a-r-committee {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.anti-ragging-page .a-r-committee-table {
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(70, 69, 69);
+}
+.anti-ragging-page .a-r-committee-table td {
+  padding: 20px 10px;
+  text-align: center;
+}
+.anti-ragging-page .a-r-committee-table tr:hover {
+  background-color: #ddd;
+}
+.anti-ragging-page .a-r-committee-table th {
+  padding: 10px;
+  text-align: center;
+  background-color: #0a3981;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 700px) {
+  .anti-ragging-page .a-r-committee {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .anti-ragging-page .a-r-committee h1 {
+    font-size: 20px;
+  }
+  .anti-ragging-page .a-r-committee-table {
+    margin-top: 30px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(70, 69, 69);
+  }
+  .anti-ragging-page .a-r-committee-table td {
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .anti-ragging-page .a-r-committee-table tr:hover {
+    background-color: #ddd;
+  }
+  .anti-ragging-page .a-r-committee-table th {
+    padding: 10px;
+    text-align: center;
+    background-color: #0a3981;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 490px) {
+  .anti-ragging-page .a-r-committee {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .anti-ragging-page .a-r-committee-table {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(70, 69, 69);
+  }
+  .anti-ragging-page .a-r-committee-table td {
+    padding: 3px;
+    font-size: 8px;
+  }
+  .anti-ragging-page .a-r-committee-table th {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.anti-ragging-page .a-r-squad {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.anti-ragging-page .a-r-squad-table {
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 1px 1px 10px rgb(70, 69, 69);
+}
+.anti-ragging-page .a-r-squad-table td {
+  padding: 20px 10px;
+  text-align: center;
+}
+.anti-ragging-page .a-r-squad-table tr:hover {
+  background-color: #ddd;
+}
+.anti-ragging-page .a-r-squad-table th {
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #0a3981;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 700px) {
+  .anti-ragging-page .a-r-squad {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .anti-ragging-page .a-r-squad h1 {
+    font-size: 20px;
+  }
+  .anti-ragging-page .a-r-squad-table {
+    margin-top: 30px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(70, 69, 69);
+  }
+  .anti-ragging-page .a-r-squad-table td {
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .anti-ragging-page .a-r-squad-table tr:hover {
+    background-color: #ddd;
+  }
+  .anti-ragging-page .a-r-squad-table th {
+    padding: 10px;
+    text-align: center;
+    background-color: #0a3981;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 490px) {
+  .anti-ragging-page .a-r-squad {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .anti-ragging-page .a-r-squad-table {
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(70, 69, 69);
+  }
+  .anti-ragging-page .a-r-squad-table td {
+    padding: 5px;
+    font-size: 8px;
+  }
+  .anti-ragging-page .a-r-squad-table th {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.anti-ragging-page .contact-heading {
+  font-size: 25px;
+}
+@media (max-width: 500px) {
+  .anti-ragging-page .contact-heading {
+    font-size: 18px;
+  }
+}
+.anti-ragging-page .a-r-cell {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+}
+.anti-ragging-page .a-r-cell-grid {
+  display: flex;
+  flex-direction: column;
+}
+.anti-ragging-page .a-r-cell-grid .contact {
+  margin-top: 20px;
+  width: 400px;
+  animation: bounce 2s linear infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info:hover .svg {
+  background-color: #CCCCCC;
+  box-shadow: 1px 1px 10px rgb(190, 190, 190);
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info:hover .svg svg {
+  fill: #fb8c00;
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info:hover .svg-name {
+  color: #fb8c00;
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info .svg {
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info .svg svg {
+  fill: #757575;
+}
+.anti-ragging-page .a-r-cell-grid .a-r-cell-info .svg-name {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #757575;
+}
+@media (max-width: 800px) {
+  .anti-ragging-page .a-r-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .anti-ragging-page .a-r-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  .anti-ragging-page .a-r-cell-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .anti-ragging-page .a-r-cell-grid .contact {
+    margin-top: 10px;
+    width: 200px;
+  }
+  .anti-ragging-page .a-r-cell-grid .a-r-cell-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .anti-ragging-page .a-r-cell-grid .a-r-cell-info .svg {
+    padding: 8px 10px;
+    border-radius: 50%;
+  }
+  .anti-ragging-page .a-r-cell-grid .a-r-cell-info .svg-name {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=antiRaging.css.map */
