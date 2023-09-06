@@ -316,7 +316,10 @@ body {
   transition: all 0.3s ease-in;
 }
 
+
 .next-page {
+.next {
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: white;
@@ -329,8 +332,9 @@ body {
   overflow: hidden;
 }
 
+
 .next-page span:not(:nth-child(6)) {
-  position: absolute;
+   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -341,31 +345,31 @@ body {
   transition: 0.6s ease;
 }
 
-.next-page span:nth-child(6) {
-  position: relative;
-}
 
-.next-page span:nth-child(1) {
+
+
+
+.next span:nth-child(1) {
   transform: translate(-3.3em, -4em);
 }
 
-.next-page span:nth-child(2) {
+.next span:nth-child(2) {
   transform: translate(-8em, 1.3em);
 }
 
-.next-page span:nth-child(3) {
+.next span:nth-child(3) {
   transform: translate(-0.2em, 1.8em);
 }
 
-.next-page span:nth-child(4) {
+.next span:nth-child(4) {
   transform: translate(3.5em, 1.4em);
 }
 
-.next-page span:nth-child(5) {
+.next span:nth-child(5) {
   transform: translate(3.5em, -3.8em);
 }
 
-.next-page:hover span:not(:nth-child(6)) {
+.next:hover span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
 }
@@ -736,7 +740,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0px 30px 20px 30px;
+  padding: 40px 30px 20px 30px;
+
 }
 .footer-con .address-info {
   height: 65%;
@@ -856,7 +861,9 @@ footer {
   width: 150px;
   position: absolute;
   top: -60px;
+
   left: 10px;
+
 }
 
 .btn-con {
@@ -881,18 +888,11 @@ footer {
     width: 100px;
     position: absolute;
     top: -40px;
+
   }
   .footer-con {
     padding: 50px 30px 20px 30px;
   }
-  .footer-con {
-    margin-top: 100px;
-  }
-}
-@media (max-width: 430px) {
-  .footer-img {
-    width: 80px;
-    position: absolute;
-    top: -30px;
+
   }
 }/*# sourceMappingURL=admission.css.map */
