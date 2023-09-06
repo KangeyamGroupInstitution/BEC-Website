@@ -19,3 +19,10 @@
     color:$primary-text-color-hover;
     text-align: center;
 }
+@mixin head-blue{
+    font-size: 30px;
+    font-family: $primary-text;
+    font-weight: 700;
+    color:$primary-text-color;
+    text-align: center;
+}
