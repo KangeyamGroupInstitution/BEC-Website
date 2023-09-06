@@ -1,1 +1,11 @@
 @use "../nav/nav2";
+@use "../abstract/color" as *;
+@use "../abstract/font" as *;
+@use "../abstract/mixin" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

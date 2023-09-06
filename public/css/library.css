@@ -199,4 +199,9 @@ body {
   .navbar nav ul li ul li {
     border-top: none;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=library.css.map */
