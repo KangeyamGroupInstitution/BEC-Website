@@ -227,6 +227,7 @@
         }
         .nav-con1{
             @include nav-con;
+            display: block;
             &-li{
                 line-height: 60px;
                 color: gray;
@@ -261,6 +262,15 @@
             
         }
         .nav-con5{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con6{
             @include nav-con;
             display: none;
             &-li{
