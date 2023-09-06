@@ -1,22 +1,120 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: gray;
+}
+.form-con{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+.form-con::before{
+  content: '';
+  width: 300vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #070755;
+  top: 0;
+  left: 0;
   
-  .section {
-    height: 100vh; /* Set height to viewport height */
+  animation: left 1s ease-in-out  1 forwards ;
+}
+.child{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
+  width: 40vw;
+}
+@keyframes left {
+  100%{
+    border-bottom-right-radius:max(50vw,50vh);
+    width:50vw ;
+    height: 100vh;
   }
-  
-  #animatedElement {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: fixed;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
+}
+form{
+  margin-right: 10%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 20px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 2px 2px 5px rgb(239, 239, 239),
+              -2px -2px 5px rgb(220, 219, 219);
+  transform: scale(0);
+  animation: zoom 0.4s ease-in-out 1s  1 forwards ;
+  background-color: #fff;
+}
+@keyframes zoom {
+  100%{
+    transform: scale(1);
   }
-  
+}
+input,button{
+  padding: 15px 30px;
+  /* border-radius: 10px; */
+  outline: none;
+  border: none;
+  border-bottom: 0.5px solid gray;
+  font-size: 18px;
+  animation: input 0.2s linear 1.4s 1 forwards ;
+  filter: blur(10px);
+}
+@keyframes input {
+  100%{
+    filter: blur(0);
+  }
+}
+button{
+  border-radius: 10px;
+  border: none;
+  background-color: #070755;
+  color: #fff;
+}
+span{
+  opacity: 0;
+  animation: text 1.7s ease 1s 1 forwards ;
+  filter: blur(4px);
+}
+@keyframes text {
+  100%{
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+span:nth-child(1){
+  animation-delay: 1.1s;
+}
+span:nth-child(2){
+  animation-delay: 1.2s;
+}
+span:nth-child(3){
+  animation-delay: 1.3s;
+}
+span:nth-child(4){
+  animation-delay: 1.4s;
+}
+span:nth-child(5){
+  animation-delay: 1.5s;
+}
+span:nth-child(6){
+  animation-delay: 1.6s;
+}
+span:nth-child(7){
+  animation-delay: 1.7s;
+}
+span:nth-child(8){
+  animation-delay: 1.8s;
+}

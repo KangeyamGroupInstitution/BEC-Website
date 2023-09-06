@@ -11,6 +11,16 @@
 	justify-content: end;
 	align-items: center;
 }
+.highlight {
+    color: transparent;
+    animation: text 0.005s linear 1  forwards;
+  }
+
+  @keyframes text {
+    100% {
+      color: #fff;
+    }
+  }
 .form-con::before{
     content: '';
     position: absolute;
@@ -49,7 +59,7 @@ form{
 	padding: 1rem;
     background-color: #ffffff;
     border-radius: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: $white-shadow;
     transform: scale(0);
     animation: scale 0.4s ease-in-out 1s  1 forwards ;
     text-align: center;
@@ -121,7 +131,7 @@ form a{
         margin-right:20px;
     }
 }
-@media (max-width:900px) {
+@media (max-width:950px) {
     input{
         width: 100%;
     }
@@ -161,6 +171,8 @@ form a{
     form{
         margin: 0;
         width: 90%;
+        box-shadow: 0 3px 3px rgb(229, 228, 228),
+         -3px 0 3px rgb(229, 228, 228);
     }
     input{
         width: 100%;

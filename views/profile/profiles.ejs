@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .container{
+            width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: row;
+            background-color: #f2f2f2;
+            border-radius: 3px;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .profile-picture{
+            margin: 10px;
+            width: 30% ;
+            height: 120px ;
+            border-radius: 50%;
+            border: 1px black solid;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <% data.forEach((item) => { %>
+        <a href="profile/<%= item._id %>">
+            <div class="container">
+                <div class="profile-picture">
+                     
+                </div>
+                <div class="admission-details">
+                      <p> <b>Name:</b> <%= item.fullname %> </p>
+                      <p> <b>Parent:</b> <%= item.parentname %> </p> 
+                      <p> <b>Birth:</b> <%= item.dateofbirth %> </p>
+                </div>
+            </div>
+        </a>
+    <% })  %>
+</body>
+</html>

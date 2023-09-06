@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/admissionpage3.css">
-</head>
-<body>
-    <%- include('../navbar.ejs')%> 
+    <link rel="stylesheet" href="/css/admissionpage3.css" />
+  </head>
+  <body>
+    <%- include('../navbar.ejs')%>
     <div class="admission-text">Admission Form</div>
     <div class="page1-con">
       
-        <form action="/admissionPage3">
+        <form method="post">
             <div class="p-text">Program Choice</div>
           <p>Select the program(s) you wish to apply for:</p>
           
@@ -65,8 +65,9 @@
             </a>
            </div>
     </div>
-    <%- include('../footer.ejs')%> 
+    <%- include('../footer.ejs')%>
+
     <script src="/js/nav.js"></script>
     <script src="/js/form.js"></script>
-</body>
+  </body>
 </html>
