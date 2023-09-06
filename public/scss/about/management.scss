@@ -1,1 +1,177 @@
 @use "../nav/nav2";
+@use "../nav/footer";
+@use "../abstract/mixin" as *;
+@use "../abstract/button" as*;
+@use "../abstract/width100%" as*;
+@use "../abstract/color" as *;
+.management-text{
+    @include  head-blue;
+    margin-top: 100px;
+    text-transform: capitalize
+}
+.manage-con{
+    @include parent;
+    
+    &-text{
+        width: 1000px;
+        border: 0.5px solid $form-green;
+        border-left: 10px solid $form-green;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-top: 50px;
+        font-family: $primary-text;
+        font-size: 20px;
+        color: $primary-text-color;
+        line-height: 40px;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
+        font-weight: 700;
+    }
+    @media (max-width:1050px) {
+        &-text{
+            width: 90%;
+        }
+    }
+    @media (max-width:600px) {
+        &-text{
+           line-height: 20px;
+           padding: 7px 5px;
+           border-left: 10px solid $form-green;
+           font-size: 14px;
+        }
+    }
+}
+.trusty-con{
+    @include parent;
+    margin-top: 100px;
+}
+.trust-profile-photo-name{
+    position: absolute;
+    bottom: 10%;
+    width: 207px;
+    height: 14%;
+    background-color: $form-blue;
+    border-bottom-left-radius:22px;
+    border-bottom-right-radius:22px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    text-transform: capitalize;
+    font-family: $primary-text;
+    font-weight: 700;
+    transition-duration: 2s;
+    text-align: center;
+}
+.trust-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 1px solid $form-blue;
+    cursor: pointer;
+}
+.trust-profile-photo:hover .trust-profile-photo-name{
+    display: flex ;
+}
+.trusty{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+.trust-profile{
+    width: 230px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    &-photo{
+        width: 90%;
+        height: 90%;
+        border-radius: 10%;
+        background-color: white;
+        box-shadow: $white-shadow;
+    }
+}
+.trusty-info{
+   width: 70%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 20px;
+.trusty-text{
+    font-family: $primary-text;
+    font-size: 18px;
+}
+.trusty-text:nth-child(1){
+    color:$form-blue;
+    font-weight: 900;
+}
+.trusty-text:nth-child(2){
+    color: gray;
+}
+.trusty-text-a{
+    color: $primary-text-color-hover;
+    font-weight: 900;
+    text-decoration: none;
+}
+.trusty-text:nth-child(4){
+    color: rgb(31, 30, 30);
+}
+.trusty-text:nth-child(5){
+    font-size: 16px;
+    color: gray;
+}
+}
+@media (max-width:1050px) {
+    .trusty{
+        width: 90%;
+    }
+}
+@media (max-width:800px) {
+    .trusty{
+        flex-direction: column;
+    }
+    .trusty-info{
+        width: 100%;
+    }
+    .trust-profile-photo-name{
+        bottom: 0;
+        height: 10%;
+        top: 230px;
+}
+}
+@media (max-width:600px) {
+    .trusty{
+        flex-direction: column;
+    }
+    .trusty-info{
+        row-gap: 10PX;
+    }
+    .trusty-text{
+        text-align: justify;
+    }
+    .trusty-text:nth-child(1){
+        font-size: 16px;
+    }
+    .trusty-text-a{
+        font-size: 18px;
+    }
+    .trusty-text:nth-child(4){
+        font-size: 14px;
+    }
+    .trusty-text:nth-child(5){
+        font-size: 10px;
+    }
+    .trusty-info{
+        row-gap: 5px;
+    }
+    .trusty-info{
+        width: 100%;
+        padding: 5px 5px;
+    }
+  
+}
+.trusty-text-a:hover{
+    color: $form-blue;
+}
