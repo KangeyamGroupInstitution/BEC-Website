@@ -1,1 +1,34 @@
 @use "../nav/nav2";
+@use "../abstract/button" as*;
+@use "../abstract/color" as *;
+@use '../nav/footer';
+.departement-con{
+    margin-top: 150px;
+    row-gap: 50px;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-family: $primary-text;
+        font-weight: 900;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .head-img{
+        width: 500px;
+       
+    }
+    &-info{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+    }.info-text{
+        
+    }
+    
+}
