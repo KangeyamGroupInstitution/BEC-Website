@@ -546,13 +546,14 @@ footer {
 }
 .departement-con {
   margin-top: 150px;
-  row-gap: 50px;
+  row-gap: 100px;
   font-weight: 900;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: #2F2E41;
 }
 .departement-con h2 {
   font-family: "Belanosima", sans-serif;
@@ -570,4 +571,248 @@ footer {
   align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
+}
+.departement-con .head-con {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.departement-con .head-con .head-content {
+  text-indent: 50px;
+  text-align: justify;
+  line-height: 30px;
+  color: #2F2E41;
+}
+.departement-con .head-text {
+  color: #00BFA6;
+  font-size: 1.5rem;
+}
+.departement-con .vision-mission-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.departement-con .card {
+  width: 430px;
+  height: 170px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+.departement-con .card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 20px 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.departement-con .card:hover {
+  transform: scale(1.04) rotate(0.5deg);
+}
+.departement-con .circle {
+  width: 70px;
+  height: 70px;
+  background: #00BFA6;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(2px);
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+.departement-con .circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+.departement-con .circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+.departement-con .card-head {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Belanosima", sans-serif;
+  color: #00BFA6;
+  font-weight: 900;
+}
+.departement-con .card-con {
+  color: #2F2E41;
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 25px;
+}
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+.departement-con .departement-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "out out side" "bt bt side";
+  padding: 40px;
+}
+.departement-con .departement-grid .grid-content {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+}
+.departement-con .departement-grid ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  line-height: 25px;
+}
+.departement-con .departement-grid ul li {
+  color: rgb(172, 171, 171);
+  font-weight: 400;
+}
+.departement-con .departement-grid .li {
+  color: black;
+  font-weight: 600;
+}
+.departement-con .departement-grid-con1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  grid-area: out;
+  display: flex;
+}
+.departement-con .departement-grid-con2 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-right: 1px solid black;
+  grid-area: bt;
+  padding-top: 20px;
+}
+.departement-con .departement-grid-con3 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  grid-area: side;
+  justify-content: center;
+  align-items: center;
+}
+.departement-con .departement-grid-con3 .grid-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  padding: 0 0 0 30px;
+}
+.departement-con .departement-grid-con3 .aids-img2 {
+  width: 400px;
+}
+.departement-con-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.departement-con-nav .nav-li {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.departement-con-nav .nav-li li {
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.departement-con-nav .nav-li .value {
+  background-color: #00BFA6;
+  color: #fff;
+}
+.departement-con-nav .nav-con1 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+.departement-con-nav .nav-con1-li {
+  line-height: 60px;
+  color: gray;
+}
+.departement-con-nav .nav-con2 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: none;
+}
+.departement-con-nav .nav-con2-li {
+  line-height: 60px;
+  color: gray;
+}
+.departement-con-nav .nav-con3 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: none;
+}
+.departement-con-nav .nav-con3-li {
+  line-height: 60px;
+  color: gray;
+}
+.departement-con-nav .nav-con4 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: none;
+}
+.departement-con-nav .nav-con4-li {
+  line-height: 60px;
+  color: gray;
+}
+.departement-con-nav .nav-con5 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: none;
+}
+.departement-con-nav .nav-con5-li {
+  line-height: 60px;
+  color: gray;
 }/*# sourceMappingURL=AI&DS.css.map */
