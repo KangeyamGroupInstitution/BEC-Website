@@ -1,2 +1,283 @@
 @use "../nav/nav2";
-@use "./department";
+@use "../abstract/button" as*;
+@use "../abstract/color" as *;
+@use '../nav/footer';
+.departement-con{
+    margin-top: 150px;
+    row-gap: 100px;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $aids-text;
+    
+    h2{
+        font-family: $primary-text;
+        font-weight: 900;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .head-img{
+        width: 500px;
+       
+    }
+    &-info{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+    }
+    
+    .head-con{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+     
+        .head-content{
+            text-indent: 50px;
+            text-align: justify;
+            line-height: 30px;
+            color: $aids-text;
+        }
+    }
+    .head-text{
+        color: $aids-primary;
+        font-size: 1.5rem;
+    }
+    .vision-mission-con{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        }
+      
+      .card {
+        width: 430px;
+        height: 170px;
+        transition: all 0.2s;
+        position: relative;
+        cursor: pointer;
+        
+      }
+      
+      .card-inner {
+        width: inherit;
+        height: inherit;
+        background: rgba(255,255,255,.05);
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 20px 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .card:hover {
+        transform: scale(1.04) rotate(0.5deg);
+      }
+      
+      .circle {
+        width: 70px;
+        height: 70px;
+        background: $aids-primary;
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(2px);
+        animation: move-up6 2s ease-in infinite alternate-reverse;
+      }
+      
+      .circle:nth-child(1) {
+        top: -25px;
+        left: -25px;
+      }
+      
+      .circle:nth-child(2) {
+        bottom: -25px;
+        right: -25px;
+        animation-name: move-down1;
+      }
+      .card-head{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: $primary-text;
+        color: $aids-primary;
+        font-weight: 900;
+      }
+      .card-con{
+     
+        color: $aids-text;
+        text-indent: 30px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      @keyframes move-up6 {
+        to {
+          transform: translateY(-10px);
+        }
+      }
+      
+      @keyframes move-down1 {
+        to {
+          transform: translateY(10px);
+        }
+      }  
+      .departement-grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-areas: "out out side"
+                             "bt bt side";
+        padding: 40px;
+        .grid-content{
+            display: flex;
+            column-gap: 30px;
+            justify-content: space-between;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            line-height: 25px;
+            
+            li{
+                color: rgb(172, 171, 171);
+                font-weight: 400;
+            }
+        }
+        .li{
+            color: black;
+            font-weight: 600;
+        }
+        @mixin con {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+        
+           padding: 0px 10px 30px 10px;
+           display: flex;
+           flex-direction: column;
+           row-gap: 20px;
+        }
+        &-con1{
+            @include con;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            grid-area: out;
+            display: flex;
+        
+        }
+        &-con2{
+            @include con;
+            border-right: 1px solid black;
+            grid-area: bt;
+            padding-top:20px
+        }
+        &-con3{
+            @include con;
+            grid-area: side;
+            justify-content: center;
+            align-items: center;
+            .grid-con{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 20px;
+                padding: 0 0 0 30px;
+            }
+            .aids-img2{
+                width: 400px;
+            }
+        }
+      
+      }
+     &-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .nav-li{
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                list-style: none;
+                padding: 15px 20px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .value{
+                background-color: $aids-primary;
+                color: #fff;
+            }
+        }
+
+        @mixin nav-con{
+            background-color: white;
+            box-shadow: $white-shadow;
+            width: 65%;
+            margin-top: 20px;
+            padding: 20px 50px;
+            border-radius: 20px;
+        }
+        .nav-con1{
+            @include nav-con;
+            display: block;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con2{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con3{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con4{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con5{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+        .nav-con6{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
+     }
+}
