@@ -269,5 +269,14 @@
             }
             
         }
+        .nav-con6{
+            @include nav-con;
+            display: none;
+            &-li{
+                line-height: 60px;
+                color: gray;
+            }
+            
+        }
      }
 }

@@ -815,4 +815,17 @@ footer {
 .departement-con-nav .nav-con5-li {
   line-height: 60px;
   color: gray;
+}
+.departement-con-nav .nav-con6 {
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+  width: 65%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: none;
+}
+.departement-con-nav .nav-con6-li {
+  line-height: 60px;
+  color: gray;
 }/*# sourceMappingURL=AI&DS.css.map */
