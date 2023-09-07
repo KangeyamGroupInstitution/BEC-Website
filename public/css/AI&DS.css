@@ -759,6 +759,7 @@ footer {
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
+  display: block;
 }
 .departement-con-nav .nav-con1-li {
   line-height: 60px;
