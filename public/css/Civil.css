@@ -584,8 +584,21 @@ footer {
   color: #2F2E41;
 }
 .departement-con .head-text {
-  color: #00BFA6;
+  color: #F9A826;
   font-size: 1.5rem;
+}
+.departement-con .countdownContainer {
+  height: 70px;
+  width: 200px;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+}
+.departement-con .countdownContainer h1 {
+  color: #06111E;
+  padding: 20px;
+  font-size: 40px;
 }
 .departement-con .vision-mission-con {
   width: 100%;
@@ -619,7 +632,7 @@ footer {
 .departement-con .circle {
   width: 70px;
   height: 70px;
-  background: #00BFA6;
+  background: #F9A826;
   border-radius: 50%;
   position: absolute;
   filter: blur(2px);
@@ -639,7 +652,7 @@ footer {
   text-transform: capitalize;
   text-align: center;
   font-family: "Belanosima", sans-serif;
-  color: #00BFA6;
+  color: #F9A826;
   font-weight: 900;
 }
 .departement-con .card-con {
@@ -678,12 +691,12 @@ footer {
   line-height: 25px;
 }
 .departement-con .departement-grid ul li {
-  color: rgb(172, 171, 171);
-  font-weight: 400;
-}
-.departement-con .departement-grid .li {
   color: black;
   font-weight: 600;
+}
+.departement-con .departement-grid .li {
+  color: rgb(162, 162, 162);
+  font-weight: 400;
 }
 .departement-con .departement-grid-con1 {
   background-color: rgb(255, 255, 255);
@@ -749,13 +762,13 @@ footer {
   cursor: pointer;
 }
 .departement-con-nav .nav-li .value {
-  background-color: #00BFA6;
+  background-color: #F9A826;
   color: #fff;
 }
 .departement-con-nav .nav-con1 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
@@ -768,46 +781,67 @@ footer {
 .departement-con-nav .nav-con2 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
   display: none;
 }
+.departement-con-nav .nav-con2 p {
+  color: gray;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .departement-con-nav .nav-con2-li {
+  padding-left: 30px;
   line-height: 60px;
   color: gray;
 }
 .departement-con-nav .nav-con3 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
   display: none;
 }
+.departement-con-nav .nav-con3 p {
+  color: gray;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .departement-con-nav .nav-con3-li {
+  padding-left: 30px;
   line-height: 60px;
   color: gray;
 }
 .departement-con-nav .nav-con4 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
   display: none;
 }
+.departement-con-nav .nav-con4 p {
+  color: gray;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .departement-con-nav .nav-con4-li {
+  padding-left: 30px;
   line-height: 60px;
   color: gray;
 }
 .departement-con-nav .nav-con5 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
@@ -820,13 +854,24 @@ footer {
 .departement-con-nav .nav-con6 {
   background-color: white;
   box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
-  width: 65%;
+  width: 68.5%;
   margin-top: 20px;
   padding: 20px 50px;
   border-radius: 20px;
   display: none;
 }
+.departement-con-nav .nav-con6 p {
+  color: gray;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.departement-con-nav .nav-con6 .head-text {
+  color: #2F2E41;
+  font-size: 1.2rem;
+}
 .departement-con-nav .nav-con6-li {
+  padding-left: 30px;
   line-height: 60px;
   color: gray;
 }/*# sourceMappingURL=Civil.css.map */
