@@ -14,6 +14,45 @@ let navCon5IdEl = document.getElementById("navCon5Id");
 let navCon6IdEl = document.getElementById("navCon6Id");
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    function animateNumber(target, finalValue, duration) {
+        let current = 0;
+        let step = (finalValue - current) / (duration / 50);
+
+        function updateNumber() {
+            if (current <= finalValue) {
+                document.getElementById(target).textContent = Math.floor(current);
+                current += step;
+                setTimeout(updateNumber, 50);
+            } else {
+                document.getElementById(target).textContent = finalValue ;
+            }
+        }
+
+        updateNumber();
+    }
+
+    function checkIfVisible(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateNumber("intakeId1", 60, 900);
+                animateNumber("intakeId2", 36, 900);
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(checkIfVisible, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+    });
+
+    const countdownContainer = document.getElementById("countdownContainer");
+
+    observer.observe(countdownContainer);
+});
+
 valueIdEl.addEventListener("click" , function(){
    
     navCon1IdEl.style.display = "block";
