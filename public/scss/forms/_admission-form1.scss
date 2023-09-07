@@ -1,0 +1,243 @@
+@use "../abstract/color" as *;
+@use "../abstract/button" as *;
+.admission-text{
+  margin-top: 100px;
+  text-align: center;
+  color: $form-blue;
+  font-family: $primary-text;
+  font-size: 30px;
+  font-weight: 900;
+}
+.page1-con{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.p-text{
+  color: $form-green;
+  font-family: $primary-text;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 900;
+}
+form{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  box-shadow: $white-shadow;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transform: scale(0);
+  animation: scale 0.4s ease-in-out   1 forwards ;
+}
+@keyframes scale {
+  100%{
+      transform: scale(1);
+  }
+}
+form::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: -4;
+  background-color: $form-blue;
+  border-top-right-radius: 10px;
+  animation: top 0.6s ease-in-out  1 forwards ;
+
+}
+@keyframes top {
+  100%{
+    border-bottom-left-radius:100%;
+    width: 40%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+.empty{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $form-blue;
+  z-index: -4;
+  border-bottom-left-radius: 10px;
+  animation:bottom 0.6s ease-in-out  1 forwards  ;
+  
+}
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 40%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+
+input , select {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background-color: rgb(223, 223, 228);
+    border-radius: .5rem;
+    border: 0.125rem solid #fff;
+    outline: none;
+    
+}
+input , select ,label{
+  filter: blur(5px);
+  animation: input 0.2s ease-in-out 0.4s 1 forwards ;
+}
+@keyframes input {
+  100%{
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0);
+  }
+}
+select:focus{
+  border: 0.125rem solid $form-blue;
+}
+input:focus {
+  border: 0.125rem solid $form-blue;
+}
+label{
+  font-family: $primary-text;
+  color: $form-blue;
+  font-size: 16px;
+  font-weight: 700;
+}
+.a{
+  display: none;
+}
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+option {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 18px;
+}
+p{
+  color: $primary-text-color-hover;
+  font-size: 18px;
+  font-family: $primary-text;
+  font-weight: 600;
+}
+.btn-cont{
+  position: absolute;
+  left: 21.7%;
+  bottom: 30px;
+}
+@media (max-width:1500px) {
+  form{
+    width: 70%;
+  }
+  .btn-cont{
+    left: 17.2%;
+    bottom: 30px;
+}
+}
+@media (max-width:1150px) {
+  form{
+    width: 95%;
+  }
+  .btn-cont{
+    left: 7%;
+    bottom: 30px;
+}
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 50%;
+      height: 30%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 50%;
+    height: 30%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+}
+@media (max-width:800px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 25%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 25%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+.btn-cont{
+  left: 7%;
+}
+}
+@media (max-width:600px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 20%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 20%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+}
+@media (max-width:450px) {
+  @keyframes top {
+    100%{
+      border-bottom-left-radius:100%;
+      width: 60%;
+      height: 12%;
+      opacity: 0.2;
+      filter: blur(1px);
+    }
+  }
+@keyframes bottom {
+  100%{
+    border-top-right-radius: 100%;
+    width: 60%;
+    height: 12%;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+}
+.btn-cont{
+  left: 10%;
+}
+}
