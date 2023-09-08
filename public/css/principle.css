@@ -199,4 +199,122 @@ body {
   .navbar nav ul li ul li {
     border-top: none;
   }
-}/*# sourceMappingURL=principle.css.map */
+}
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/png.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.princi {
+  position: relative;
+  margin-top: 130px;
+  justify-content: space-between;
+}
+
+.tit {
+  text-align: center;
+  color: #fb8c00;
+  font-weight: 900;
+}
+
+.cr {
+  text-align: center;
+  color: rgb(7, 7, 85);
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.pr {
+  text-align: center;
+  font-weight: 400;
+}
+
+.princico {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.c-box {
+  width: 50%;
+  justify-content: center;
+}
+.c-box .ce {
+  width: 300px;
+}
+
+.content {
+  width: 90%;
+  text-align: center;
+  justify-content: end;
+  padding: 20px;
+  line-height: 30px;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.pic {
+  width: 320px;
+  margin-top: 50px;
+  height: 320px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1500px) {
+  .princico {
+    display: block;
+    margin-top: 1%;
+  }
+  .content {
+    width: 90%;
+    margin: 3%;
+  }
+  .c-box {
+    width: 100%;
+    margin: 3%;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .left {
+    margin-left: 26%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .pic {
+    width: 200px;
+    height: 200px;
+  }
+  .content {
+    padding: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pic {
+    width: 200px;
+    height: 300px;
+  }
+}
