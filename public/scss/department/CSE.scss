@@ -11,7 +11,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: $aids-text;
+    color: $cse-text;
     
     h2{
         font-family: $primary-text;
@@ -40,16 +40,32 @@
             text-indent: 50px;
             text-align: justify;
             line-height: 30px;
-            color: $aids-text;
+            color: $cse-text;
         }
     }
     .head-text{
-        color: $aids-primary;
+        color: $cse-primary;
         font-size: 1.5rem;
+     
+    }
+    .countdownContainer{
+        height: 70px;
+        width: 200px;
+        background-color: transparent;
+         align-items: center;
+        display: flex;
+        justify-content: start;
+        h1{
+            color:#06111E;
+            font-size: 40px;
+         
+        }
     }
     .vision-mission-con{
         width: 100%;
         display: flex;
+        margin-top: 5%;
+        margin-bottom: 7%;
         justify-content: space-evenly;
         }
       
@@ -64,7 +80,7 @@
       
       .card-inner {
         width: inherit;
-        height: inherit;
+        height: 250px;
         background: rgba(255,255,255,.05);
         box-shadow: 0 0 10px rgba(0,0,0,0.25);
         backdrop-filter: blur(10px);
@@ -75,6 +91,7 @@
         flex-direction: column;
         justify-content: center;
       }
+    
       
       .card:hover {
         transform: scale(1.04) rotate(0.5deg);
@@ -83,7 +100,7 @@
       .circle {
         width: 70px;
         height: 70px;
-        background: $aids-primary;
+        background: $cse-primary;
         border-radius: 50%;
         position: absolute;
         filter: blur(2px);
@@ -96,21 +113,24 @@
       }
       
       .circle:nth-child(2) {
-        bottom: -25px;
+        bottom: -100px;
         right: -25px;
         animation-name: move-down1;
       }
+     
+      
+     
       .card-head{
         font-size: 1.5rem;
         text-transform: capitalize;
         text-align: center;
         font-family: $primary-text;
-        color: $aids-primary;
+        color: $cse-primary;
         font-weight: 900;
       }
       .card-con{
      
-        color: $aids-text;
+        color: $cse-text;
         text-indent: 30px;
         text-align: justify;
         line-height: 25px;
@@ -125,10 +145,16 @@
         to {
           transform: translateY(10px);
         }
-      }  
+      } 
+      .dept{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .departement-grid{
+        margin: 4%;
         display: grid;
-        width: 100%;
+        width: 90%;
         grid-template-columns:1fr 1fr 1fr;
         grid-template-areas: "out out side"
                              "bt bt side";
@@ -137,6 +163,18 @@
             display: flex;
             column-gap: 30px;
             justify-content: space-between;
+            width: 100%;
+            .intakes{
+              width: 35%;
+             ul:nth-child(2){
+              margin-top: 20%;
+             }
+              
+             
+            }
+            .salient{
+              width: 65%;
+            }
         }
         ul{
             display: flex;
@@ -145,13 +183,15 @@
             line-height: 25px;
             
             li{
-                color: rgb(172, 171, 171);
-                font-weight: 400;
+                color: black;
+                font-weight: 600;
+               
             }
         }
         .li{
-            color: black;
-            font-weight: 600;
+            color: rgb(126, 124, 124);   
+            font-weight: 400;
+          
         }
         @mixin con {
             background-color: rgb(255, 255, 255);
@@ -181,6 +221,7 @@
             grid-area: side;
             justify-content: center;
             align-items: center;
+            row-gap: 50px;
             .grid-con{
                 display: flex;
                 flex-direction: column;
@@ -188,6 +229,10 @@
                 align-items: center;
                 row-gap: 20px;
                 padding: 0 0 0 30px;
+              
+            }
+            .head-text{
+              text-align: center;
             }
             .aids-img2{
                 width: 400px;
@@ -212,7 +257,7 @@
                 cursor: pointer;
             }
             .value{
-                background-color: $aids-primary;
+                background-color: $cse-primary;
                 color: #fff;
             }
         }
