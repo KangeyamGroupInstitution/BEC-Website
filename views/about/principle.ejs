@@ -6,10 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/principle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <%- include('../navbar.ejs')%>
-        <script src="/assets/js/nav.js"></script>
+     
+    <div class="princi">
+    <h1 class ="tit" data-aos="fade-down"> Principal</h1>
+    <div class="princico">
+      <div class="left">
+        <div class="pro">
+        <img class="pic" src="/img/principal.jpeg" alt="Ramkumar" data-aos="fade-right"></div>
+        <h3 class="cr">Dr. S. RAMKUMAR</h3>
+        <p class ="pr">Principal<br>
+          principal@builderscollege.edu.in</p>
+       </div>
+       <div class="c-box">
+    <p class="content" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">Greetings<br>
+      It gives me an immense pleasure in welcoming you to Builders Engineering College (BEC), Nathakadaiyur, Tirupur 638 108. BEC (Formerly Erode Builder Educational Trust’s Group of Institutions) was founded in the year 2009 by Erode Builder Educational Trust (EBET) with a vision to impart quality higher education to rural aspirants through innumerable institutions. It has been promoted by a group of likeminded visionaries with the unique objective of offering value based education to the students for a prosperous career.
+
+      BEC is approved by AICTE, New Delhi and affiliated to Anna University, Chennai. It is accredited by NAAC with A+ (CGPA 3.36) . The campus is eco-friendly and equipped with excellent infrastructure, qualified and well experienced faculty members who strive hard to attain academic excellence in higher education by empowering students with knowledge, wisdom and experience.
+      
+      Over the past 14 years, the college has witnessed a strong blend of state-of-the-art infrastructure including incubation and innovation centres and dedicated human resource committed to provide professional education with thrust on Creativity, Technical and Innovation.
+      
+      Since its inception, BEC creates excellent placement opportunities to the students to reach a spectacular position in their professional career and offers special training to develop the extracurricular skills.
+      
+      I look forward to receiving you at Builders Engineering College to witness all new Outcome Based Education (OBE).</p></div>
+   </div>
+    </div>
+      <script src="/assets/js/nav.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
