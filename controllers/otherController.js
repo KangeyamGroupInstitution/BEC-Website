@@ -28,7 +28,7 @@ class otherController {
     }
     static showSSRPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','Aggregation','nacc','iqac.ejs');
+        const viewsPath = path.join(__dirname,'..','views','Aggregation','nacc','SSR.ejs');
         console.log(viewsPath);
         res.render(viewsPath);
     }
