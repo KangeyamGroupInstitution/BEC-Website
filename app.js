@@ -9,7 +9,7 @@ import admissionRoutes from "./routes/admissionRoutes.js";
 import academicRoutes from "./routes/academicRoutes.js";
 import placementRoutes from "./routes/placementRoute.js";
 import profileRoutes from "./routes/profileRoutes.js";
-// import otherRoutes from "./routes/otherRoutes.js";
+import otherRoutes from "./routes/otherRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 const DATABASE_URL =
   process.env.DATABASE_URL || "mongodb://127.0.0.1:27017/accountDB";
@@ -39,8 +39,10 @@ app.use("/", admissionRoutes);
 app.use("/academics", academicRoutes);
 app.use("/", placementRoutes);
 app.use("/", profileRoutes);
-// app.use('/others', otherRoutes);
+app.use('/research', otherRoutes);
 app.use("/auth", authRoutes);
+app.use("/aggregation", otherRoutes);
+
  
 //Server Listening
 app.listen("3000", () => {
