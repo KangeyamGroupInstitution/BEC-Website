@@ -339,6 +339,7 @@
            .galary-text{
              color: gray;
              font-size: 1.2rem;
+             text-align: start;
            }
            
         }
@@ -513,6 +514,9 @@
             &-con{
                 flex-direction: column;
             }
+            &-galary{
+                width: 90%;
+            }
             &-info{
                 width: 90%;
                 padding: 0px;
@@ -526,6 +530,7 @@
 }
 @media (max-width:1000px) {
     .departement-con{
+        
         &-info{
             flex-direction: column;
             row-gap: 20px;
@@ -549,6 +554,11 @@
         &-nav{
             .nav-li{
             flex-direction: column;
+            }
+        }
+        .hod-con{
+            .teachers{
+                grid-template-columns: repeat(2,280px);
             }
         }
     }
@@ -580,6 +590,22 @@
     }
 
 }
+@media (max-width:700px) {
+    .departement-con{
+    .hod-con{
+        .teachers{
+            grid-template-columns: repeat(1,280px);
+            .teacher{
+                width: 280px;
+                height: 120%;
+                // background-color: #fff;
+                // box-shadow: $white-shadow;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+}
 @media (max-width:600px) {
     .departement-con{
     .departement-grid{
@@ -593,6 +619,7 @@
             }
         }
     }
+   
 }
 }
 @media (max-width:500px) {
@@ -625,7 +652,15 @@
             right: -10px;
             animation-name: move-down1;
           }
-       
+          .hod-con{
+        .profile{
+          .pro-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+       } 
+    }
+    }
     }
 }
 @media (max-width:300px) {
