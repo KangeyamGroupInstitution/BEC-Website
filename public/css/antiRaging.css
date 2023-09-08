@@ -346,7 +346,7 @@ body {
   padding: 20px;
   width: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 .anti-ragging-page .possible-punishment .p-p-grid1 .p-p {
@@ -376,18 +376,6 @@ body {
   font-weight: 900;
   flex-wrap: wrap;
   color: #0a3981;
-}
-@media (max-width: 800px) {
-  .anti-ragging-page .possible-punishment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-  }
-  .anti-ragging-page .possible-punishment .svg-name {
-    width: 80%;
-  }
 }
 @media (max-width: 450px) {
   .anti-ragging-page .possible-punishment {
@@ -445,7 +433,7 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .anti-ragging-page .a-r-committee {
     margin-top: 30px;
     display: flex;
@@ -534,7 +522,7 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .anti-ragging-page .a-r-squad {
     margin-top: 30px;
     display: flex;
