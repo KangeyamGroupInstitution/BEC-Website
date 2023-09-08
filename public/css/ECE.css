@@ -584,8 +584,23 @@ footer {
   color: #2F2E41;
 }
 .departement-con .head-text {
-  color: #00BFA6;
+  color: #19C37D;
   font-size: 1.5rem;
+}
+.departement-con .countdownContainer {
+  height: 70px;
+  width: 250px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.departement-con .countdownContainer h1 {
+  color: #06111E;
+  padding: 20px;
+  font-size: 40px;
 }
 .departement-con .vision-mission-con {
   width: 100%;
@@ -619,7 +634,7 @@ footer {
 .departement-con .circle {
   width: 70px;
   height: 70px;
-  background: #00BFA6;
+  background: #19C37D;
   border-radius: 50%;
   position: absolute;
   filter: blur(2px);
@@ -639,7 +654,7 @@ footer {
   text-transform: capitalize;
   text-align: center;
   font-family: "Belanosima", sans-serif;
-  color: #00BFA6;
+  color: #19C37D;
   font-weight: 900;
 }
 .departement-con .card-con {
@@ -678,12 +693,12 @@ footer {
   line-height: 25px;
 }
 .departement-con .departement-grid ul li {
-  color: rgb(172, 171, 171);
-  font-weight: 400;
-}
-.departement-con .departement-grid .li {
   color: black;
   font-weight: 600;
+}
+.departement-con .departement-grid .li {
+  color: rgb(162, 162, 162);
+  font-weight: 400;
 }
 .departement-con .departement-grid-con1 {
   background-color: rgb(255, 255, 255);
@@ -749,7 +764,7 @@ footer {
   cursor: pointer;
 }
 .departement-con-nav .nav-li .value {
-  background-color: #00BFA6;
+  background-color: #19C37D;
   color: #fff;
 }
 .departement-con-nav .nav-con1 {
