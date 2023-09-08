@@ -172,3 +172,16 @@ figcaption{
           object-fit: cover;
       }
   }
+  @media (max-width:700px) {
+    .container {
+        max-width: 90%;
+        
+    }
+    section {
+        background: rgb(255, 255, 255);
+        box-shadow: $white-shadow;
+        padding: 20px 0;
+        border-radius: 5px;
+        width: 90%;
+    }
+  }

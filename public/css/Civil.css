@@ -742,6 +742,18 @@ section {
      object-fit: cover;
 }
 
+@media (max-width: 700px) {
+  .container {
+    max-width: 90%;
+  }
+  section {
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgb(229, 228, 228), -10px -10px 20px rgb(229, 228, 228);
+    padding: 20px 0;
+    border-radius: 5px;
+    width: 90%;
+  }
+}
 .departement-con {
   margin-top: 150px;
   row-gap: 100px;
