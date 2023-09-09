@@ -2,6 +2,7 @@
 @use "../abstract/button" as*;
 @use "../abstract/color" as *;
 @use '../nav/footer';
+@use "../carosal/_departement-carosal";
 .departement-con{
     margin-top: 150px;
     row-gap: 100px;
@@ -325,4 +326,113 @@
             
         }
      }
+     .lab{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      row-gap: 20px;
+    
+      justify-content: center;
+      &-con{
+          display: flex;
+          width: 100%;
+          height: 100%;
+          column-gap: 20px;
+          text-align: start;
+          justify-content: center;
+          align-items: center;
+      }
+      &-galary{
+           width: 60%;
+           height: 100%;
+           padding: 20px;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           column-gap: 50px;
+         .galary-photo{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;    
+          align-items: center;
+          margin: 5%;
+         }
+         .galary-text{
+           color: gray;
+           font-size: 1.2rem;
+         }
+         
+      }
+      &-info{
+          width: 20%;
+           height: 100%;
+           padding: 20px;
+           li{
+              list-style: none;line-height: 50px;
+           }
+      }
+   }
+   .hod-con{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+      align-items: center;
+      justify-content: space-around;
+      .hod{
+          width: 280px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          
+      }
+      .teachers{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3,280px);
+          gap: 50px;
+          justify-content: center;
+          .teacher{
+              width: 280px;
+              height: 350px;
+              // background-color: #fff;
+              // box-shadow: $white-shadow;
+              border-radius: 10px;
+          }
+      }
+      .profile{
+          height: 55%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         .pro-img{
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+         } 
+         .pro-images{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          // border: 3px solid $aids-primary;
+         }
+      }
+      .profile-con{
+          text-align: center;
+          line-height: 30px;
+          .faculty-head{
+              color: $aids-primary;
+              font-size: 1.1rem;
+          }
+          .faculty-desination{
+              color: $form-blue;
+          }
+          .faculty-experience{
+              color: gray;
+          }
+      }
+   }
 }
