@@ -9,7 +9,10 @@
     text-transform: capitalize
 }
 .manage-con{
-    // @include parent;
+  width: 100%;
+    display: flex;
+    justify-content: center;
+
     
     &-text{
         width: 1000px;
@@ -41,7 +44,9 @@
     }
 }
 .trusty-con{
-    @include parent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
 }
 .trust-profile-photo-name{
