@@ -2,7 +2,6 @@
 @use "../nav/footer";
 @use "../abstract/mixin" as *;
 @use "../abstract/button" as*;
-
 @use "../abstract/color" as *;
 .management-text{
     @include  head-blue;
@@ -10,9 +9,10 @@
     text-transform: capitalize
 }
 .manage-con{
-    width: 100%;
+  width: 100%;
     display: flex;
     justify-content: center;
+
     
     &-text{
         width: 1000px;
