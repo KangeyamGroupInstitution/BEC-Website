@@ -1,8 +1,7 @@
-@use "../nav/nav2";
+@use "../nav/nav1";
 @use "../nav/footer";
 @use "../abstract/mixin" as *;
 @use "../abstract/button" as*;
-@use "../abstract/width100%" as*;
 @use "../abstract/color" as *;
 .management-text{
     @include  head-blue;
@@ -10,7 +9,10 @@
     text-transform: capitalize
 }
 .manage-con{
-    @include parent;
+  width: 100%;
+    display: flex;
+    justify-content: center;
+
     
     &-text{
         width: 1000px;
@@ -42,7 +44,9 @@
     }
 }
 .trusty-con{
-    @include parent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
 }
 .trust-profile-photo-name{

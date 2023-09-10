@@ -6,10 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/ceo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <%- include('../navbar.ejs')%>
-        <script src="/assets/js/nav.js"></script>  
+  <%- include('../navbar.ejs')%> 
+    <div class="ceo">
+      <h1 class ="tits" data-aos="fade-down">Chief Executive Officer</h1>
+      <div class="ceoco">
+        <div class="card" data-aos="fade-down">
+          <img class="pics" src="/img/CEO5-HD.png" alt="CEO">
+          <h1 class="cr">Dr. C. VENKATESH</h1>
+          <p class="title">Students learn through academic and experiential learning. As a teacher, instilling the passion for learning lies in our hands. Let us travel together to attain the pinnacle of success.</p>
+          <h2 class="cr2">Chief Executive Officer</h2>
+        </div>
+  <div class="contents"  data-aos="flip-right"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1000">
+    <img class ="pics2"src="/img/CEO2.jpg"><br>
+    <a class="cr2" style="margin-left: 20px;" href="https://www.ceoinsightsindia.com/magazines/ceos-in-education-may-2023/#page=12"> Top 10 Education-CEO insights India Magazine</a>
+  </div></div>
+
+  </div>
+        <script src="/assets/js/nav.js"></script> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script> 
     
 </body>
 </html>
