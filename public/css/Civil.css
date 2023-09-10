@@ -627,13 +627,11 @@ section {
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
-
 .carousel > input:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
-
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
