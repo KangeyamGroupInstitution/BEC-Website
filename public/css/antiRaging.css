@@ -254,13 +254,18 @@ body {
 }
 .anti-ragging-page .forms-of-ragging {
   margin-top: 20px;
+  margin-bottom: 50px;
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 200px;
   width: 90%;
 }
-.anti-ragging-page .forms-of-ragging .f-r {
+.anti-ragging-page .forms-of-ragging .grid1 h1 {
+  color: #001f4e;
+}
+.anti-ragging-page .forms-of-ragging .grid1 .f-r {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -269,29 +274,36 @@ body {
   font-weight: 600;
   color: #757575;
 }
-.anti-ragging-page .forms-of-ragging .f-r:hover {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r:hover {
   color: #fb8c00;
 }
-.anti-ragging-page .forms-of-ragging .f-r .svg-tick {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r:hover .svg-tick {
+  background-color: #efefef;
+}
+.anti-ragging-page .forms-of-ragging .grid1 .f-r:hover .svg-tick .svg {
+  stroke: #fb8c00;
+  fill: #efefef;
+}
+.anti-ragging-page .forms-of-ragging .grid1 .f-r .svg-tick {
   box-shadow: 1px 1px 5px rgb(155, 154, 154);
   padding: 2px 4px;
   border-radius: 50%;
 }
-.anti-ragging-page .forms-of-ragging .f-r .svg-tick:hover {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r .svg-tick:hover {
   background-color: #efefef;
 }
-.anti-ragging-page .forms-of-ragging .f-r .svg-tick:hover .svg {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r .svg-tick:hover .svg {
   stroke: #fb8c00;
   fill: #efefef;
 }
-.anti-ragging-page .forms-of-ragging .f-r .svg-tick .svg {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r .svg-tick .svg {
   margin: 0;
   width: 30px;
   height: 30px;
   stroke: #757575;
   fill: white;
 }
-.anti-ragging-page .forms-of-ragging .f-r .svg-name {
+.anti-ragging-page .forms-of-ragging .grid1 .f-r .svg-name {
   margin-top: 10px;
   font-size: 20px;
 }
@@ -346,8 +358,7 @@ body {
   padding: 20px;
   width: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 .anti-ragging-page .possible-punishment .p-p-grid1 .p-p {
   display: flex;
@@ -592,7 +603,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 90%;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 200px;
 }
 .anti-ragging-page .a-r-cell-grid {
   display: flex;

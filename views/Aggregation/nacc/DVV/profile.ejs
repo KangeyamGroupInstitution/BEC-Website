@@ -4,12 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/academicCalender.css">
+    <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <%- include('../../../navbar.ejs')%>
-      
+
+  <div class="profile">
+    <h1>Extended Profile</h1>
+    <table class="profile-table">
+      <tr>
+        <th  style="border-top-left-radius: 10px;">Extended ID</th>
+        <th>Deviations Of Extended Question</th>
+        <th style="border-top-right-radius: 10px;">Clarifications Link</th>
+      </tr>
+      <tr>
+        <th   colspan="3">1. Program</th>
+      </tr>
+      <tr class="profile-table-border">
+        <td>1.1</td>
+        <td>Number of courses offered by the Institution across all programs</td>
+        <td>View</td>
+      </tr>
+      <tr class="profile-table-border">
+        <td>1.2</td>
+        <td>Number of programs offered year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr>
+        <th colspan="3">2. Students</th>
+      </tr>
+      <tr class="profile-table-border">
+        <td>2.1</td>
+        <td>Number of students year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr class="profile-table-border">
+        <td>2.2</td>
+        <td>Number of seats earmarked for reserved category as per GOI/State Govt rule year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr class="profile-table-border">
+        <td>2.3</td>
+        <td>Number of outgoing/final year students year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr>
+        <th colspan="3">3. Teachers</th>
+      </tr>
+      <tr class="profile-table-border">
+        <td>3.1</td>
+        <td>Number of full-time teachers year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr class="profile-table-border">
+        <td>3.2</td>
+        <td>Number of sanctioned posts year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr>
+        <th colspan="3">4. Institution</th>
+      </tr>
+      <tr class="profile-table-border">
+        <td>4.1</td>
+        <td>Total number of classrooms and seminar halls</td>
+        <td>View</td>
+      </tr>
+      <tr class="profile-table-border">
+        <td>4.2</td>
+        <td>Total Expenditure excluding salary year-wise</td>
+        <td>View</td>
+      </tr>
+      <tr>
+        <td style="border-bottom-left-radius: 10px;">4.3</td>
+        <td>Number of Computers</td>
+        <td style="border-bottom-right-radius: 10px;">View</td>
+      </tr>
+    </table>
+  </div>
+
+  <%- include('../../../footer.ejs')%> 
+  <%- include('../../../foot.ejs')%>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
         <script src="/assets/js/nav.js"></script>
 </body>
 </html>
