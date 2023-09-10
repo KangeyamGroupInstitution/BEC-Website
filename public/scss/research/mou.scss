@@ -1,1 +1,100 @@
 @use "../nav/nav2";
+@use "../nav/footer";
+@use "../abstract/color" as *;
+@use "../abstract/font" as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/button" as *;
+
+
+.mou{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-table {
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgb(70, 69, 69);
+      }
+      
+      &-table td{
+        padding: 20px 10px;
+        text-align: center;
+      }
+      
+     h1{
+        color: #fb8c00;
+     }
+      
+      &-table tr:hover {background-color: #ddd;}
+      &-table th {
+        padding: 10px;
+        text-align: center;
+        background-color: $primary-text-color;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+ }
+ @media (max-width:1000px) {
+    .mou{
+        h1{font-size: 20px;}
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &-table {
+            margin-top: 30px;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(70, 69, 69);
+          }
+          
+          &-table td{
+            padding: 10px 5px;
+            text-align: center;
+            font-size: 12px;
+          }
+
+          &-table tr:hover {background-color: #ddd;}
+          &-table th {
+            padding: 10px;
+            text-align: center;
+            background-color: $primary-text-color;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+          }
+     }
+ }
+ @media (max-width:490px) {
+    .mou{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-table {
+            margin-top: 20px;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(70, 69, 69);
+          }
+          
+          &-table td{
+            padding: 3px;
+            font-size: 8px;
+          }
+
+          &-table th {
+            padding: 5px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+     }
+ }

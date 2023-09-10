@@ -1,4 +1,9 @@
 @use "../nav/nav2";
+@use "../nav/footer";
+@use "../abstract/color" as *;
+@use "../abstract/font" as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/button" as *;
 *{
 	padding: 0;
 	margin: 0px;
