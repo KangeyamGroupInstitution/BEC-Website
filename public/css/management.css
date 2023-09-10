@@ -145,7 +145,6 @@ body {
     position: fixed;
     width: 100%;
     background: #fff;
-    min-height: 100vh;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -747,4 +746,3 @@ footer {
 .trusty-text-a:hover {
   color: rgb(7, 7, 85);
 }/*# sourceMappingURL=management.css.map */
-

@@ -627,11 +627,13 @@ section {
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
+
 .carousel > input:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
+
   box-shadow: 0px 0px 0px 3px #00BFA6;
   border-radius: 10px;
 }
@@ -681,7 +683,9 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
+
   border-radius: 10px;
+
 }
 .carousel__slide img {
   display: block;
@@ -739,7 +743,9 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
+
   border-radius: 10px;
+
 }
 .carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
   cursor: pointer;
@@ -754,7 +760,9 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+
 }
+
 
 .departement-con {
   margin-top: 150px;
