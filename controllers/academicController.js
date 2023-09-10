@@ -12,7 +12,7 @@ class academicControllers {
 
     static showCalendarPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-        const viewsPath = path.join(__dirname,'..','views','academics', 'calender.ejs');
+        const viewsPath = path.join(__dirname,'..','views','academics', 'calendar.ejs');
         console.log(viewsPath);
         res.render(viewsPath);
     }

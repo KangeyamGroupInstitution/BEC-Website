@@ -1,20 +1,20 @@
 import path from "path";
 import url from "url";
 import AccountModel from "../models/Account.js";
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
-var email;
+// var email;
 
-let testaccount = nodemailer.createTestAccount();
+// let testaccount = nodemailer.createTestAccount();
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.ethereal.email",
-  port: 587,
-  auth: {
-    user: "diana18@ethereal.email",
-    pass: "gruwFPK17pjW7NvtUs",
-  },
-});
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.ethereal.email",
+//   port: 587,
+//   auth: {
+//     user: "diana18@ethereal.email",
+//     pass: "gruwFPK17pjW7NvtUs",
+//   },
+// });
 
 class authenticate {
   static userLogin = (req, res, next) => {
@@ -101,51 +101,51 @@ class authenticate {
     next();
   };
 
-  static sendOTP = async (req, res) => {
-    email = req.body.email;
+  // static sendOTP = async (req, res) => {
+  //   email = req.body.email;
 
-    var otp = Math.random();
-    otp = otp * 1000000;
-    otp = parseInt(otp);
-    console.log(otp);
-    console.log(req.body.email);
-    let user = await AccountModel.findOne({ email: req.body.email });
-    let newuser = await AccountModel.findOneAndUpdate(
-      { _id: `${user._id}` },
-      { otp: otp },
-      { new: true }
-    );
-    console.log(newuser);
-    // send mail with defined transport object
-    var mailOptions = {
-      to: req.body.email,
-      subject: "Otp for registration is: ",
-      html:
-        "<h3>OTP for account verification is </h3>" +
-        "<h1 style='font-weight:bold;'>" +
-        otp +
-        "</h1>", // html body
-    };
+  //   var otp = Math.random();
+  //   otp = otp * 1000000;
+  //   otp = parseInt(otp);
+  //   console.log(otp);
+  //   console.log(req.body.email);
+  //   let user = await AccountModel.findOne({ email: req.body.email });
+  //   let newuser = await AccountModel.findOneAndUpdate(
+  //     { _id: `${user._id}` },
+  //     { otp: otp },
+  //     { new: true }
+  //   );
+  //   console.log(newuser);
+  //   // send mail with defined transport object
+  //   var mailOptions = {
+  //     to: req.body.email,
+  //     subject: "Otp for registration is: ",
+  //     html:
+  //       "<h3>OTP for account verification is </h3>" +
+  //       "<h1 style='font-weight:bold;'>" +
+  //       otp +
+  //       "</h1>", // html body
+  //   };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.log(error);
-      }
-      console.log("Message sent: %s", info.messageId);
-      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    });
-    res.redirect('/auth/otp');
-  };
+  //   transporter.sendMail(mailOptions, (error, info) => {
+  //     if (error) {
+  //       return console.log(error);
+  //     }
+  //     console.log("Message sent: %s", info.messageId);
+  //     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+  //   });
+  //   res.redirect('/auth/otp');
+  // };
 
-  static verifyOtp = async (req, res) => {
-    const otp = req.body.otp;
-    const user = await AccountModel.findOne({ username: "admin" });
-    if (otp == user.otp) {
-      res.redirect("/auth/create-new-password");
-    } else {
-      res.send("You enter wrong OTP");
-    }
-  };
+  // static verifyOtp = async (req, res) => {
+  //   const otp = req.body.otp;
+  //   const user = await AccountModel.findOne({ username: "admin" });
+  //   if (otp == user.otp) {
+  //     res.redirect("/auth/create-new-password");
+  //   } else {
+  //     res.send("You enter wrong OTP");
+  //   }
+  // };
 
   static newPassword = async (req, res) => {
     const password = req.body.password;
