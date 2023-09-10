@@ -21,7 +21,7 @@ figcaption{
           bottom: 0;
           width: 100%;
           height: 100%;
-        //   border-radius: 10px;
+           border-radius: 10px;
     }
   }
   
@@ -56,6 +56,7 @@ figcaption{
           padding: 0;
           position: absolute;
           
+          &:nth-of-type(9):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -800%; }
           &:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -700%; }
           &:nth-of-type(7):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -600%; }
           &:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; }
@@ -71,8 +72,9 @@ figcaption{
           &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
           &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
           &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
-          &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
-          &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(6) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
+          &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
+          &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
+          &:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) { box-shadow: 0px 0px 0px 3px $aids-primary; border-radius: 10px; }
       }
   }
   

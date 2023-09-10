@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkIfVisible(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateNumber("intakeId", 60, 900);
+                animateNumber("intakeId", 60, 1000);
                 observer.unobserve(entry.target);
             }
         });
