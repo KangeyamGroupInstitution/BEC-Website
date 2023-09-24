@@ -2,7 +2,8 @@
 @use "../abstract/button" as*;
 @use "../abstract/color" as *;
 @use '../nav/footer';
-@use "../carosal/_departement-carosal";
+@use "../carosal/_departement-carosal-cse.scss";
+@use "../department/response-dept";
 .departement-con{
     margin-top: 150px;
     row-gap: 100px;
@@ -424,7 +425,7 @@
           text-align: center;
           line-height: 30px;
           .faculty-head{
-              color: $aids-primary;
+              color: $cse-primary;
               font-size: 1.1rem;
           }
           .faculty-desination{
