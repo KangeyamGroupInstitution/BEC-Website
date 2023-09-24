@@ -62,7 +62,7 @@ body{
  @media (max-width:1000px) {
     .criteria-1-to-7{
         h1{font-size: 20px;}
-        margin-top: 30px;
+        margin-top: 120px;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -74,14 +74,13 @@ body{
           }
           
           &-table td{
-            padding: 10px 5px;
-            text-align: center;
+            padding: 10px 10px;
             font-size: 12px;
           }
 
-          &-table tr:hover {background-color: #ddd;}
+          // &-table tr:hover {background-color: #ddd;}
           &-table th {
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             background-color: $primary-text-color;
             color: white;
