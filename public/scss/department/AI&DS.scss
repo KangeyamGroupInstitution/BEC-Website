@@ -2,7 +2,7 @@
 @use "../abstract/button" as*;
 @use "../abstract/color" as *;
 @use '../nav/footer';
-@use "../carosal/_departement-carosal";
+@use "../carosal/_departement-carosal-aids.scss";
 @use "../department/response-dept";
 .departement-con{
     margin-top: 150px;
@@ -29,7 +29,7 @@
         align-items: center;
         column-gap: 50px;
         .head-img{
-            width: 500px;
+            width: 400px;
            
         }
         .head-con{
@@ -205,15 +205,16 @@
             justify-content: center;
             align-items: center;
             .grid-con{
+                height: 700px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 row-gap: 20px;
                 padding: 0 0 0 30px;
             }
             .aids-img2{
-                width: 400px;
+                width: 350px;
             }
         }
       
@@ -321,7 +322,7 @@
             align-items: center;
         }
         &-galary{
-             width: 60%;
+             width: 100%;
              height: 100%;
              padding: 20px;
              display: flex;
@@ -330,11 +331,12 @@
              align-items: center;
              column-gap: 50px;
            .galary-photo{
+    
             display: flex;
             flex-direction: row;
             justify-content: center;    
             align-items: center;
-            margin: 5%;
+            margin: 10%;
            }
            .galary-text{
              color: gray;
