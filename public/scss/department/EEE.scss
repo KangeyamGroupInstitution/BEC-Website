@@ -199,7 +199,7 @@
         &-con3{
             @include con;
             grid-area: side;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             .grid-con{
                 display: flex;
@@ -209,8 +209,9 @@
                 row-gap: 20px;
                 padding: 0 0 0 30px;
             }
-            .aids-img2{
+            .eee-img2{
                 width: 400px;
+                margin-bottom: 50px;
             }
         }
       

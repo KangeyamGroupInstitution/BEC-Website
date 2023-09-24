@@ -579,18 +579,6 @@ section {
   padding: 0;
   position: absolute;
 }
-.carousel > input:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -700%;
-}
-.carousel > input:nth-of-type(7):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -600%;
-}
-.carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -500%;
-}
-.carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -400%;
-}
 .carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -300%;
 }
@@ -604,35 +592,19 @@ section {
   margin-left: 0%;
 }
 .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #414F97;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #414F97;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #414F97;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
-  border-radius: 10px;
-}
-.carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
-  border-radius: 10px;
-}
-.carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
-  border-radius: 10px;
-}
-.carousel > input:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
-  border-radius: 10px;
-}
-.carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #414F97;
   border-radius: 10px;
 }
 
@@ -750,6 +722,7 @@ section {
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;
@@ -824,7 +797,7 @@ section {
        column-gap: 50px;
 }
 .departement-con-info .head-img {
-  width: 500px;
+  width: 400px;
 }
 .departement-con-info .head-con {
   display: flex;
@@ -838,7 +811,7 @@ section {
   color: #2F2E41;
 }
 .departement-con .head-text {
-  color: #00BFA6;
+  color: #414F97;
   font-size: 1.5rem;
 }
 .departement-con .countdownContainer {
@@ -888,7 +861,7 @@ section {
 .departement-con .circle {
   width: 70px;
   height: 70px;
-  background: #00BFA6;
+  background: #414F97;
   border-radius: 50%;
   position: absolute;
   filter: blur(2px);
@@ -908,7 +881,7 @@ section {
   text-transform: capitalize;
   text-align: center;
   font-family: "Belanosima", sans-serif;
-  color: #00BFA6;
+  color: #414F97;
   font-weight: 900;
 }
 .departement-con .card-con {
@@ -989,15 +962,16 @@ section {
   align-items: center;
 }
 .departement-con .departement-grid-con3 .grid-con {
+  height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   row-gap: 20px;
   padding: 0 0 0 30px;
 }
 .departement-con .departement-grid-con3 .aids-img2 {
-  width: 400px;
+  width: 350px;
 }
 .departement-con-nav {
   width: 100%;
@@ -1018,7 +992,7 @@ section {
   cursor: pointer;
 }
 .departement-con-nav .nav-li .value {
-  background-color: #00BFA6;
+  background-color: #414F97;
   color: #fff;
 }
 .departement-con-nav .nav-con1 {
@@ -1118,7 +1092,7 @@ section {
   align-items: center;
 }
 .departement-con .lab-galary {
-  width: 60%;
+  width: 100%;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -1133,7 +1107,7 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  margin: 10%;
 }
 .departement-con .lab-galary .galary-text {
   color: gray;
@@ -1197,7 +1171,7 @@ section {
   line-height: 30px;
 }
 .departement-con .hod-con .profile-con .faculty-head {
-  color: #00BFA6;
+  color: #414F97;
   font-size: 1.1rem;
 }
 .departement-con .hod-con .profile-con .faculty-desination {
