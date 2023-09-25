@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 animateNumber("intakeId1", 60, 900);
-                animateNumber("intakeId2", 18, 900);
+                
                 observer.unobserve(entry.target);
             }
         });
