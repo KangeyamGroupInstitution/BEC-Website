@@ -382,15 +382,22 @@
         }
         &-info{
            
-             height: 100%;
-             padding: 20px;
-             li{
-                list-style: none;line-height: 50px;
-             }
-             li:hover{ 
+          
+             width: 20%;
+             text-align: start;
+              height: 100%;
+              padding: 20px;
+              ul{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: flex-start;
+              }
+              li{
+                 list-style: none;line-height: 50px;
+              }
+              li:hover{
                 color: #c57d0a;
-               
-             }
+              }
         }
      }
      .hod-con{
