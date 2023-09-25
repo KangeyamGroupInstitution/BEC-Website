@@ -237,8 +237,8 @@
             .head-text{
               text-align: center;
             }
-            .aids-img2{
-                width: 400px;
+            .cse-img2{
+                width: 300px;
             }
         }
       
@@ -374,6 +374,9 @@
            li{
               list-style: none;line-height: 50px;
            }
+           li:hover{
+            color: $cse-primary;
+           }
       }
    }
    .hod-con{
@@ -446,4 +449,259 @@
           }
       }
    }
+}
+
+//reponse//
+@media (max-width:1600px) {
+    .departement-con{
+        &-nav{
+            .nav-li{
+                width: 95%;
+                text-align: center;
+            }
+    
+            @mixin nav-con{
+               width: 90%;
+            }
+            .nav-con1{
+                @include nav-con;
+                
+            }
+            .nav-con2{
+                @include nav-con;
+
+                
+            }
+            .nav-con3{
+                @include nav-con;
+                
+            }
+            .nav-con4{
+                @include nav-con;
+
+                
+            }
+            .nav-con5{
+                @include nav-con;
+                
+            }
+            .nav-con6{
+                @include nav-con;
+                
+            }
+         }
+    }
+}
+@media (max-width:1400px) {
+    .departement-con{
+        &-info{
+            width: 90%;
+        }
+    }
+}
+@media (max-width:1200px) {
+    .departement-con{
+        &-info{
+            width: 90%;
+            .head-img{
+                width: 300px;
+            }
+            .head-con{
+                row-gap: 0px;
+                .head-content{
+                    line-height: 25px;
+                }
+            }
+        }
+        .card {
+            width: 300px;
+            height: 150px;
+        } 
+        .card-head{
+            font-size: 1.1rem;
+          }
+          .card-con{
+            font-size: 0.8rem;
+          }
+          .departement-grid{
+            grid-template-areas: "out out out"
+                                 "bt bt bt"
+                                 "side side side";
+            &-con1{
+                border-right: none;
+            }
+             &-con2{
+                border-right: none;
+                border-bottom: 1px solid black;
+            }
+                              
+            &-con3{
+                .grid-con{
+                    flex-direction:row;
+                    column-gap: 30px;
+                }
+            }
+          
+          }
+          .lab{
+            &-con{
+                flex-direction: column;
+            }
+            &-galary{
+                width: 90%;
+            }
+            &-info{
+                width: 90%;
+                padding: 0px;
+                text-align: center;
+                 li{
+                 line-height: 30px;
+                 }
+            }
+         }
+    }
+}
+@media (max-width:1000px) {
+    .departement-con{
+        
+        &-info{
+            flex-direction: column;
+            row-gap: 20px;
+            .head-img{
+                width: 90%;
+            }
+            .head-con{
+                .head-content{
+                    line-height: 30px;
+                }
+            }
+        }
+        .departement-grid{
+            &-con3{
+                .grid-con{
+                    flex-direction:column;
+                    column-gap: 30px;
+                }
+            }
+        }
+        &-nav{
+            .nav-li{
+            flex-direction: column;
+            }
+        }
+        .hod-con{
+            .teachers{
+                grid-template-columns: repeat(2,280px);
+            }
+        }
+    }
+}
+@media (max-width:800px) {
+    .departement-con{
+       row-gap: 30px;
+       .vision-mission-con{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+        }
+
+    .departement-grid{
+        .grid-content{
+            flex-direction: column;
+        }
+        ul{
+            row-gap: 10px;
+        }
+        &-con2{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+    }
+    }
+
+}
+@media (max-width:700px) {
+    .departement-con{
+    .hod-con{
+        .teachers{
+            grid-template-columns: repeat(1,280px);
+            .teacher{
+                width: 280px;
+                height: 120%;
+                // background-color: #fff;
+                // box-shadow: $white-shadow;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+}
+@media (max-width:600px) {
+    .departement-con{
+    .departement-grid{
+        &-con3{
+            .grid-con{
+                flex-direction:column;
+                column-gap: 30px;
+            }
+            .aids-img2{
+                width: 90%;
+            }
+        }
+    }
+   
+}
+}
+@media (max-width:500px) {
+    .departement-con{
+        &-info{
+            .head-con{
+                .head-content{
+                    line-height: 20px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        h2{
+            font-size: 1.1rem;
+        }
+        .head-text{
+            font-size: 1rem;
+        }
+        .circle {
+            width: 30px;
+            height: 30px;
+          }
+          .circle:nth-child(1) {
+            top: -10px;
+            left: -10px;
+          }
+          
+          .circle:nth-child(2) {
+            bottom: -10px;
+            right: -10px;
+            animation-name: move-down1;
+          }
+          .hod-con{
+        .profile{
+          .pro-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+       } 
+    }
+    }
+    }
+}
+@media (max-width:300px) {
+    .departement-con{
+        .card {
+            width: 80%;
+            height: 150px;
+        } 
+       
+    }
 }

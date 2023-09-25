@@ -1123,6 +1123,9 @@ section {
   list-style: none;
   line-height: 50px;
 }
+.departement-con .lab-info li:hover {
+  color: #414F97;
+}
 .departement-con .hod-con {
   width: 100%;
   display: flex;
