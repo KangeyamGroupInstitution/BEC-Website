@@ -1179,8 +1179,15 @@ section {
   font-size: 1.2rem;
 }
 .departement-con .lab-info {
+  width: 20%;
+  text-align: start;
   height: 100%;
   padding: 20px;
+}
+.departement-con .lab-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .departement-con .lab-info li {
   list-style: none;
