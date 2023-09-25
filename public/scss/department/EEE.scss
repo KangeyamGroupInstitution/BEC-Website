@@ -2,7 +2,7 @@
 @use "../abstract/button" as*;
 @use "../abstract/color" as *;
 @use '../nav/footer';
-@use "../carosal/_departement-carosal";
+@use "../carosal/_departement-carosal-eee.scss";
 .departement-con{
     margin-top: 150px;
     row-gap: 100px;
@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: $aids-text;
+    color: $eee-text;
     
     h2{
         font-family: $primary-text;
@@ -41,11 +41,11 @@
             text-indent: 50px;
             text-align: justify;
             line-height: 30px;
-            color: $aids-text;
+            color: $eee-text;
         }
     }
     .head-text{
-        color: $aids-primary;
+        color: $eee-primary;
         font-size: 1.5rem;
     }
     .countdownContainer{
@@ -82,7 +82,7 @@
       
       .card-inner {
         width: inherit;
-        height: 250px;
+        height: inherit;
         background: rgba(255,255,255,.05);
         box-shadow: 0 0 10px rgba(0,0,0,0.25);
         backdrop-filter: blur(10px);
@@ -101,7 +101,7 @@
       .circle {
         width: 70px;
         height: 70px;
-        background: $aids-primary;
+        background: $eee-primary;
         border-radius: 50%;
         position: absolute;
         filter: blur(2px);
@@ -114,7 +114,7 @@
       }
       
       .circle:nth-child(2) {
-        bottom: -100px;
+        bottom: -25px;
         right: -25px;
         animation-name: move-down1;
       }
@@ -123,12 +123,12 @@
         text-transform: capitalize;
         text-align: center;
         font-family: $primary-text;
-        color: $aids-primary;
+        color: $eee-primary;
         font-weight: 900;
       }
       .card-con{
      
-        color: $aids-text;
+        color: $eee-text;
         text-indent: 30px;
         text-align: justify;
         line-height: 25px;
@@ -199,19 +199,20 @@
         &-con3{
             @include con;
             grid-area: side;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             .grid-con{
                 display: flex;
+                height: 500px;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 row-gap: 20px;
                 padding: 0 0 0 30px;
             }
             .eee-img2{
                 width: 400px;
-                margin-bottom: 50px;
+      
             }
         }
       
@@ -233,7 +234,7 @@
                 cursor: pointer;
             }
             .value{
-                background-color: $aids-primary;
+                background-color: $eee-primary;
                 color: #fff;
             }
         }
@@ -347,6 +348,9 @@
              li{
                 list-style: none;line-height: 50px;
              }
+             li:hover{
+                color: $eee-primary;
+             }
         }
      }
      .hod-con{
@@ -364,17 +368,25 @@
             
         }
         .teachers{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3,280px);
-            gap: 50px;
-            justify-content: center;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
             .teacher{
                 width: 280px;
-                height: 350px;
+                height: 450px;
                 // background-color: #fff;
-                // box-shadow: $white-shadow;
+               //box-shadow: $white-shadow;
                 border-radius: 10px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                
+  
             }
         }
         .profile{
@@ -387,6 +399,7 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
+                margin-bottom: 20px;
            } 
            .pro-images{
             width: 100%;
@@ -399,7 +412,7 @@
             text-align: center;
             line-height: 30px;
             .faculty-head{
-                color: $aids-primary;
+                color: $eee-primary;
                 font-size: 1.1rem;
             }
             .faculty-desination{
