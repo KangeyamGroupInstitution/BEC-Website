@@ -1133,21 +1133,28 @@ section {
 }
 .departement-con .hod-con .hod {
   width: 280px;
+  height: 350px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
 .departement-con .hod-con .teachers {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 50px;
-  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-.departement-con .hod-con .teachers .teacher {
+.departement-con .hod-con .teachers .teacher .teacher {
   width: 280px;
-  height: 350px;
+  height: 450px;
   border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 .departement-con .hod-con .profile {
   height: 55%;
@@ -1160,6 +1167,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 .departement-con .hod-con .profile .pro-images {
   width: 100%;

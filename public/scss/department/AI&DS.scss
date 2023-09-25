@@ -363,23 +363,34 @@
         justify-content: space-around;
         .hod{
             width: 280px;
+            height: 350px;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
             
         }
         .teachers{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3,280px);
-            gap: 50px;
-            justify-content: center;
+            width: 70%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
             .teacher{
-                width: 280px;
-                height: 350px;
-                // background-color: #fff;
-                // box-shadow: $white-shadow;
-                border-radius: 10px;
+                .teacher{
+                    width: 280px;
+                    height: 450px;
+                    // background-color: #fff;
+                   //box-shadow: $white-shadow;
+                    border-radius: 10px;
+                    margin-bottom: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    overflow: hidden;
+                    
+      
+                }
             }
         }
         .profile{
@@ -392,6 +403,7 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
+                margin-bottom: 20px;
            } 
            .pro-images{
             width: 100%;
