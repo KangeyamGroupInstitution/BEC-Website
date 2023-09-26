@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.home-svg {
+  margin-top: 80px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(90deg, #f5f5f5 0%, #258965 17%);
+  opacity: 1;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.navbar.hide {
+  top: -100px;
+  opacity: 0;
+}
+
+.navbar.top {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(72deg, rgb(255, 255, 255) 0%, rgb(7, 7, 85) 21%);
+  color: black;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+}
+
+.navbar nav ul li {
+  position: relative;
+  float: left;
+  padding: 15px;
+}
+
+.navbar nav ul li a {
+  padding: 5px;
+  display: block;
+  color: white;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.navbar nav ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.navbar nav ul li ul {
+  display: none;
+  position: absolute;
+  background: linear-gradient(90deg, #001F4E 4%, rgb(25, 116, 173) 100%);
+  opacity: 0.9;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  left: 0;
+  padding: 0 10px 0 10px;
+  width: 250px;
+}
+
+.navbar nav ul li .others {
+  left: -100px;
+  width: 200px;
+}
+
+.navbar nav ul li ul li {
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+.navbar nav ul li ul li a:hover {
+  border-bottom: none;
+}
+
+.navbar nav ul li ul li ul {
+  left: 230px;
+  top: 0;
+}
+
+.navbar nav ul li ul li .Comitee {
+  left: 230px;
+  top: 0;
+  width: 280px;
+}
+
+.navbar nav ul li ul li .departement {
+  left: -400px;
+  top: 0;
+  width: 400px;
+}
+
+.navbar nav ul li ul li .other {
+  left: -250px;
+  top: 10px;
+  width: 250px;
+}
+
+.navbar nav ul li:focus-within > ul,
+.navbar nav ul li:hover > ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.navbar label {
+  font-size: 30px;
+  cursor: pointer;
+  color: #eee;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px;
+  }
+  .navbar label {
+    display: initial;
+  }
+  .navbar nav {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .navbar nav ul li {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .navbar nav ul li a {
+    color: black;
+  }
+  .navbar nav ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .navbar nav ul li ul li {
+    background: #eee;
+  }
+  .navbar nav ul li ul li ul {
+    left: 0;
+    width: 100%;
+  }
+  #menu-bar:checked ~ nav {
+    display: initial;
+    left: 0;
+  }
+  .navbar nav ul li ul li .Comitee {
+    left: 0;
+    width: 200px;
+  }
+  .navbar nav ul li ul li .departement {
+    left: 0;
+    width: 100%;
+  }
+  .navbar nav ul li ul li .other {
+    left: 0px;
+    width: 100%;
+  }
+  .navbar nav ul li .others {
+    left: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar nav {
+    background-image: url(../img/backgrond/2713234.png);
+    background-repeat: no-repeat;
+    background-size: 450px;
+  }
+  .navbar nav ul li ul li {
+    background: none;
+  }
+  .navbar nav ul li a:hover {
+    border-bottom: none;
+  }
+  .navbar nav ul li ul li {
+    border-top: none;
+  }
+  .build-img {
+    height: 40px;
+  }
+}
+@media (max-width: 300px) {
+  .build-img {
+    height: 30px;
+  }
+  .navbar nav {
+    top: 60px;
+  }
+}
+.placement-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: rgb(7, 7, 85);
+  font-family: "Belanosima", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+}
+
+.placement-btn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #fb8c00;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.placement-btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.placement-btn .read-more {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.placement-btn a {
+  color: #fff;
+}
+
+.placement-btnn:hover .read-more {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*apply btn*/
+/* From uiverse.io by @Ali-Tahmazi99 */
+.apply-btn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.apply-btn::before,
+.apply-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.apply-btn::before {
+  left: -10px;
+  background: #0a3981;
+}
+
+.apply-btn::after {
+  right: -10px;
+  background: #fb8c00;
+}
+
+.apply-btn:hover::before,
+.apply-btn:hover::after {
+  width: 58%;
+}
+
+.apply-btn:hover .apply-add {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.apply-btn .apply-add {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+.next-page {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 0.4rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.next-page span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 35px;
+  background-color: #388e3c;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.next-page span:nth-child(6) {
+  position: relative;
+}
+
+.next-page span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.next-page span:nth-child(2) {
+  transform: translate(-8em, 1.3em);
+}
+
+.next-page span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+.next-page span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.next-page span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.next-page:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #0a3981;
+}
+
+label {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+p, li {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+strong {
+  font-size: 19px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.code-of-conduct {
+  margin-top: 100px;
+  width: 100;
+  padding: 20px;
+}
+.code-of-conduct .accordion > input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+.code-of-conduct .accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.code-of-conduct .accordion > input[type=checkbox]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+.code-of-conduct .accordion label {
+  display: block;
+}
+.code-of-conduct .accordion {
+  margin-bottom: 50px;
+}
+.code-of-conduct .accordion > input[type=checkbox]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+.code-of-conduct .accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+.code-of-conduct .accordion label {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0a3981;
+}
+.code-of-conduct .accordion label:hover,
+.code-of-conduct .accordion label:focus {
+  background: #d8d8d8;
+  color: #0a3981;
+}
+.code-of-conduct .accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  color: #0a3981;
+  display: inline-block;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+.code-of-conduct .accordion > input[type=checkbox]:checked ~ .handle label:before {
+  content: "\f078";
+}
+.code-of-conduct a {
+  color: #06c;
+}
+.code-of-conduct p {
+  margin: 0 0 1em;
+}
+.code-of-conduct h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.code-of-conduct .accordion {
+  max-width: 65em;
+}
+.code-of-conduct .accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.code-of-conduct-for-students {
+  margin-top: 30px;
+  width: 100;
+  padding: 20px;
+}
+.code-of-conduct-for-students .accordion > input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+.code-of-conduct-for-students .accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.code-of-conduct-for-students .accordion > input[type=checkbox]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+.code-of-conduct-for-students .accordion label {
+  display: block;
+}
+.code-of-conduct-for-students .accordion {
+  margin-bottom: 50px;
+}
+.code-of-conduct-for-students .accordion > input[type=checkbox]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+.code-of-conduct-for-students .accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+.code-of-conduct-for-students .accordion label {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0a3981;
+}
+.code-of-conduct-for-students .accordion label:hover,
+.code-of-conduct-for-students .accordion label:focus {
+  background: #d8d8d8;
+  color: #0a3981;
+}
+.code-of-conduct-for-students .accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  color: #0a3981;
+  display: inline-block;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+.code-of-conduct-for-students .accordion > input[type=checkbox]:checked ~ .handle label:before {
+  content: "\f078";
+}
+.code-of-conduct-for-students a {
+  color: #06c;
+}
+.code-of-conduct-for-students p {
+  margin: 0 0 1em;
+}
+.code-of-conduct-for-students h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.code-of-conduct-for-students .accordion {
+  max-width: 65em;
+}
+.code-of-conduct-for-students .accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.code-of-conduct-for-the-teaching-staff {
+  margin-top: 30px;
+  width: 100;
+  padding: 20px;
+}
+.code-of-conduct-for-the-teaching-staff .accordion > input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+.code-of-conduct-for-the-teaching-staff .accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.code-of-conduct-for-the-teaching-staff .accordion > input[type=checkbox]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+.code-of-conduct-for-the-teaching-staff .accordion label {
+  display: block;
+}
+.code-of-conduct-for-the-teaching-staff .accordion {
+  margin-bottom: 50px;
+}
+.code-of-conduct-for-the-teaching-staff .accordion > input[type=checkbox]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+.code-of-conduct-for-the-teaching-staff .accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+.code-of-conduct-for-the-teaching-staff .accordion label {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0a3981;
+}
+.code-of-conduct-for-the-teaching-staff .accordion label:hover,
+.code-of-conduct-for-the-teaching-staff .accordion label:focus {
+  background: #d8d8d8;
+  color: #0a3981;
+}
+.code-of-conduct-for-the-teaching-staff .accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  color: #0a3981;
+  display: inline-block;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+.code-of-conduct-for-the-teaching-staff .accordion > input[type=checkbox]:checked ~ .handle label:before {
+  content: "\f078";
+}
+.code-of-conduct-for-the-teaching-staff a {
+  color: #06c;
+}
+.code-of-conduct-for-the-teaching-staff p {
+  margin: 0 0 1em;
+}
+.code-of-conduct-for-the-teaching-staff h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.code-of-conduct-for-the-teaching-staff .accordion {
+  max-width: 65em;
+}
+.code-of-conduct-for-the-teaching-staff .accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.code-of-conduct-for-non-teaching-staff {
+  margin-top: 30px;
+  width: 100;
+  padding: 20px;
+}
+.code-of-conduct-for-non-teaching-staff .accordion > input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+.code-of-conduct-for-non-teaching-staff .accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.code-of-conduct-for-non-teaching-staff .accordion > input[type=checkbox]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+.code-of-conduct-for-non-teaching-staff .accordion label {
+  display: block;
+}
+.code-of-conduct-for-non-teaching-staff .accordion {
+  margin-bottom: 50px;
+}
+.code-of-conduct-for-non-teaching-staff .accordion > input[type=checkbox]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+.code-of-conduct-for-non-teaching-staff .accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+.code-of-conduct-for-non-teaching-staff .accordion label {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0a3981;
+}
+.code-of-conduct-for-non-teaching-staff .accordion label:hover,
+.code-of-conduct-for-non-teaching-staff .accordion label:focus {
+  background: #d8d8d8;
+  color: #0a3981;
+}
+.code-of-conduct-for-non-teaching-staff .accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  color: #0a3981;
+  display: inline-block;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+.code-of-conduct-for-non-teaching-staff .accordion > input[type=checkbox]:checked ~ .handle label:before {
+  content: "\f078";
+}
+.code-of-conduct-for-non-teaching-staff a {
+  color: #06c;
+}
+.code-of-conduct-for-non-teaching-staff p {
+  margin: 0 0 1em;
+}
+.code-of-conduct-for-non-teaching-staff h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.code-of-conduct-for-non-teaching-staff .accordion {
+  max-width: 65em;
+}
+.code-of-conduct-for-non-teaching-staff .accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.code-of-conduct-for-others {
+  margin-top: 30px;
+  width: 100;
+  padding: 20px;
+}
+.code-of-conduct-for-others .accordion > input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+.code-of-conduct-for-others .accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+.code-of-conduct-for-others .accordion > input[type=checkbox]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+.code-of-conduct-for-others .accordion label {
+  display: block;
+}
+.code-of-conduct-for-others .accordion {
+  margin-bottom: 50px;
+}
+.code-of-conduct-for-others .accordion > input[type=checkbox]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+.code-of-conduct-for-others .accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+.code-of-conduct-for-others .accordion label {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0a3981;
+}
+.code-of-conduct-for-others .accordion label:hover,
+.code-of-conduct-for-others .accordion label:focus {
+  background: #d8d8d8;
+  color: #0a3981;
+}
+.code-of-conduct-for-others .accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  color: #0a3981;
+  display: inline-block;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+.code-of-conduct-for-others .accordion > input[type=checkbox]:checked ~ .handle label:before {
+  content: "\f078";
+}
+.code-of-conduct-for-others a {
+  color: #06c;
+}
+.code-of-conduct-for-others p {
+  margin: 0 0 1em;
+}
+.code-of-conduct-for-others h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.code-of-conduct-for-others .accordion {
+  max-width: 65em;
+}
+.code-of-conduct-for-others .accordion p:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=codeconduct.css.map */

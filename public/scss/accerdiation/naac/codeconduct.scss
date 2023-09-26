@@ -1,0 +1,495 @@
+@use "../../nav/nav1";
+@use "../../abstract/color" as *;
+@use "../../abstract/font" as *;
+
+@use"../../abstract/mixin";
+@use"../../abstract/button";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  text-align: center;
+  color: $primary-text-color;
+}
+label{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+p, li{
+  font-size: 18px;
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+strong{
+  font-size: 19px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.code-of-conduct{
+    margin-top: 100px;
+    width: 100;
+    padding: 20px;
+    .accordion > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+      
+      .accordion .content {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        height: auto;
+        overflow: visible;
+      }
+      
+      .accordion label {
+        display: block;
+      }
+      
+      .accordion {
+        margin-bottom: 50px;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+      }
+      
+      .accordion .handle {
+        margin: 0;
+        font-size: 1.125em;
+        line-height: 1.2em;
+      }
+      
+      .accordion label {
+        color: white;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background: $primary-text-color;
+      }
+      
+      .accordion label:hover,
+      .accordion label:focus {
+        background: #d8d8d8;
+        color: $primary-text-color;
+      }
+      
+      .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        color: $primary-text-color;
+        display: inline-block;
+        // margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+        content: "\f078";
+      }
+      
+      a {
+        color: #06c;
+      }
+      
+      p {
+        margin: 0 0 1em;
+      }
+      
+      h1 {
+        margin: 0 0 1.5em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      
+      .accordion {
+        max-width: 65em;
+      }
+      
+      .accordion p:last-child {
+        margin-bottom: 0;
+      }
+}
+.code-of-conduct-for-students{
+    margin-top: 30px;
+    width: 100;
+    padding: 20px;
+    .accordion > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+      
+      .accordion .content {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        height: auto;
+        overflow: visible;
+      }
+      
+      .accordion label {
+        display: block;
+      }
+      
+      .accordion {
+        margin-bottom: 50px;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+      }
+      
+      .accordion .handle {
+        margin: 0;
+        font-size: 1.125em;
+        line-height: 1.2em;
+      }
+      
+      .accordion label {
+        color: white;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background: $primary-text-color;
+      }
+      
+      .accordion label:hover,
+      .accordion label:focus {
+        background: #d8d8d8;
+        color: $primary-text-color;
+      }
+      
+      .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        color: $primary-text-color;
+        display: inline-block;
+        // margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+        content: "\f078";
+      }
+      
+      a {
+        color: #06c;
+      }
+      
+      p {
+        margin: 0 0 1em;
+      }
+      
+      h1 {
+        margin: 0 0 1.5em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      
+      .accordion {
+        max-width: 65em;
+      }
+      
+      .accordion p:last-child {
+        margin-bottom: 0;
+      }
+}
+.code-of-conduct-for-the-teaching-staff{
+    margin-top: 30px;
+    width: 100;
+    padding: 20px;
+    .accordion > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+      
+      .accordion .content {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        height: auto;
+        overflow: visible;
+      }
+      
+      .accordion label {
+        display: block;
+      }
+      
+      .accordion {
+        margin-bottom: 50px;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+      }
+      
+      .accordion .handle {
+        margin: 0;
+        font-size: 1.125em;
+        line-height: 1.2em;
+      }
+      
+      .accordion label {
+        color: white;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background: $primary-text-color;
+      }
+      
+      .accordion label:hover,
+      .accordion label:focus {
+        background: #d8d8d8;
+        color: $primary-text-color;
+      }
+      
+      .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        color: $primary-text-color;
+        display: inline-block;
+        // margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+        content: "\f078";
+      }
+      
+      a {
+        color: #06c;
+      }
+      
+      p {
+        margin: 0 0 1em;
+      }
+      
+      h1 {
+        margin: 0 0 1.5em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      
+      .accordion {
+        max-width: 65em;
+      }
+      
+      .accordion p:last-child {
+        margin-bottom: 0;
+      }
+}
+.code-of-conduct-for-non-teaching-staff{
+    margin-top: 30px;
+    width: 100;
+    padding: 20px;
+    .accordion > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+      
+      .accordion .content {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        height: auto;
+        overflow: visible;
+      }
+      
+      .accordion label {
+        display: block;
+      }
+      
+      .accordion {
+        margin-bottom: 50px;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+      }
+      
+      .accordion .handle {
+        margin: 0;
+        font-size: 1.125em;
+        line-height: 1.2em;
+      }
+      
+      .accordion label {
+        color: white;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background: $primary-text-color;
+      }
+      
+      .accordion label:hover,
+      .accordion label:focus {
+        background: #d8d8d8;
+        color: $primary-text-color;
+      }
+      
+      .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        color: $primary-text-color;
+        display: inline-block;
+        // margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+        content: "\f078";
+      }
+      
+      a {
+        color: #06c;
+      }
+      
+      p {
+        margin: 0 0 1em;
+      }
+      
+      h1 {
+        margin: 0 0 1.5em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      
+      .accordion {
+        max-width: 65em;
+      }
+      
+      .accordion p:last-child {
+        margin-bottom: 0;
+      }
+}
+.code-of-conduct-for-others{
+    margin-top: 30px;
+    width: 100;
+    padding: 20px;
+    .accordion > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+      
+      .accordion .content {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        height: auto;
+        overflow: visible;
+      }
+      
+      .accordion label {
+        display: block;
+      }
+      
+      .accordion {
+        margin-bottom: 50px;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .content {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+      }
+      
+      .accordion .handle {
+        margin: 0;
+        font-size: 1.125em;
+        line-height: 1.2em;
+      }
+      
+      .accordion label {
+        color: white;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background: $primary-text-color;
+      }
+      
+      .accordion label:hover,
+      .accordion label:focus {
+        background: #d8d8d8;
+        color: $primary-text-color;
+      }
+      
+      .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        color: $primary-text-color;
+        display: inline-block;
+        // margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+      }
+      
+      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+        content: "\f078";
+      }
+      
+      a {
+        color: #06c;
+      }
+      
+      p {
+        margin: 0 0 1em;
+      }
+      
+      h1 {
+        margin: 0 0 1.5em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      
+      .accordion {
+        max-width: 65em;
+      }
+      
+      .accordion p:last-child {
+        margin-bottom: 0;
+      }
+}

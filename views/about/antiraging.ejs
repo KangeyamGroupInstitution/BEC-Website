@@ -20,43 +20,43 @@
   <div class="forms-of-ragging">
     <div class="grid1">
       <h1>Forms of Ragging</h1>
-      <div class="f-r"  data-aos="zoom-out-up">
+      <div class="f-r"  >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Dress Code Ragging</p>
       </div>
-      <div class="f-r"  data-aos="zoom-out-up">
+      <div class="f-r"  >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Playing the Fool</p>
       </div>
-      <div class="f-r" data-aos="zoom-out-up">
+      <div class="f-r" >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Formal Introduction</p>
       </div>
-      <div class="f-r" data-aos="zoom-out-up">
+      <div class="f-r" >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Hostel Ragging</p>
       </div>
-      <div class="f-r" data-aos="zoom-out-up">
+      <div class="f-r" >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Verbal Torture</p>
       </div>
-      <div class="f-r" data-aos="zoom-out-up">
+      <div class="f-r" >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
         <p class="svg-name">Drug Abuse</p>
       </div>
-      <div class="f-r" data-aos="zoom-out-up">
+      <div class="f-r" >
         <div class="svg-tick">
           <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>ionicons-v5-e</title><polyline points="416 128 192 384 96 288" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:72px"/></svg>
         </div>      
@@ -105,8 +105,6 @@
             </svg>
             <p class="svg-name">Debarring from representing the institution in any regional, national and international meet, tournament, youth festival, etc.,</p>
           </div>   
-      </div>
-      <div class="p-p-grid1">
         <div class="p-p">
           <svg >
             <circle class="circle" cx="20" cy="20" r="10" stroke-width="3" />
@@ -310,5 +308,21 @@
         <script>
           AOS.init();
         </script>
+        <script>
+          var i = 0;
+          var txt1 = "The anti ragging policies of BEC are based on the Honorable Supreme Court of India’s ruling and UGC regulations on curbing the menace of ragging in higher education institutions, 2009. Our institute has been free from this menace because of the active cooperation of the faculty members, students, parents and staff.The anti ragging cell is being constituted and stringent measures are being taken to prevent ragging in the campus. The mobile numbers of anti ragging cell members are prominently displayed in the notice boards and banners. The anti ragging squad conducts regular and surprise visits to the hostels, library, food court, sport facilities and ensure freshers comfort.The newly admitted students should submit anti ragging undertaking online / produce anti ragging affidavit on a stamp paper as per the direction of Supreme Court of India.";
+          var speed1 = 10;
+          window.onload = function() {
+            typeWriter();
+          };
+          
+          function typeWriter() {
+            if (i < txt1.length) {
+              document.getElementById("demo1").innerHTML += txt1.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed1);
+            }
+          }
+              </script>
 </body>
 </html>

@@ -1,1 +1,237 @@
 @use "../nav/nav2";
+@use "../nav/footer";
+@use "../abstract/color" as *;
+@use "../abstract/font" as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/button" as *;
+
+.vision-mission-con{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  }
+
+.card {
+  width: 430px;
+  height: 170px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 20px 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(0.5deg);
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background: $primary-text-color;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(2px);
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+.card-head{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: $primary-text;
+  color:$primary-text-color;
+  font-weight: 900;
+}
+.card-con{
+
+  color: $aids-text;
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 25px;
+}
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}  
+@media (max-width:1200px){
+  .card {
+    width: 300px;
+    height: 150px;
+} 
+.card-head{
+    font-size: 1.1rem;
+  }
+  .card-con{
+    font-size: 0.8rem;
+  }
+} 
+@media (max-width:800px){
+  .vision-mission-con{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    }
+}
+@media (max-width:500px) {
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .circle:nth-child(1) {
+    top: -10px;
+    left: -10px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -10px;
+    right: -10px;
+    animation-name: move-down1;
+  }
+}
+@media (max-width:300px) {
+      .card {
+          width: 80%;
+          height: 150px;
+      } 
+     
+  
+}
+  .edc{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-table {
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgb(70, 69, 69);
+      }
+      
+      &-table td{
+        padding: 20px 10px;
+        text-align: center;
+      }
+      
+     h1{
+        color: #fb8c00;
+     }
+      
+      &-table tr:hover {background-color: #ddd;}
+      &-table th {
+        padding: 10px;
+        text-align: center;
+        background-color: $primary-text-color;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .econtent{
+        width: 90%;
+        text-align: left;
+        padding: 10px;
+      }
+      h2{
+        margin-top: 20px;
+        color:$primary-text-color;
+  
+      }
+ }
+ @media (max-width:1000px) {
+    .edc{
+        h1{font-size: 20px;}
+        h2{font-size: 18px;}
+        .econtent{font-size:15px ;
+        padding: 30px;}
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &-table {
+            margin-top: 30px;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(70, 69, 69);
+          }
+          
+          &-table td{
+            padding: 10px 5px;
+            text-align: center;
+            font-size: 12px;
+          }
+
+          &-table tr:hover {background-color: #ddd;}
+          &-table th {
+            padding: 10px;
+            text-align: center;
+            background-color: $primary-text-color;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+          }
+     }
+ }
+ @media (max-width:490px) {
+    .edc{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-table {
+            margin-top: 20px;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(70, 69, 69);
+          }
+          
+          &-table td{
+            padding: 3px;
+            font-size: 8px;
+          }
+
+          &-table th {
+            padding: 5px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+     }
+ }
