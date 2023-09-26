@@ -5,9 +5,10 @@
 @use "../abstract/color" as *;
 .internal-text{
     @include  head-blue;
-    margin-top: 100px;
+    margin-top: 10%;
     text-transform: capitalize;
-    color: $primary-text-color-hover
+    color: $primary-text-color-hover;
+ 
     
 }
 .internal-con{
@@ -50,44 +51,131 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    margin-left: 30%;
+    justify-content: center;
     gap: 5%;
     align-items: center;
-   
+
 }
 .email-con{
     margin-top:10% ;
     font-style: $primary-text;
     color: $primary-text-color;
-    font-size: 20px;
-    
+    font-size: 20px; 
+
 
 }
-.email-con1{
-    color: $primary-text-color;
-}
+.email-img{
+    animation: bounce 2s linear infinite;
+    @keyframes bounce {
+        0%, 100% {transform: translateY(0);} 
+        50% {transform: translateY(-30px);} 
+     }
+     align-items: center;
+    
+    }
 .internal-phone{
     display: flex;
     flex-direction: row;
-    margin-top: 90px;
-    margin-left: 20%;
-   gap: 10%;
+    margin-top: 70px;
+   justify-content: center;
+   gap: 7%;
 }
 .phone-con{
     margin-top:10% ;
     font-style: $primary-text;
     color: $primary-text-color;
-    font-size: 18px; 
-    margin-left: 250px; 
-   
-    
+    font-size: 20px; 
+    // margin-left: 250px; 
+}
+.phone-img-1{
+    display: none;
+    animation: bounce 2s linear infinite;
+    @keyframes bounce {
+        0%, 100% {transform: translateY(0);} 
+        50% {transform: translateY(-30px);} 
+     }
+     align-items: center;
+ }
+.phone-img{
+    animation: bounce 2s linear infinite;
+    @keyframes bounce {
+        0%, 100% {transform: translateY(0);} 
+        50% {transform: translateY(-30px);} 
+     }
+     align-items: center;
 }
 @media(max-width:1000px){
+    .internal-text{
+        font-size: 18px;
+      
+    }
     .internal-email{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+      
+    }
+    .internal-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+        
+    }
+    .phone-img-1{
+        display: block;
+        margin-top: 10%;
+     }
+     .phone-img{
+     display: none;
+     }
+     .internal-text{
+        margin-top: 16%;
+        font-size:25px ;
     }
 
+}
+@media(max-width:560px){
+    .internal-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .internal-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    .phone-img-1{
+       
+        margin-top: 13%;
+        height: 30%;
+        width: 200px;
+     }
+     .email-img{
+        height: 30%;
+        width: 250px;
+     }
+     .email-con{
+        font-size: 16px;
+     }
+     .phone-con{
+        font-size: 16px;
+     }
+     .internal-text{
+        margin-top: 30%;
+        font-size: 20px;
+     }
+   
+}
+@media(max-width:380px){
+    .internal-text{
+        margin-top: 40%;
+    }
 }
