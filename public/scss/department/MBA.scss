@@ -2,7 +2,7 @@
 @use "../abstract/button" as*;
 @use "../abstract/color" as *;
 @use '../nav/footer';
-@use "../carosal/_departement-carosal";
+@use "../carosal/_departement-carosal-mba.scss";
 .departement-con{
     margin-top: 150px;
     row-gap: 100px;
@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: $aids-text;
+    color: $mba-text;
     
     h2{
         font-family: $primary-text;
@@ -41,11 +41,11 @@
             text-indent: 50px;
             text-align: justify;
             line-height: 30px;
-            color: $aids-text;
+            color: $mba-text;
         }
     }
     .head-text{
-        color: $aids-primary;
+        color: $mba-primary;
         font-size: 1.5rem;
     }
     .countdownContainer{
@@ -101,7 +101,7 @@
       .circle {
         width: 70px;
         height: 70px;
-        background: $aids-primary;
+        background: $mba-primary;
         border-radius: 50%;
         position: absolute;
         filter: blur(2px);
@@ -123,12 +123,12 @@
         text-transform: capitalize;
         text-align: center;
         font-family: $primary-text;
-        color: $aids-primary;
+        color: $mba-primary;
         font-weight: 900;
       }
       .card-con{
      
-        color: $aids-text;
+        color: $mba-text;
         text-indent: 30px;
         text-align: justify;
         line-height: 25px;
@@ -209,7 +209,7 @@
                 row-gap: 20px;
                 padding: 0 0 0 30px;
             }
-            .aids-img2{
+            .mba-img2{
                 width: 400px;
             }
         }
@@ -232,7 +232,7 @@
                 cursor: pointer;
             }
             .value{
-                background-color: $aids-primary;
+                background-color: $mba-primary;
                 color: #fff;
             }
         }
@@ -352,7 +352,7 @@
            
         }
         &-info{
-            width: 20%;
+            width: 30%;
             text-align: start;
              height: 100%;
              padding: 20px;
@@ -384,17 +384,25 @@
             
         }
         .teachers{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3,280px);
-            gap: 50px;
-            justify-content: center;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
             .teacher{
                 width: 280px;
-                height: 350px;
+                height: 450px;
                 // background-color: #fff;
-                // box-shadow: $white-shadow;
+               //box-shadow: $white-shadow;
                 border-radius: 10px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                
+  
             }
         }
         .profile{
@@ -407,19 +415,20 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
+                margin-bottom: 20px;
            } 
            .pro-images{
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            // border: 3px solid $aids-primary;
+            // border: 3px solid $mba-primary;
            }
         }
         .profile-con{
             text-align: center;
             line-height: 30px;
             .faculty-head{
-                color: $aids-primary;
+                color: $mba-primary;
                 font-size: 1.1rem;
             }
             .faculty-desination{
@@ -628,7 +637,7 @@
                 flex-direction:column;
                 column-gap: 30px;
             }
-            .aids-img2{
+            .mba-img2{
                 width: 90%;
             }
         }
