@@ -604,35 +604,35 @@ section {
   margin-left: 0%;
 }
 .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 .carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
-  box-shadow: 0px 0px 0px 3px #00BFA6;
+  box-shadow: 0px 0px 0px 3px #9178FF;
   border-radius: 10px;
 }
 
@@ -747,6 +747,7 @@ section {
   transition: all 300ms ease-in-out;
 }
 .carousel__thumbnails img {
+  border-radius: 10px;
   display: block;
   width: 100%;
   height: 100%;
@@ -816,7 +817,8 @@ section {
   text-align: center;
 }
 .departement-con .head-img {
-  width: 500px;
+  width: 400px;
+  margin: 7%;
 }
 .departement-con-info {
   width: 70%;
@@ -838,7 +840,7 @@ section {
   color: #2F2E41;
 }
 .departement-con .head-text {
-  color: #00BFA6;
+  color: #9178FF;
   font-size: 1.5rem;
 }
 .departement-con .countdownContainer {
@@ -888,7 +890,7 @@ section {
 .departement-con .circle {
   width: 70px;
   height: 70px;
-  background: #00BFA6;
+  background: #9178FF;
   border-radius: 50%;
   position: absolute;
   filter: blur(2px);
@@ -908,7 +910,7 @@ section {
   text-transform: capitalize;
   text-align: center;
   font-family: "Belanosima", sans-serif;
-  color: #00BFA6;
+  color: #9178FF;
   font-weight: 900;
 }
 .departement-con .card-con {
@@ -996,7 +998,7 @@ section {
   row-gap: 20px;
   padding: 0 0 0 30px;
 }
-.departement-con .departement-grid-con3 .aids-img2 {
+.departement-con .departement-grid-con3 .sh-img2 {
   width: 400px;
 }
 .departement-con-nav {
@@ -1018,7 +1020,7 @@ section {
   cursor: pointer;
 }
 .departement-con-nav .nav-li .value {
-  background-color: #00BFA6;
+  background-color: #9178FF;
   color: #fff;
 }
 .departement-con-nav .nav-con1 {
@@ -1141,12 +1143,21 @@ section {
 }
 .departement-con .lab-info {
   width: 20%;
+  text-align: start;
   height: 100%;
   padding: 20px;
+}
+.departement-con .lab-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .departement-con .lab-info li {
   list-style: none;
   line-height: 50px;
+}
+.departement-con .lab-info li:hover {
+  color: #9178FF;
 }
 .departement-con .hod-con {
   width: 100%;
@@ -1163,16 +1174,22 @@ section {
   flex-direction: column;
 }
 .departement-con .hod-con .teachers {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 50px;
-  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .departement-con .hod-con .teachers .teacher {
   width: 280px;
-  height: 350px;
+  height: 450px;
   border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 .departement-con .hod-con .profile {
   height: 55%;
@@ -1185,6 +1202,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-bottom: 30px;
 }
 .departement-con .hod-con .profile .pro-images {
   width: 100%;
@@ -1196,7 +1214,7 @@ section {
   line-height: 30px;
 }
 .departement-con .hod-con .profile-con .faculty-head {
-  color: #00BFA6;
+  color: #9178FF;
   font-size: 1.1rem;
 }
 .departement-con .hod-con .profile-con .faculty-desination {
@@ -1204,4 +1222,189 @@ section {
 }
 .departement-con .hod-con .profile-con .faculty-experience {
   color: gray;
+}
+
+@media (max-width: 1600px) {
+  .departement-con-nav .nav-li {
+    width: 95%;
+    text-align: center;
+  }
+  .departement-con-nav .nav-con1 {
+    width: 90%;
+  }
+  .departement-con-nav .nav-con2 {
+    width: 90%;
+  }
+  .departement-con-nav .nav-con3 {
+    width: 90%;
+  }
+  .departement-con-nav .nav-con4 {
+    width: 90%;
+  }
+  .departement-con-nav .nav-con5 {
+    width: 90%;
+  }
+  .departement-con-nav .nav-con6 {
+    width: 90%;
+  }
+}
+@media (max-width: 1400px) {
+  .departement-con-info {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .departement-con-info {
+    width: 90%;
+  }
+  .departement-con-info .head-img {
+    width: 300px;
+  }
+  .departement-con-info .head-con {
+    row-gap: 0px;
+  }
+  .departement-con-info .head-con .head-content {
+    line-height: 25px;
+  }
+  .departement-con .card {
+    width: 300px;
+    height: 150px;
+  }
+  .departement-con .card-head {
+    font-size: 1.1rem;
+  }
+  .departement-con .card-con {
+    font-size: 0.8rem;
+  }
+  .departement-con .departement-grid {
+    grid-template-areas: "out out out" "bt bt bt" "side side side";
+  }
+  .departement-con .departement-grid-con1 {
+    border-right: none;
+  }
+  .departement-con .departement-grid-con2 {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .departement-con .departement-grid-con3 .grid-con {
+    flex-direction: row;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .departement-con .lab-con {
+    flex-direction: column;
+  }
+  .departement-con .lab-galary {
+    width: 90%;
+  }
+  .departement-con .lab-info {
+    width: 90%;
+    padding: 0px;
+    text-align: center;
+  }
+  .departement-con .lab-info li {
+    line-height: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .departement-con-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .departement-con-info .head-img {
+    width: 90%;
+  }
+  .departement-con-info .head-con .head-content {
+    line-height: 30px;
+  }
+  .departement-con .departement-grid-con3 .grid-con {
+    flex-direction: column;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .departement-con-nav .nav-li {
+    flex-direction: column;
+  }
+  .departement-con .hod-con .teachers {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+@media (max-width: 800px) {
+  .departement-con {
+    row-gap: 30px;
+  }
+  .departement-con .vision-mission-con {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .departement-con .departement-grid .grid-content {
+    flex-direction: column;
+  }
+  .departement-con .departement-grid ul {
+    row-gap: 10px;
+  }
+  .departement-con .departement-grid-con2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .departement-con .hod-con .teachers {
+    grid-template-columns: repeat(1, 280px);
+  }
+  .departement-con .hod-con .teachers .teacher {
+    width: 280px;
+    height: 120%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .departement-con .departement-grid-con3 .grid-con {
+    flex-direction: column;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .departement-con .departement-grid-con3 .sh-img2 {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .departement-con-info .head-con .head-content {
+    line-height: 20px;
+    font-size: 0.8rem;
+  }
+  .departement-con h2 {
+    font-size: 1.1rem;
+  }
+  .departement-con .head-text {
+    font-size: 1rem;
+  }
+  .departement-con .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .departement-con .circle:nth-child(1) {
+    top: -10px;
+    left: -10px;
+  }
+  .departement-con .circle:nth-child(2) {
+    bottom: -10px;
+    right: -10px;
+    animation-name: move-down1;
+  }
+  .departement-con .hod-con .profile .pro-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 300px) {
+  .departement-con .card {
+    width: 80%;
+    height: 150px;
+  }
 }/*# sourceMappingURL=s&h.css.map */
