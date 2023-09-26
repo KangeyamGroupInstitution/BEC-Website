@@ -51,7 +51,7 @@
 }
 .trust-profile-photo-name{
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     width: 207px;
     height: 14%;
     background-color: $form-blue;
@@ -105,6 +105,7 @@
     row-gap: 20px;
 .trusty-text{
     font-family: $primary-text;
+     color: $primary-text-color;
     font-size: 18px;
 }
 .trusty-text:nth-child(1){

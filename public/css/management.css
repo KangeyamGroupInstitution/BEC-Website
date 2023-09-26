@@ -614,7 +614,7 @@ footer {
 
 .trust-profile-photo-name {
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   width: 207px;
   height: 14%;
   background-color: rgb(7, 7, 85);
@@ -674,6 +674,7 @@ footer {
 }
 .trusty-info .trusty-text {
   font-family: "Belanosima", sans-serif;
+  color: #0a3981;
   font-size: 18px;
 }
 .trusty-info .trusty-text:nth-child(1) {
