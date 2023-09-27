@@ -1,7 +1,7 @@
 @use "../../nav/nav1";
 @use "../../abstract/color" as *;
 @use "../../abstract/font" as *;
-
+@use "../../nav/footer";
 @use"../../abstract/mixin";
 @use"../../abstract/button";
 
@@ -20,24 +20,35 @@ body{
 }
 
 h1{
-  text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 1.5rem;
   color: $primary-text-color;
+  font-family:$primary-text;
+  text-align: center;
+  margin-bottom: 20px;
 }
 label{
-  font-size: 18px;
+  font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
 }
 p, li{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 25px;
 }
 strong{
-  font-size: 19px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 700;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.fa-caret-down{
+  margin-left: 20px;
+}
+
 .code-of-conduct{
     margin-top: 100px;
     width: 100;
@@ -115,12 +126,6 @@ strong{
         margin: 0 0 1em;
       }
       
-      h1 {
-        margin: 0 0 1.5em;
-        font-weight: 600;
-        font-size: 1.5em;
-      }
-      
       .accordion {
         max-width: 65em;
       }
@@ -131,36 +136,71 @@ strong{
 }
 .code-of-conduct-for-students{
     margin-top: 30px;
-    width: 100;
+    width: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .accordion {
+      margin-bottom: 50px;
+      width: 900px;
+    }
+
     .accordion > input[type="checkbox"] {
         position: absolute;
         left: -100vw;
       }
       
       .accordion .content {
+        width: 100%;
+        display: none;
         overflow-y: hidden;
         height: 0;
         transition: height 0.3s ease;
       }
       
+      
       .accordion > input[type="checkbox"]:checked ~ .content {
+        // display: block;
         height: auto;
-        overflow: visible;
-      }
-      
-      .accordion label {
-        display: block;
-      }
-      
-      .accordion {
-        margin-bottom: 50px;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
+        overflow: hidden;
         padding: 15px;
         border: 1px solid #e8e8e8;
         border-top: 0;
+      }
+      
+      .accordion label {
+        width: 100%;
+        display: block;
+        color: white;
+        display: flex;
+
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: normal;
+       padding: 15px;
+        background: $primary-text-color;
+      }
+      .label-item{
+        height: 50px;
+        width: 900px;
+        box-sizing: border-box;
+        padding: 10px;
+        color: #fff;
+        background-color:$primary-text-color;
+        display: flex;
+        justify-content: space-between;
+      }
+      .para-label{
+        align-self: flex-start;
+      }
+     
+      .icon-label{
+        align-self: flex-start;
+        color: #fff;
+        
+
       }
       
       .accordion .handle {
@@ -169,19 +209,11 @@ strong{
         line-height: 1.2em;
       }
       
-      .accordion label {
-        color: white;
-        cursor: pointer;
-        font-weight: normal;
-        padding: 15px;
-        background: $primary-text-color;
-      }
-      
-      .accordion label:hover,
-      .accordion label:focus {
-        background: #d8d8d8;
-        color: $primary-text-color;
-      }
+      // .accordion label:hover,
+      // .accordion label:focus {
+      //   background: #d8d8d8;
+      //   color: $primary-text-color;
+      // }
       
       .accordion .handle label:before {
         font-family: 'fontawesome';
@@ -204,12 +236,6 @@ strong{
       
       p {
         margin: 0 0 1em;
-      }
-      
-      h1 {
-        margin: 0 0 1.5em;
-        font-weight: 600;
-        font-size: 1.5em;
       }
       
       .accordion {
@@ -221,275 +247,338 @@ strong{
       }
 }
 .code-of-conduct-for-the-teaching-staff{
-    margin-top: 30px;
-    width: 100;
-    padding: 20px;
-    .accordion > input[type="checkbox"] {
-        position: absolute;
-        left: -100vw;
-      }
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .accordion {
+    margin-bottom: 50px;
+    width: 900px;
+  }
+
+  .accordion > input[type="checkbox"] {
+      position: absolute;
+      left: -100vw;
+    }
+    
+    .accordion .content {
+      width: 100%;
+      display: none;
+      overflow-y: hidden;
+      height: 0;
+      transition: height 0.3s ease;
+    }
+    
+    
+    .accordion > input[type="checkbox"]:checked ~ .content {
+      // display: block;
+      height: auto;
+      overflow: hidden;
+      padding: 15px;
+      border: 1px solid #e8e8e8;
+      border-top: 0;
+    }
+    
+    .accordion label {
+      width: 100%;
+      display: block;
+      color: white;
+      display: flex;
+
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: normal;
+     padding: 15px;
+      background: $primary-text-color;
+    }
+    .label-item{
+      height: 50px;
+      width: 900px;
+      box-sizing: border-box;
+      padding: 10px;
+      color: #fff;
+      background-color:$primary-text-color;
+      display: flex;
+      justify-content: space-between;
+    }
+    .para-label{
+      align-self: flex-start;
+    }
+   
+    .icon-label{
+      align-self: flex-start;
+      color: #fff;
       
-      .accordion .content {
-        overflow-y: hidden;
-        height: 0;
-        transition: height 0.3s ease;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        height: auto;
-        overflow: visible;
-      }
-      
-      .accordion label {
-        display: block;
-      }
-      
-      .accordion {
-        margin-bottom: 50px;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        padding: 15px;
-        border: 1px solid #e8e8e8;
-        border-top: 0;
-      }
-      
-      .accordion .handle {
-        margin: 0;
-        font-size: 1.125em;
-        line-height: 1.2em;
-      }
-      
-      .accordion label {
-        color: white;
-        cursor: pointer;
-        font-weight: normal;
-        padding: 15px;
-        background: $primary-text-color;
-      }
-      
-      .accordion label:hover,
-      .accordion label:focus {
-        background: #d8d8d8;
-        color: $primary-text-color;
-      }
-      
-      .accordion .handle label:before {
-        font-family: 'fontawesome';
-        content: "\f054";
-        color: $primary-text-color;
-        display: inline-block;
-        // margin-right: 10px;
-        font-size: .58em;
-        line-height: 1.556em;
-        vertical-align: middle;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
-        content: "\f078";
-      }
-      
-      a {
-        color: #06c;
-      }
-      
-      p {
-        margin: 0 0 1em;
-      }
-      
-      h1 {
-        margin: 0 0 1.5em;
-        font-weight: 600;
-        font-size: 1.5em;
-      }
-      
-      .accordion {
-        max-width: 65em;
-      }
-      
-      .accordion p:last-child {
-        margin-bottom: 0;
-      }
+
+    }
+    
+    .accordion .handle {
+      margin: 0;
+      font-size: 1.125em;
+      line-height: 1.2em;
+    }
+    
+    // .accordion label:hover,
+    // .accordion label:focus {
+    //   background: #d8d8d8;
+    //   color: $primary-text-color;
+    // }
+    
+    .accordion .handle label:before {
+      font-family: 'fontawesome';
+      content: "\f054";
+      color: $primary-text-color;
+      display: inline-block;
+      // margin-right: 10px;
+      font-size: .58em;
+      line-height: 1.556em;
+      vertical-align: middle;
+    }
+    
+    .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+      content: "\f078";
+    }
+    
+    a {
+      color: #06c;
+    }
+    
+    p {
+      margin: 0 0 1em;
+    }
+    
+    .accordion {
+      max-width: 65em;
+    }
+    
+    .accordion p:last-child {
+      margin-bottom: 0;
+    }
 }
 .code-of-conduct-for-non-teaching-staff{
-    margin-top: 30px;
-    width: 100;
-    padding: 20px;
-    .accordion > input[type="checkbox"] {
-        position: absolute;
-        left: -100vw;
-      }
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .accordion {
+    margin-bottom: 50px;
+    width: 900px;
+  }
+
+  .accordion > input[type="checkbox"] {
+      position: absolute;
+      left: -100vw;
+    }
+    
+    .accordion .content {
+      width: 100%;
+      display: none;
+      overflow-y: hidden;
+      height: 0;
+      transition: height 0.3s ease;
+    }
+    
+    
+    .accordion > input[type="checkbox"]:checked ~ .content {
+      // display: block;
+      height: auto;
+      overflow: hidden;
+      padding: 15px;
+      border: 1px solid #e8e8e8;
+      border-top: 0;
+    }
+    
+    .accordion label {
+      width: 100%;
+      display: block;
+      color: white;
+      display: flex;
+
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: normal;
+     padding: 15px;
+      background: $primary-text-color;
+    }
+    .label-item{
+      height: 50px;
+      width: 900px;
+      box-sizing: border-box;
+      padding: 10px;
+      color: #fff;
+      background-color:$primary-text-color;
+      display: flex;
+      justify-content: space-between;
+    }
+    .para-label{
+      align-self: flex-start;
+    }
+   
+    .icon-label{
+      align-self: flex-start;
+      color: #fff;
       
-      .accordion .content {
-        overflow-y: hidden;
-        height: 0;
-        transition: height 0.3s ease;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        height: auto;
-        overflow: visible;
-      }
-      
-      .accordion label {
-        display: block;
-      }
-      
-      .accordion {
-        margin-bottom: 50px;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        padding: 15px;
-        border: 1px solid #e8e8e8;
-        border-top: 0;
-      }
-      
-      .accordion .handle {
-        margin: 0;
-        font-size: 1.125em;
-        line-height: 1.2em;
-      }
-      
-      .accordion label {
-        color: white;
-        cursor: pointer;
-        font-weight: normal;
-        padding: 15px;
-        background: $primary-text-color;
-      }
-      
-      .accordion label:hover,
-      .accordion label:focus {
-        background: #d8d8d8;
-        color: $primary-text-color;
-      }
-      
-      .accordion .handle label:before {
-        font-family: 'fontawesome';
-        content: "\f054";
-        color: $primary-text-color;
-        display: inline-block;
-        // margin-right: 10px;
-        font-size: .58em;
-        line-height: 1.556em;
-        vertical-align: middle;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
-        content: "\f078";
-      }
-      
-      a {
-        color: #06c;
-      }
-      
-      p {
-        margin: 0 0 1em;
-      }
-      
-      h1 {
-        margin: 0 0 1.5em;
-        font-weight: 600;
-        font-size: 1.5em;
-      }
-      
-      .accordion {
-        max-width: 65em;
-      }
-      
-      .accordion p:last-child {
-        margin-bottom: 0;
-      }
+
+    }
+    
+    .accordion .handle {
+      margin: 0;
+      font-size: 1.125em;
+      line-height: 1.2em;
+    }
+    
+    // .accordion label:hover,
+    // .accordion label:focus {
+    //   background: #d8d8d8;
+    //   color: $primary-text-color;
+    // }
+    
+    .accordion .handle label:before {
+      font-family: 'fontawesome';
+      content: "\f054";
+      color: $primary-text-color;
+      display: inline-block;
+      // margin-right: 10px;
+      font-size: .58em;
+      line-height: 1.556em;
+      vertical-align: middle;
+    }
+    
+    .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+      content: "\f078";
+    }
+    
+    a {
+      color: #06c;
+    }
+    
+    p {
+      margin: 0 0 1em;
+    }
+    
+    .accordion {
+      max-width: 65em;
+    }
+    
+    .accordion p:last-child {
+      margin-bottom: 0;
+    }
 }
 .code-of-conduct-for-others{
-    margin-top: 30px;
-    width: 100;
-    padding: 20px;
-    .accordion > input[type="checkbox"] {
-        position: absolute;
-        left: -100vw;
-      }
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .accordion {
+    margin-bottom: 50px;
+    width: 900px;
+  }
+
+  .accordion > input[type="checkbox"] {
+      position: absolute;
+      left: -100vw;
+    }
+    
+    .accordion .content {
+      width: 100%;
+      display: none;
+      overflow-y: hidden;
+      height: 0;
+      transition: height 0.3s ease;
+    }
+    
+    
+    .accordion > input[type="checkbox"]:checked ~ .content {
+      // display: block;
+      height: auto;
+      overflow: hidden;
+      padding: 15px;
+      border: 1px solid #e8e8e8;
+      border-top: 0;
+    }
+    
+    .accordion label {
+      width: 100%;
+      display: block;
+      color: white;
+      display: flex;
+
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: normal;
+     padding: 15px;
+      background: $primary-text-color;
+    }
+    .label-item{
+      height: 50px;
+      width: 900px;
+      box-sizing: border-box;
+      padding: 10px;
+      color: #fff;
+      background-color:$primary-text-color;
+      display: flex;
+      justify-content: space-between;
+    }
+    .para-label{
+      align-self: flex-start;
+    }
+   
+    .icon-label{
+      align-self: flex-start;
+      color: #fff;
       
-      .accordion .content {
-        overflow-y: hidden;
-        height: 0;
-        transition: height 0.3s ease;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        height: auto;
-        overflow: visible;
-      }
-      
-      .accordion label {
-        display: block;
-      }
-      
-      .accordion {
-        margin-bottom: 50px;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .content {
-        padding: 15px;
-        border: 1px solid #e8e8e8;
-        border-top: 0;
-      }
-      
-      .accordion .handle {
-        margin: 0;
-        font-size: 1.125em;
-        line-height: 1.2em;
-      }
-      
-      .accordion label {
-        color: white;
-        cursor: pointer;
-        font-weight: normal;
-        padding: 15px;
-        background: $primary-text-color;
-      }
-      
-      .accordion label:hover,
-      .accordion label:focus {
-        background: #d8d8d8;
-        color: $primary-text-color;
-      }
-      
-      .accordion .handle label:before {
-        font-family: 'fontawesome';
-        content: "\f054";
-        color: $primary-text-color;
-        display: inline-block;
-        // margin-right: 10px;
-        font-size: .58em;
-        line-height: 1.556em;
-        vertical-align: middle;
-      }
-      
-      .accordion > input[type="checkbox"]:checked ~ .handle label:before {
-        content: "\f078";
-      }
-      
-      a {
-        color: #06c;
-      }
-      
-      p {
-        margin: 0 0 1em;
-      }
-      
-      h1 {
-        margin: 0 0 1.5em;
-        font-weight: 600;
-        font-size: 1.5em;
-      }
-      
-      .accordion {
-        max-width: 65em;
-      }
-      
-      .accordion p:last-child {
-        margin-bottom: 0;
-      }
+
+    }
+    
+    .accordion .handle {
+      margin: 0;
+      font-size: 1.125em;
+      line-height: 1.2em;
+    }
+    
+    // .accordion label:hover,
+    // .accordion label:focus {
+    //   background: #d8d8d8;
+    //   color: $primary-text-color;
+    // }
+    
+    .accordion .handle label:before {
+      font-family: 'fontawesome';
+      content: "\f054";
+      color: $primary-text-color;
+      display: inline-block;
+      // margin-right: 10px;
+      font-size: .58em;
+      line-height: 1.556em;
+      vertical-align: middle;
+    }
+    
+    .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+      content: "\f078";
+    }
+    
+    a {
+      color: #06c;
+    }
+    
+    p {
+      margin: 0 0 1em;
+    }
+    
+    .accordion {
+      max-width: 65em;
+    }
+    
+    .accordion p:last-child {
+      margin-bottom: 0;
+    }
 }
