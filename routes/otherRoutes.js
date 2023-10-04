@@ -15,4 +15,12 @@ router.get('/naac/bestpractises', otherController.showBestPractisesPage);
 router.get('/naac/institute', otherController.showInstitutePage);
 router.get('/naac/coc', otherController.showCOCPage);
 router.get('/naac/capacity', otherController.showCapacityPage);
+router.get('/beyound', otherController.showBeyoundPage);
+router.get('/infra', otherController.showInfaPage);
+router.get('/sports', otherController.showSportsPage);
+router.get('/club', otherController.showClubPage);
+router.get('/galaery', otherController.showGalleryPage);
+router.get('/invitation', otherController.showInvitationPage);
+router.get('/quicklink', otherController.showQuickLink);
+
 export default router;
