@@ -42,6 +42,7 @@ app.use("/", profileRoutes);
 app.use('/research', otherRoutes);
 app.use("/auth", authRoutes);
 app.use("/aggregation", otherRoutes);
+app.use("/campus", otherRoutes);
 
  
 //Server Listening
