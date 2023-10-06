@@ -74,6 +74,48 @@ class otherController {
         console.log(viewsPath);
         res.render(viewsPath);
     }
+    static showBeyoundPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','beyound.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showInfaPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','infra.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showSportsPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','sports.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showClubPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','club.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showGalleryPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','galaery.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showInvitationPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','invitation.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showQuickLink = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','campus','quicklink.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
 
 
 }
