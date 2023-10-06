@@ -1,0 +1,706 @@
+@use "../../nav/nav1";
+@use "../../abstract/color" as *;
+@use "../../abstract/font" as *;
+@use "../../nav/footer";
+@use"../../abstract/mixin";
+@use"../../abstract/button";
+*{
+    font-family: Open Sans;
+  
+
+}
+body{
+    width: 100%;
+    
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 200px;
+    background-color: #f3f5f7;
+    flex-direction: column;
+    margin: 200px 0px ;
+    align-items: center;
+    padding: 0px;
+   
+    h1{
+        margin-bottom: 5%;
+        text-decoration: underline;
+        color: #ae3333;
+    }
+
+    
+    .div1{
+        background-color: $main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-start;
+        height: 500px;
+        width: 70%;
+        top: 190vh;
+        transform: rotate(4deg);
+        left: -20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+    }
+    .div2{
+        background-color: $main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-start;
+        height: 400px;
+        width: 70%;
+        top: 220vh;
+        transform: rotate(-4deg);
+        left: -20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .div3{
+        background-color: $main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-start;
+        height: 591.5px;
+        width: 71%;
+        top: 195vh;
+        transform: rotate(0deg);
+        left: -20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .div{
+
+        
+        position: absolute;
+        z-index: -1;
+        align-self: flex-start;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin: 0px;
+        top: 330vh;
+        
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 80px;
+    }
+    .div1-1{
+        background-color: $main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-end;
+        height: 400px;
+        width: 70%;
+        top: 15vh;
+        transform: rotate(-4deg);
+        right: -20px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+
+    }
+    .div2-1{
+        background-color:$main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-end;
+        height: 400px;
+        width: 70%;
+        top: 45vh;
+        transform: rotate(4deg);
+        right: -20px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .div3-1{
+        background-color: $main-color;
+        position: absolute;
+        z-index: -1;
+        align-self: flex-end;
+        height: 591.5px;
+        width: 71%;
+        top: 20vh;
+        transform: rotate(0deg);
+        right: -20px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+   
+}
+.bg-con-cap{
+    
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+
+}
+.soft-skills{
+    width: 70%;
+    //   background-color: rgb(161, 177, 196);
+        box-shadow: $white-shadow;
+        // background-image: linear-gradient(to left,#001d3d,#003566,#ffc300);
+        //background-image: linear-gradient(to left,#616263,#8f8e8b,#141415);
+        padding: 5%;
+        flex-wrap: wrap;
+        display: flex;
+        border-radius: 50%;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+  
+}
+.naac{
+    width: 200px;
+   
+}
+.soft-skills-content{
+    display: flex;
+       
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+    h1{
+        color: $form-blue;
+        font-size: 33px;
+        text-align: center;
+        font-weight: 700;
+        
+        
+    }
+    p{  width: 70%;
+        text-align: center;
+        color: $form-blue;
+        padding-top: 2%;
+        line-height: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.soft-skills-points{
+    width: 500px;
+    text-align: center;
+    ul{
+        list-style: none;
+        text-align: left;
+        padding-top: 15%;
+        
+    }
+    li{
+     color: $form-blue;
+        padding: 2%;
+        font-size: 15px;
+    }
+
+}
+.photo-con{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &-imgs{
+    
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       
+        .cap-card1{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Leadership-Competency.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+              
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card1:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+        .cap-card2{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Webinar.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+              
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card2:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+
+    }
+    .naac{
+        width: 23%;
+        height: 500px;
+        
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border: 5px solid #968a50;
+        background-color: #001d3d;
+        border-radius: 8%;
+        h1{
+            text-align: center;
+            color: #968a50;
+            text-decoration: underline;
+            font-size: 30px;
+    
+        }
+        ul{
+            padding-top: 2%;
+            list-style: none;
+        }
+        li{
+            padding: 2%;
+            display: flex;
+        }
+        li a{
+          font-size: 15px;
+            color: #968a50;
+            font-weight: 700;
+        }
+        li a:hover{
+          font-size: 15px;
+            color: #ffc300;
+            font-weight: 700;
+            
+        }
+        i{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #968a50;
+          }
+        
+    }
+    .life-style{
+        width: 800px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-right: 20%;
+ 
+       h1{
+        color: #001d3d;
+       }
+       p{
+       text-indent: 50px;
+       color: #001d3d;
+        font-weight: 700;
+        line-height: 30px;
+       }
+       ul{
+        list-style: none;
+        margin: 10%;
+        line-height: 35px;
+       }
+       li{
+        color: #001d3d;
+        font-weight: 700;
+       }
+       li:hover{
+        color: #044b11;
+        font-weight: 700;
+
+       }
+   
+    }
+    .life-style-img-con{
+        width: 380px;
+        height: 550PX;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        // background-color: #001f54;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        justify-content: space-between;
+        .life-style-img1{
+            height: 250px;
+            width: 350px;
+            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Yoga1-1024x768.jpg");
+            align-self: flex-end;
+            background-size: cover;
+            border-radius: 20px;
+            transform: skewX(10deg);
+            border: 5px solid #968a50;
+            p{  display: none;
+                position: absolute;
+                z-index: 4;
+                height: 100px;
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #001d3d;
+                width: 340px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+           
+        }
+        .life-style-img2{
+            height: 250px;
+            width: 350px;
+            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Yoga-1024x768.jpg");
+            align-self: flex-end;
+            background-size: cover;
+            border-radius: 20px;
+            transform: skewX(-10deg);
+            border: 5px solid #968a50;
+            p{    display: none;
+                position: absolute;
+                z-index: 4;
+                height: 100px;
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #001d3d;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                width: 340px;
+            }
+        }
+        .life-style-img1:hover{
+            p{
+              display: block;
+            }
+        }
+        .life-style-img2:hover{
+            p{
+                display: block;
+            }
+        }
+   
+    }
+    &-imgs-1{
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 13%;
+     
+        margin-top: 5%;
+       
+        .cap-card1{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/English-is-Fun-600x338.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+                
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card1:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+        .cap-card2{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Communication-Skill-scaled-e1651392035189-1024x566.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+              
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card2:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+
+    }
+    .life{
+        width: 100%;
+       padding-left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .life-style-1{
+        
+        padding-left: 50px;
+        // background-color: #ffc300;
+        order: 1;
+        margin-left: 70px;
+        width: 40%;
+        margin-top:6%;
+        margin-bottom: 10%;
+        
+     
+ 
+       h1{
+        color: #001d3d;
+       }
+       p{width: 900px;
+       text-indent: 50px;
+       color: #001d3d;
+        font-weight: 700;
+        line-height: 30px;
+       }
+       ul{
+      
+        list-style: none;
+        margin-top: 10%;
+        line-height: 35px;
+       }
+       li{
+        width: 600px;
+        color: #001d3d;
+        font-weight: 700;
+       }
+       li:hover{
+        color: #044b11;
+        font-weight: 700;
+
+       }
+   
+    }
+    .life-style-img-con-1{
+            width: 20%;
+        height: 550PX;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        justify-content: space-between;
+        .life-style-img1{
+            height: 250px;
+            width: 350px;
+            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/English-is-Fun-600x338.jpg");
+            align-self: flex-end;
+            background-size: cover;
+            border-radius: 20px;
+            transform: skewX(-10deg);
+            border: 5px solid #968a50;
+            p{  display: none;
+                position: absolute;
+                z-index: 4;
+                height: 100px;
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #001d3d;
+                width: 340px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+           
+        }
+        .life-style-img2{
+            height: 250px;
+            width: 350px;
+            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Communication-Skill-scaled-e1651392035189-1024x566.jpg");
+            align-self: flex-end;
+            background-size: cover;
+            border-radius: 20px;
+            transform: skewX(10deg);
+            border: 5px solid #968a50;
+            p{    display: none;
+                position: absolute;
+                z-index: 4;
+                height: 100px;
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #001d3d;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                width: 340px;
+            }
+        }
+        .life-style-img1:hover{
+            p{
+              display: block;
+            }
+        }
+        .life-style-img2:hover{
+            p{
+                display: block;
+            }
+        }
+   
+    }
+    &-imgs-2{
+      order: 3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 13%;
+     
+        margin-top: 5%;
+       
+        .cap-card1{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/BIM-1024x576.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+                
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card1:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+        .cap-card2{
+            width:  530px;
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            background-size: cover;
+           
+            align-items: end;
+            // background-color: #001f54;
+             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Mechanical-Design-1024x576.jpg");
+           
+            p{  
+                position: absolute;
+                z-index: 4;
+              
+                font-size: 15PX;
+                color: #fff;
+                padding: 15px;
+                background-color: #034078;
+                width: inherit;
+            }
+            
+            }
+            .cap-card2:hover{
+                p{
+                    display: none;
+                    
+                }
+        }
+
+    }
+    .bottom-para{
+        order: 5;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+           border-radius: 10px;
+            width: 500px;
+            padding: 20px;
+            background-color: #001d3d;
+            border: 5px solid #968a50;
+            color: #968a50;
+        }
+    }
+ 
+
+}
