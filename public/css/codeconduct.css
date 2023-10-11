@@ -1032,4 +1032,29 @@ strong {
 }
 .code-of-conduct-for-others .accordion p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .code-of-conduct-for-students .label-item, .code-of-conduct-for-non-teaching-staff .label-item, .code-of-conduct-for-others .label-item, .code-of-conduct-for-the-teaching-staff .label-item {
+    width: 600px;
+  }
+  .code-of-conduct-for-students .accordion, .code-of-conduct-for-non-teaching-staff .accordion, .code-of-conduct-for-others .accordion, .code-of-conduct-for-the-teaching-staff .accordion {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .code-of-conduct-for-students .label-item, .code-of-conduct-for-non-teaching-staff .label-item, .code-of-conduct-for-others .label-item, .code-of-conduct-for-the-teaching-staff .label-item {
+    width: 500px;
+  }
+  .code-of-conduct-for-students .accordion, .code-of-conduct-for-non-teaching-staff .accordion, .code-of-conduct-for-others .accordion, .code-of-conduct-for-the-teaching-staff .accordion {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .code-of-conduct-for-students .label-item, .code-of-conduct-for-non-teaching-staff .label-item, .code-of-conduct-for-others .label-item, .code-of-conduct-for-the-teaching-staff .label-item {
+    width: 300px;
+  }
+  .code-of-conduct-for-students .accordion, .code-of-conduct-for-non-teaching-staff .accordion, .code-of-conduct-for-others .accordion, .code-of-conduct-for-the-teaching-staff .accordion {
+    width: 300px;
+  }
 }/*# sourceMappingURL=codeconduct.css.map */

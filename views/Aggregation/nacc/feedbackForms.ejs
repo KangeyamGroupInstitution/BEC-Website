@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/academicCalender.css">
+    <link rel="stylesheet" href="/css/feedback.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <%- include('../../navbar.ejs')%>
-      
-        <script src="/assets/js/nav.js"></script>
+
+  <article class="card">
+    <h3>STATUTORY DECLARATION ON RTI ACT</h3>
+
+    <span class="top"></span>
+    <span class="right"></span>
+    <span class="bottom"></span>
+    <span class="left"></span>
+  </article>
+
+
+  <%- include('../../footer.ejs')%> 
+  <%- include('../../foot.ejs')%>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/assets/js/nav.js"></script>
 </body>
 </html>
