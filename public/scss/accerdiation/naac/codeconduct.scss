@@ -582,3 +582,38 @@ strong{
       margin-bottom: 0;
     }
 }
+
+@media (max-width:1000px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 600px;
+    }
+    .accordion{
+      width: 600px;
+    }
+  }
+
+}
+
+@media (max-width:700px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 500px;
+    }
+    .accordion{
+      width: 500px;
+    }
+  }
+
+}
+@media (max-width:500px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 300px;
+    }
+    .accordion{
+      width: 300px;
+    }
+  }
+
+}
