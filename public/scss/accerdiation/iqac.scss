@@ -215,7 +215,8 @@
         background-color: white;
         // box-shadow: 5px 5px 20px rgb(177, 174, 174);
         padding: 30px;
-        margin: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
         }
         
         &-text{
@@ -320,9 +321,11 @@
     /* benefits */
 
     &-benefits{
-        
         background-color:white;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         &-white{
             width: 60%;
@@ -539,44 +542,94 @@
    }
 }
 
-@media (max-width:800px) {
-    .iqac{
-       .vision-mission-con{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 50px;
-        .card {
-            width: 300px;
-            height: 150px;
-        }
-        .card-head{
-            font-size: 1.1rem;
-          }
-          .card-con{
-            font-size: 0.8rem;
-          }
-        }
-        &-obj{
-            .content{
-                h2{
-                    margin-top: 0px;
-                }
-            }
-        }
-        &-benefits{
-            &-white{
-                width: 90%;
-                border-radius: 20px;
-                padding: 30px;
-                margin: 50px;
-                &-text{
-                    font-size: 1.75rem;
-                }
-            }
-        }
+@media (max-width:1000px) {
+  .iqac{
+    &-compositions{
+      .label-item{
+        width: 600px;
+      }
+      .accordion{
+        width: 600px;
+      }
     }
+  }
+}
 
+@media (max-width:800px) {
+  .iqac{
+     .vision-mission-con{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 50px;
+      .card {
+          width: 300px;
+          height: 150px;
+      }
+      .card-head{
+          font-size: 1.1rem;
+        }
+        .card-con{
+          font-size: 0.8rem;
+        }
+      }
+      &-obj{
+          .content{
+              h2{
+                  margin-top: 0px;
+              }
+          }
+      }
+      &-benefits{
+          &-white{
+              width: 90%;
+              border-radius: 20px;
+              padding: 30px;
+              margin: 50px;
+              &-text{
+                  font-size: 1.75rem;
+              }
+          }
+      }
+  }
+
+}
+
+@media (max-width:700px) {
+  .iqac{
+    &-compositions{
+      .label-item{
+        width: 500px;
+      }
+      .accordion{
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .iqac{
+   .function{
+    margin-top: 0;
+    &-text{
+      text-decoration: underline;
+      font-weight: 900;
+      font-size: 1.5rem;
+  }
+  .olcards li::before {
+    font-size: 1.5em;
+  }
+
+  .olcards li .content .text {
+    font-size: 0.70em;
+  }
+
+  .olcards li .content {
+    margin-left: 10px;
+  }
+  }
+  }
 }
 
 @media (max-width:500px) {
@@ -625,6 +678,14 @@
                 }
             }
         }
+        &-compositions{
+          .label-item{
+            width: 300px;
+          }
+          .accordion{
+            width: 300px;
+          }
+        } 
     }
 }
 
