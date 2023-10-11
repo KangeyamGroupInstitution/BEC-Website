@@ -732,7 +732,8 @@ footer {
   border-radius: 20px;
   background-color: white;
   padding: 30px;
-  margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .iqac .function-text {
   text-decoration: underline;
@@ -819,6 +820,10 @@ footer {
 }
 .iqac-benefits {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .iqac-benefits-white {
@@ -1000,6 +1005,14 @@ footer {
     height: 100%;
   }
 }
+@media (max-width: 1000px) {
+  .iqac-compositions .label-item {
+    width: 600px;
+  }
+  .iqac-compositions .accordion {
+    width: 600px;
+  }
+}
 @media (max-width: 800px) {
   .iqac .vision-mission-con {
     flex-direction: column;
@@ -1028,6 +1041,33 @@ footer {
   }
   .iqac-benefits-white-text {
     font-size: 1.75rem;
+  }
+}
+@media (max-width: 700px) {
+  .iqac-compositions .label-item {
+    width: 500px;
+  }
+  .iqac-compositions .accordion {
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .iqac .function {
+    margin-top: 0;
+  }
+  .iqac .function-text {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .iqac .function .olcards li::before {
+    font-size: 1.5em;
+  }
+  .iqac .function .olcards li .content .text {
+    font-size: 0.7em;
+  }
+  .iqac .function .olcards li .content {
+    margin-left: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -1067,6 +1107,12 @@ footer {
   .iqac-benefits-white-text {
     font-size: 1.5rem;
     margin-bottom: 20px;
+  }
+  .iqac-compositions .label-item {
+    width: 300px;
+  }
+  .iqac-compositions .accordion {
+    width: 300px;
   }
 }
 @media (max-width: 300px) {
