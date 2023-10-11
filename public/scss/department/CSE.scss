@@ -334,13 +334,16 @@
       flex-direction: column;
       text-align: center;
       row-gap: 20px;
-    
+      align-items: center;
       justify-content: center;
+      p{
+        width: 80%;
+      }
       &-con{
           display: flex;
           width: 100%;
           height: 100%;
-          column-gap: 20px;
+          column-gap: 50px;
           text-align: start;
           justify-content: center;
           align-items: center;
@@ -350,6 +353,7 @@
            height: 100%;
            padding: 20px;
            display: flex;
+           
            flex-direction: row;
            justify-content: center;
            align-items: center;
@@ -368,22 +372,31 @@
          
       }
       &-info{
-        width: 20%;
-        text-align: start;
-         height: 100%;
-         padding: 20px;
-         ul{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-         }
-         li{
-            list-style: none;line-height: 50px;
-         }
-         li:hover{
-            color: $cse-primary;
-         }
-      }
+          
+        width: 500px;
+       
+          line-height: 50px;
+          ul{
+             
+             display: flex;
+             flex-direction: column;
+             align-items:flex-start;
+              
+          }
+          li{
+             cursor: pointer;
+           list-style: none;
+           font-size: 15px;
+            
+          }
+          
+          li:hover{
+             
+             color: $cse-primary;
+          
+          }
+         
+     }
    }
    .hod-con{
       width: 100%;
@@ -503,12 +516,92 @@
         &-info{
             width: 90%;
         }
+        .lab-con{
+            column-gap: 50px;
+        }
+       
+        .lab-info{
+            width: 300px;
+            
+            padding-left: 30px;
+           
+          
+        }
     }
+
 }
 @media (max-width:1200px) {
     .departement-con{
         &-info{
             width: 90%;
+            .head-img{
+                width: 300px;
+            }
+            .head-con{
+                row-gap: 0px;
+                .head-content{
+                    line-height: 25px;
+                }
+            }
+        }
+        .card {
+            width: 300px;
+            height: 150px;
+        } 
+        .card-head{
+            font-size: 1.1rem;
+          }
+          .card-con{
+            font-size: 0.8rem;
+          }
+          .departement-grid{
+            grid-template-areas: "out out out"
+                                 "bt bt bt"
+                                 "side side side";
+            &-con1{
+                border-right: none;
+            }
+             &-con2{
+                border-right: none;
+                border-bottom: 1px solid black;
+            }
+                              
+            &-con3{
+                .grid-con{
+                    flex-direction:row;
+                    column-gap: 30px;
+                }
+            }
+          
+          }
+          .lab{
+            &-con{
+                flex-direction: column;
+            }
+            &-galary{
+                width: 90%;
+            }
+            &-info{
+                width: 90%;
+            
+                padding: 0px;
+                text-align: center;
+                 li{
+                 line-height: 30px;
+                 }
+            }
+         }
+    }
+}
+@media (max-width:1100px) {
+    .departement-con{
+       
+        .lab-info{
+     
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .head-img{
                 width: 300px;
             }
@@ -625,6 +718,9 @@
             align-items: center;
             row-gap: 20px;
         }
+    }
+    .lab-galary{
+        margin: 50px;
     }
     }
 
