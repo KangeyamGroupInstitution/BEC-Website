@@ -557,7 +557,7 @@ section {
 }
 
 .container {
-  max-width: 1044px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -709,6 +709,7 @@ section {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: 20px -10px;
 }
 .carousel__slides + .carousel__thumbnails {
@@ -716,8 +717,9 @@ section {
 }
 .carousel__thumbnails li {
   flex: 1 1 auto;
-  max-width: calc(16.6666666667% - 20px);
+  max-width: calc(12.5% - 20px);
   margin: 0 10px;
+  width: 50px;
   transition: all 300ms ease-in-out;
 }
 .carousel__thumbnails label {
@@ -756,6 +758,11 @@ section {
   aspect-ratio: 16/9;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    max-width: 700px;
+  }
+}
 @media (max-width: 700px) {
   .container {
     max-width: 500px;
@@ -768,11 +775,53 @@ section {
 @media (max-width: 500px) {
   .container {
     height: 250px;
-    max-width: 400px;
+    max-width: 370px;
   }
   section {
     aspect-ratio: 16/9;
     width: 100%;
+  }
+  label {
+    display: block;
+    position: relative;
+  }
+  label:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 70%;
+  }
+  label > img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  label:hover, label:focus {
+    cursor: pointer;
+  }
+  label:hover img, label:focus img {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+  }
+  img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc(12.5% + 15px);
+    margin: 5px 12px;
+    width: 50px;
+    transition: all 300ms ease-in-out;
   }
 }
 @media (max-width: 400px) {
@@ -781,6 +830,12 @@ section {
   }
   section {
     width: 100%;
+  }
+  .carousel__thumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
   }
 }
 @media (max-width: 350px) {
@@ -1140,9 +1195,8 @@ section {
   align-items: center;
   justify-content: center;
 }
-.departement-con .lab .lab-para {
-  width: 70%;
-  text-align: center;
+.departement-con .lab p {
+  width: 80%;
 }
 .departement-con .lab-con {
   display: flex;
@@ -1155,11 +1209,9 @@ section {
   align-items: center;
 }
 .departement-con .lab-galary {
-  width: 40%;
-  margin-right: 10%;
-  margin-left: 20%;
+  width: 50%;
   height: 100%;
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1172,17 +1224,16 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  margin: 30px;
 }
 .departement-con .lab-galary .galary-text {
   color: gray;
   font-size: 1.2rem;
+  text-align: start;
 }
 .departement-con .lab-info {
-  width: 20%;
-  text-align: start;
-  height: 100%;
-  padding: 20px;
+  width: 500px;
+  line-height: 50px;
 }
 .departement-con .lab-info ul {
   display: flex;
@@ -1190,11 +1241,12 @@ section {
   align-items: flex-start;
 }
 .departement-con .lab-info li {
+  cursor: pointer;
   list-style: none;
-  line-height: 50px;
+  font-size: 15px;
 }
 .departement-con .lab-info li:hover {
-  color: #c57d0a;
+  color: #F9A826;
 }
 .departement-con .hod-con {
   width: 100%;
@@ -1287,21 +1339,29 @@ section {
   }
 }
 @media (max-width: 1400px) {
-  .departement-con-info {
-    width: 90%;
+  .departement-con .lab-con {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .departement-con .lab-info {
+    width: 400px;
+    padding-left: 30px;
   }
 }
-@media (max-width: 1200px) {
-  .departement-con-info {
-    width: 90%;
+@media (max-width: 1100px) {
+  .departement-con .lab-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .departement-con-info .head-img {
+  .departement-con .lab-info .head-img {
     width: 300px;
   }
-  .departement-con-info .head-con {
+  .departement-con .lab-info .head-con {
     row-gap: 0px;
   }
-  .departement-con-info .head-con .head-content {
+  .departement-con .lab-info .head-con .head-content {
     line-height: 25px;
   }
   .departement-con .card {
@@ -1411,7 +1471,7 @@ section {
   }
 }
 @media (max-width: 500px) {
-  .departement-con-info .head-con .head-content {
+  .departement-con .lab-info .head-con .head-content {
     line-height: 20px;
     font-size: 0.8rem;
   }
