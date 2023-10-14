@@ -1509,6 +1509,16 @@ section {
     right: -10px;
     animation-name: move-down1;
   }
+  .departement-con .lab {
+    align-items: center;
+  }
+  .departement-con .lab p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .departement-con .lab-info li {
+    font-size: 13px;
+  }
   .departement-con .hod-con .profile .pro-img {
     width: 150px;
     height: 150px;
