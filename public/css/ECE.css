@@ -557,7 +557,7 @@ section {
 }
 
 .container {
-  max-width: 1044px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -716,6 +716,7 @@ section {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: 20px -10px;
 }
 .carousel__slides + .carousel__thumbnails {
@@ -723,8 +724,9 @@ section {
 }
 .carousel__thumbnails li {
   flex: 1 1 auto;
-  max-width: calc(16.6666666667% - 20px);
+  max-width: calc(12.5% - 20px);
   margin: 0 10px;
+  width: 50px;
   transition: all 300ms ease-in-out;
 }
 .carousel__thumbnails label {
@@ -763,6 +765,11 @@ section {
   aspect-ratio: 16/9;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    max-width: 700px;
+  }
+}
 @media (max-width: 700px) {
   .container {
     max-width: 500px;
@@ -772,14 +779,56 @@ section {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container {
-    height: 250px;
-    max-width: 400px;
+    height: 300px;
+    max-width: 370px;
   }
   section {
     aspect-ratio: 16/9;
     width: 100%;
+  }
+  label {
+    display: block;
+    position: relative;
+  }
+  label:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 70%;
+  }
+  label > img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  label:hover, label:focus {
+    cursor: pointer;
+  }
+  label:hover img, label:focus img {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+  }
+  img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc(12.5% + 10px);
+    margin: 5px 12px;
+    width: 50px;
+    transition: all 300ms ease-in-out;
   }
 }
 @media (max-width: 400px) {
@@ -788,6 +837,12 @@ section {
   }
   section {
     width: 100%;
+  }
+  .carousel__thumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
   }
 }
 @media (max-width: 350px) {
@@ -1245,6 +1300,14 @@ section {
   .departement-con-info {
     width: 90%;
   }
+  .departement-con .lab-con {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .departement-con .lab-info {
+    width: 500px;
+    padding-left: 30px;
+  }
 }
 @media (max-width: 1200px) {
   .departement-con-info {
@@ -1257,6 +1320,21 @@ section {
     row-gap: 0px;
   }
   .departement-con-info .head-con .head-content {
+    line-height: 25px;
+  }
+  .departement-con .lab-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .departement-con .lab-info .head-img {
+    width: 300px;
+  }
+  .departement-con .lab-info .head-con {
+    row-gap: 0px;
+  }
+  .departement-con .lab-info .head-con .head-content {
     line-height: 25px;
   }
   .departement-con .card {
@@ -1361,7 +1439,7 @@ section {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .departement-con .departement-grid-con3 .aids-img2 {
+  .departement-con .departement-grid-con3 .ece-img2 {
     width: 90%;
   }
 }
@@ -1388,6 +1466,16 @@ section {
     bottom: -10px;
     right: -10px;
     animation-name: move-down1;
+  }
+  .departement-con .lab {
+    align-items: center;
+  }
+  .departement-con .lab p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .departement-con .lab-info li {
+    font-size: 13px;
   }
   .departement-con .hod-con .profile .pro-img {
     width: 150px;

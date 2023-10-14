@@ -1449,24 +1449,6 @@ section {
   .departement-con .vision-mission-con {
     margin-bottom: 50px;
   }
-  .departement-con .circle {
-    width: 70px;
-    height: 70px;
-    background: #2D5DF3;
-    border-radius: 50%;
-    position: absolute;
-    filter: blur(2px);
-    animation: move-up6 2s ease-in infinite alternate-reverse;
-  }
-  .departement-con .circle:nth-child(1) {
-    top: -25px;
-    left: -25px;
-  }
-  .departement-con .circle:nth-child(2) {
-    bottom: -100px;
-    right: -25px;
-    animation-name: move-down1;
-  }
   .departement-con .card {
     margin-bottom: 100px;
   }
