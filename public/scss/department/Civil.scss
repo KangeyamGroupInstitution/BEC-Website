@@ -531,6 +531,9 @@
 }
 @media (max-width:1400px) {
     .departement-con{
+        &-info{
+            width: 90%;
+        }
         .lab-con{
             column-gap: 50px;
         }
@@ -543,9 +546,20 @@
         }
     }
 }
-@media (max-width:1100px) {
+@media (max-width:1200px) {
     .departement-con{
-       
+        &-info{
+            width: 90%;
+            .head-img{
+                width: 300px;
+            }
+            .head-con{
+                row-gap: 0px;
+                .head-content{
+                    line-height: 25px;
+                }
+            }
+        }
         .lab-info{
      
             width: 50%;
@@ -696,7 +710,7 @@
                 flex-direction:column;
                 column-gap: 30px;
             }
-            .aids-img2{
+            .civil-img2{
                 width: 90%;
             }
         }
@@ -706,8 +720,7 @@
 }
 @media (max-width:500px) {
     .departement-con{
-       
-        .lab-info{
+        &-info{
             .head-con{
                 .head-content{
                     line-height: 20px;
@@ -715,6 +728,7 @@
                 }
             }
         }
+        
         h2{
             font-size: 1.1rem;
         }

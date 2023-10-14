@@ -762,27 +762,7 @@
         .vision-mission-con{
             margin-bottom: 50px;
         }
-        .circle {
-            width: 70px;
-            height: 70px;
-            background: $cse-primary;
-            border-radius: 50%;
-            position: absolute;
-            filter: blur(2px);
-            animation: move-up6 2s ease-in infinite alternate-reverse;
-          }
-          
-          .circle:nth-child(1) {
-            top: -25px;
-            left: -25px;
-          }
-          
-          .circle:nth-child(2) {
-            bottom: -100px;
-            right: -25px;
-            animation-name: move-down1;
-          }
-          
+        
         
         .card{
             margin-bottom: 100px;
