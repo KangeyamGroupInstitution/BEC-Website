@@ -477,12 +477,38 @@
         &-info{
             width: 90%;
         }
+        .lab-con{
+            column-gap: 50px;
+        }
+       
+        .lab-info{
+            width: 400px;
+            padding-left: 30px;
+           
+          
+        }
     }
 }
 @media (max-width:1200px) {
     .departement-con{
         &-info{
             width: 90%;
+            .head-img{
+                width: 300px;
+            }
+            .head-con{
+                row-gap: 0px;
+                .head-content{
+                    line-height: 25px;
+                }
+            }
+        }
+        .lab-info{
+     
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .head-img{
                 width: 300px;
             }
@@ -627,7 +653,7 @@
                 flex-direction:column;
                 column-gap: 30px;
             }
-            .aids-img2{
+            .eee-img2{
                 width: 90%;
             }
         }
