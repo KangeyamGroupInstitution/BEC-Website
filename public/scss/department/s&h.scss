@@ -344,6 +344,7 @@
             width: 20%;
             text-align: start;
              height: 100%;
+             margin-bottom: 50px;
              padding: 20px;
              ul{
                 display: flex;
@@ -568,6 +569,23 @@
             flex-direction: column;
             }
         }
+        .lab{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+            &-con{
+                .lab-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                 
+                 
+                }
+            }
+
+        }
         .hod-con{
             .teachers{
                 grid-template-columns: repeat(2,280px);
@@ -634,7 +652,7 @@
    
 }
 }
-@media (max-width:500px) {
+@media (max-width:550px) {
     .departement-con{
         &-info{
             .head-con{
@@ -663,6 +681,20 @@
             bottom: -10px;
             right: -10px;
             animation-name: move-down1;
+          }
+          .lab{
+            align-items: center;
+
+            p{ 
+                width: 80%;
+                font-size: 13px;
+            }
+            &-info{
+                width: 250px !important;
+                
+               
+             
+            }
           }
           .hod-con{
         .profile{
