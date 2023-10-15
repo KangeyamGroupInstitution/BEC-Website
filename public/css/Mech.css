@@ -1408,7 +1408,7 @@ section {
     grid-template-columns: repeat(2, 280px);
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .departement-con {
     row-gap: 30px;
   }
