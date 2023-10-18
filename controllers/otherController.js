@@ -74,6 +74,24 @@ class otherController {
         console.log(viewsPath);
         res.render(viewsPath);
     }
+    static showFeedbackForm = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','Aggregation','nacc','feedbackForms.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showGrievancesPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','Aggregation','nacc','grieve&Red.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
+    static showAnnualPage = (req, res) => {
+        const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+        const viewsPath = path.join(__dirname,'..','views','Aggregation','nacc','annual.ejs');
+        console.log(viewsPath);
+        res.render(viewsPath);
+    }
     static showBeyoundPage = (req, res) => {
         const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
         const viewsPath = path.join(__dirname,'..','views','campus','beyound.ejs');
