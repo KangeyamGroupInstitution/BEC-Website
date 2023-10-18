@@ -350,7 +350,9 @@
                 align-items: flex-start;
              }
              li{
-                list-style: none;line-height: 50px;
+                cursor: pointer;
+                list-style: none;
+                line-height: 50px;
              }
              li:hover{
                 color: $mech-primary;
@@ -468,7 +470,7 @@
          }
     }
 }
-@media (max-width:1400px) {
+@media (max-width:2200px) {
     .departement-con{
         &-info{
             width: 90%;

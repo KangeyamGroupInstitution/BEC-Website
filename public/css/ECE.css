@@ -1166,6 +1166,7 @@ section {
   align-items: flex-start;
 }
 .departement-con .lab-info li {
+  cursor: pointer;
   list-style: none;
   line-height: 50px;
 }

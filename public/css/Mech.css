@@ -1222,6 +1222,7 @@ section {
   align-items: flex-start;
 }
 .departement-con .lab-info li {
+  cursor: pointer;
   list-style: none;
   line-height: 50px;
 }
@@ -1317,7 +1318,7 @@ section {
     width: 90%;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 2200px) {
   .departement-con-info {
     width: 90%;
   }

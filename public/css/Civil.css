@@ -1157,11 +1157,11 @@ section {
   flex-direction: column;
   text-align: center;
   row-gap: 20px;
-  align-items: center;
   justify-content: center;
 }
 .departement-con .lab p {
   width: 80%;
+  align-self: center;
 }
 .departement-con .lab-con {
   display: flex;
@@ -1174,7 +1174,7 @@ section {
   align-items: center;
 }
 .departement-con .lab-galary {
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -1189,17 +1189,17 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 5%;
 }
 .departement-con .lab-galary .galary-text {
   color: gray;
   font-size: 1.2rem;
-  text-align: start;
 }
 .departement-con .lab-info {
-  background-color: antiquewhite;
-  width: 500px;
-  line-height: 50px;
+  width: 30%;
+  text-align: start;
+  height: 100%;
+  padding: 20px;
 }
 .departement-con .lab-info ul {
   display: flex;
@@ -1209,7 +1209,7 @@ section {
 .departement-con .lab-info li {
   cursor: pointer;
   list-style: none;
-  font-size: 15px;
+  line-height: 50px;
 }
 .departement-con .lab-info li:hover {
   color: #F9A826;
@@ -1260,7 +1260,6 @@ section {
   margin-bottom: 20px;
 }
 .departement-con .hod-con .profile .pro-images {
-  border-radius: 10px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1313,7 +1312,7 @@ section {
          column-gap: 50px;
   }
   .departement-con .lab-info {
-    width: 400px;
+    width: 500px;
     padding-left: 30px;
   }
 }
