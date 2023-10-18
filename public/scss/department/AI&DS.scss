@@ -674,6 +674,23 @@
 @media (max-width:700px) {
     .departement-con{
     .hod-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+        align-items: center;
+        justify-content: space-around;
+        h2{
+            margin-bottom: 50px;
+        }
+        .hod{
+            width: 280px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
         .teachers{
             grid-template-columns: repeat(1,280px);
             .teacher{
@@ -685,6 +702,7 @@
             }
         }
     }
+  
 }
 }
 @media (max-width:600px) {

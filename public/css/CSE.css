@@ -1110,7 +1110,6 @@ section {
   flex-direction: column;
   text-align: center;
   row-gap: 20px;
-  align-items: center;
   justify-content: center;
 }
 .departement-con .lab p {
@@ -1127,7 +1126,7 @@ section {
   align-items: center;
 }
 .departement-con .lab-galary {
-  width: 60%;
+  width: 70%;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -1149,8 +1148,10 @@ section {
   font-size: 1.2rem;
 }
 .departement-con .lab-info {
-  width: 500px;
-  line-height: 50px;
+  width: 20%;
+  text-align: start;
+  height: 100%;
+  padding: 20px;
 }
 .departement-con .lab-info ul {
   display: flex;
@@ -1160,7 +1161,7 @@ section {
 .departement-con .lab-info li {
   cursor: pointer;
   list-style: none;
-  font-size: 15px;
+  line-height: 50px;
 }
 .departement-con .lab-info li:hover {
   color: #2D5DF3;
@@ -1278,6 +1279,21 @@ section {
     row-gap: 0px;
   }
   .departement-con-info .head-con .head-content {
+    line-height: 25px;
+  }
+  .departement-con .lab-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .departement-con .lab-info .head-img {
+    width: 300px;
+  }
+  .departement-con .lab-info .head-con {
+    row-gap: 0px;
+  }
+  .departement-con .lab-info .head-con .head-content {
     line-height: 25px;
   }
   .departement-con .card {

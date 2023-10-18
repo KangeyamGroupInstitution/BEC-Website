@@ -303,7 +303,6 @@
         flex-direction: column;
         text-align: center;
         row-gap: 20px;
-      
         justify-content: center;
         &-con{
             display: flex;
@@ -347,6 +346,7 @@
                 align-items: flex-start;
              }
              li{
+                cursor: pointer;
                 list-style: none;
                 line-height: 50px;
              }
