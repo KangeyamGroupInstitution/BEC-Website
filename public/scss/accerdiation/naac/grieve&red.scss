@@ -27,12 +27,20 @@
     &-text{
         text-decoration: underline;
         font-weight: 900;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: $primary-text-color;
         font-family:$primary-text;
     }
+    .para{
+        font-size: 1.35rem;
+        color: $primary-text-color;
+        font-family:$content-text;
+        line-height: 30px;
+        padding: 20px 50px;
+    }
     table{
         width: 1200px;
+        font-size: 1.35rem;
         font-family:$primary-text;
         th{
             background-color: $primary-text-color;
