@@ -330,12 +330,12 @@
         &-white{
             width: 60%;
             border-radius: 20px;
-            background-color:whitesmoke ;
-            background-image: url(../../img/naac/drop.png);
+            // background-color:whitesmoke ;
+            // background-image: url(../../img/naac/drop.png);
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 5px 5px 20px rgb(177, 174, 174);
-            padding: 30px;
+            padding: 30px 50px;
             margin: 50px;
             &-text{
                 text-decoration: underline;
