@@ -1,1 +1,680 @@
 @use "../nav/nav2";
+@use "../nav/footer";
+@use "../abstract/mixin" as *;
+@use "../abstract/button" as*;
+@use "../abstract/color" as *;
+.infra{
+    padding: 5%
+  }
+  .infra-text{
+      @include  head-blue;
+      margin-top: 3%;
+      text-transform: capitalize;
+      color: $primary-text-color-hover;
+  }
+  .hover1:hover{
+    color: $primary-text-color-hover;
+  }
+  .class-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 35px;
+  }
+  .infra-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 10%;
+}
+.infra-img{
+    border: 5px solid $primary-text-color;
+}
+.infra-img-1{
+    display: none;
+}
+.infra-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+
+  }
+
+  .audi-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%
+  }
+  .audi-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 10%;
+}
+
+.audi-img2{
+    border: 5px solid $primary-text-color;
+}
+.audi-img2-1{
+    display: none;
+}
+.audi-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+
+  }
+.hostel-text{
+  @include head-blue;
+  font-size: 25px;
+  font-weight: 15px;
+  font-family: $primary-text;
+  text-align: center;
+  text-decoration: underline  $primary-text-color-hover;
+  margin-top: 5%;
+}
+.hostel-con-1{
+  @include head-blue;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ gap: 10%;
+}
+.hostel-con{
+  margin-top: 40px;
+  text-align: center;
+  margin-right: 10%;
+  font-family: $primary-text;
+  color: $primary-text-color;
+  font-weight: 20px;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: justify;
+  gap: 10%;
+  //  border-left:5px solid $primary-text-color-hover ;
+}
+.hostel-img{
+  border: 5px solid $primary-text-color;
+}
+.hostel-img-1{
+  display: none;
+}
+.hostel-ul{
+  text-align: justify;
+  font-family: $primary-text;
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary-text-color;
+  line-height:30px;
+
+}
+.mess-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%;
+  }
+  .mess-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 15%;
+}
+.mess-con{
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 10%;
+    font-family: $primary-text;
+    color: $primary-text-color;
+    font-weight: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    gap: 10%;
+    //  border-left:5px solid $primary-text-color-hover ;
+}
+.mess-img2{
+    border: 5px solid $primary-text-color;
+}
+.mess-img2-1{
+    display: none;
+}
+.mess-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+
+  }
+  .cafe-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%;
+  }
+  .cafe-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap:20%;
+  }
+  .cafe-img{
+    border: 5px solid $primary-text-color;
+  }
+  .cafe-img-1{
+    display: none;
+  }
+  .cafe-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+  
+  }
+  .solar-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%;
+  }
+  .solar-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 20%;
+}
+.solar-img2{
+    border: 5px solid $primary-text-color;
+  
+}
+.solar-img2-1{
+    display: none;
+}
+.solar-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 40px;
+    margin-right: 2%;
+
+  }
+  .staff-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%;
+  }
+  .staff-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap:25%;
+  }
+  .staff-img{
+    border: 5px solid $primary-text-color;
+  }
+  .staff-img-1{
+    display: none;
+  }
+  .staff-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+  
+  }
+  .ro-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 5%;
+  }
+  .ro-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 15%;
+
+}
+.ro-img2{
+    border: 5px solid $primary-text-color;
+   margin-left: 10%;
+}
+.ro-img2-1{
+    display: none;
+}
+.ro-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 16px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+    margin-right: 2%;
+  }
+  .plant-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 35px;
+    margin-top: 5%;
+  }
+  .plant-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap:15%;
+  }
+  .plant-img{
+    border: 5px solid $primary-text-color;
+  }
+  .plant-img-1{
+    display: none;
+  }
+  .plant-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+  
+  }
+  .rain-text{
+    @include head-blue;
+    font-size: 20px;
+    font-weight: 15px;
+    font-family: $primary-text;
+    text-align: center;
+    text-decoration: underline  $primary-text-color-hover;
+    margin-top: 35px;
+    margin-top: 5%;
+  }
+  .rain-con-1{
+    @include head-blue;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 15%;
+
+}
+.rain-img2{
+    border: 5px solid $primary-text-color;
+   margin-left: 10%;
+}
+.rain-img2-1{
+    display: none;
+}
+.rain-ul{
+    text-align: justify;
+    font-family: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-text-color;
+    line-height: 30px;
+    margin-right: 2%;
+  }
+  @media(max-width:1100px){
+    .infra-text{
+      margin-top: 10%;
+    }
+    .infra-img-1{
+        display: block;
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+    }
+    .infra-img{
+        display: none;
+        justify-content: center;
+    }
+    .infra-con-1{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .infra-ul{
+      margin-top: 5%;
+     margin-left: 12%;
+     font-size: 15px;
+     line-height: 25px;
+    }
+  
+  .audi-text{
+    margin-top: 10%;
+  }
+  .audi-img2{
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+  }
+  .audi-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .audi-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .hostel-text{
+    margin-top: 10%;
+  }
+  .hostel-img-1{
+      display: block;
+  justify-content: center;
+  border: 5px solid $primary-text-color;
+  height: 60%;
+  width: 50%;
+  }
+  .hostel-img{
+      display: none;
+      justify-content: center;
+  }
+  .hostel-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .hostel-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .mess-text{
+    margin-top: 10%;
+  }
+  .mess-img2{
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+  }
+  .mess-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .mess-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .cafe-text{
+    margin-top: 10%;
+  }
+  .cafe-img-1{
+      display: block;
+  justify-content: center;
+  border: 5px solid $primary-text-color;
+  height: 60%;
+  width: 50%;
+  }
+  .cafe-img{
+      display: none;
+      justify-content: center;
+  }
+  .cafe-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .cafe-ul{
+    margin-top: 5%;
+   margin-right: 8%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .solar-text{
+    margin-top: 10%;
+  }
+  .solar-img2{
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+  }
+  .solar-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .solar-ul{
+    margin-top: 5%;
+   margin-right: 14%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .staff-text{
+    margin-top: 10%;
+  }
+  .staff-img-1{
+      display: block;
+  justify-content: center;
+  border: 5px solid $primary-text-color;
+  height: 60%;
+  width: 50%;
+  }
+  .staff-img{
+      display: none;
+      justify-content: center;
+  }
+  .staff-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .staff-ul{
+    margin-top: 5%;
+   margin-right: 30%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .ro-text{
+    margin-top: 10%;
+  }
+  .ro-img2{
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+    margin-right: 10%;
+  }
+  .ro-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .ro-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .plant-text{
+    margin-top: 10%;
+  }
+  .plant-img-1{
+      display: block;
+  justify-content: center;
+  border: 5px solid $primary-text-color;
+  height: 60%;
+  width: 50%;
+  }
+  .plant-img{
+      display: none;
+      justify-content: center;
+      
+  }
+  .plant-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .plant-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .rain-text{
+    margin-top: 10%;
+  }
+  .rain-img2{
+    justify-content: center;
+    border: 5px solid $primary-text-color;
+    height: 60%;
+    width: 50%;
+    margin-right: 10%;
+  }
+  .rain-con-1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .rain-ul{
+    margin-top: 5%;
+   margin-left: 12%;
+   font-size: 15px;
+   line-height: 25px;
+  }
+  }
+  @media(max-width:700px){
+    .infra-text{
+      margin-top: 20%;
+    }
+    .infra-img-1{
+      height: 90%;
+      width: 85%;
+    }
+    .audi-img2{
+      height: 90%;
+      width: 85%;
+    }
+    .hostel-img-1{
+      height: 90%;
+      width: 85%;
+    }
+    .mess-img2{
+      height: 90%;
+      width: 85%;
+    }
+    .cafe-img-1{
+      height: 90%;
+      width: 85%;
+    }
+    .solar-img2{
+      height: 90%;
+      width: 85%;
+    }
+    .staff-img-1{
+      height: 90%;
+      width: 85%;
+    }
+    .ro-img2{
+      height: 90%;
+      width: 85%;
+    }
+    .plant-img-1{
+      height: 50%;
+      width: 65%;
+    }
+    .rain-img2{
+      height: 90%;
+      width: 85%;
+    }
+  }
+  @media(max-width:530px){
+    .infra-text{
+      margin-top: 30%;
+    }
+    .cafe-ul{
+      margin-left: 12%;
+    }
+    .solar-ul{
+      margin-left: 12%;
+    }
+    .staff-ul{
+      margin-left: 12%;
+      line-height: 20px;
+    }
+    .mess-ul{
+      margin-left: 12%;
+    }
+    .ro-ul{
+      line-height: 25px;
+    }
+  }
