@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -744,6 +745,7 @@ section {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: 20px -10px;
 }
 .carousel__slides + .carousel__thumbnails {
@@ -751,8 +753,9 @@ section {
 }
 .carousel__thumbnails li {
   flex: 1 1 auto;
-  max-width: calc(16.6666666667% - 20px);
+  max-width: calc(12.5% - 20px);
   margin: 0 10px;
+  width: 50px;
   transition: all 300ms ease-in-out;
 }
 .carousel__thumbnails label {
@@ -791,6 +794,35 @@ section {
   aspect-ratio: 16/9;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    max-width: 900px;
+  }
+  .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc(2% + 30px);
+    margin: 5px 12px;
+    width: 50px;
+    transition: all 300ms ease-in-out;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    max-width: 700px;
+  }
+  .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc(2% + 30px);
+    margin: 5px 12px;
+    width: 50px;
+    transition: all 300ms ease-in-out;
+  }
+}
 @media (max-width: 700px) {
   .container {
     max-width: 500px;
@@ -800,14 +832,21 @@ section {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container {
-    height: 250px;
-    max-width: 400px;
+    height: 330px;
+    max-width: 370px;
   }
   section {
     aspect-ratio: 16/9;
     width: 100%;
+  }
+  .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc(10% + 20px);
+    margin: 5px 12px;
+    width: 50px;
+    transition: all 300ms ease-in-out;
   }
 }
 @media (max-width: 400px) {
@@ -816,6 +855,12 @@ section {
   }
   section {
     width: 100%;
+  }
+  .carousel__thumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
   }
 }
 @media (max-width: 350px) {
@@ -1178,6 +1223,7 @@ section {
   align-items: flex-start;
 }
 .departement-con .lab-info li {
+  cursor: pointer;
   list-style: none;
   line-height: 50px;
 }
@@ -1273,9 +1319,21 @@ section {
     width: 90%;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 2200px) {
   .departement-con-info {
     width: 90%;
+  }
+  .lab-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .lab-info {
+    width: 800px !important;
+    display: flex;
+    flex-direction: column;
+    height: 400px !important;
+    overflow: hidden;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 1200px) {
@@ -1317,18 +1375,16 @@ section {
          column-gap: 30px;
   }
   .departement-con .lab-con {
+    display: flex;
     flex-direction: column;
   }
-  .departement-con .lab-galary {
-    width: 90%;
-  }
   .departement-con .lab-info {
-    width: 90%;
-    padding: 0px;
-    text-align: center;
-  }
-  .departement-con .lab-info li {
-    line-height: 30px;
+    width: 800px !important;
+    display: flex;
+    flex-direction: column;
+    height: 400px !important;
+    overflow: hidden;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 1000px) {
@@ -1376,6 +1432,16 @@ section {
     align-items: center;
     row-gap: 20px;
   }
+  .departement-con .lab {
+    align-items: center;
+  }
+  .departement-con .lab p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .departement-con .lab-info {
+    width: 650px !important;
+  }
 }
 @media (max-width: 700px) {
   .departement-con .hod-con .teachers {
@@ -1393,11 +1459,14 @@ section {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .departement-con .departement-grid-con3 .aids-img2 {
+  .departement-con .departement-grid-con3 .mech-img2 {
     width: 90%;
   }
+  .departement-con .lab-info {
+    height: 800px !important;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .departement-con-info .head-con .head-content {
     line-height: 20px;
     font-size: 0.8rem;
@@ -1420,6 +1489,19 @@ section {
     bottom: -10px;
     right: -10px;
     animation-name: move-down1;
+  }
+  .departement-con .lab {
+    align-items: center;
+  }
+  .departement-con .lab p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .departement-con .lab-info {
+    width: 300px !important;
+  }
+  .departement-con .lab-info li {
+    font-size: 13px;
   }
   .departement-con .hod-con .profile .pro-img {
     width: 150px;

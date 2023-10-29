@@ -35,7 +35,7 @@ figcaption{
   }
   
   .container {
-      max-width: 1044px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 0 20px;
   }
@@ -55,7 +55,7 @@ figcaption{
           overflow: hidden;
           padding: 0;
           position: absolute;
-          
+
           &:nth-of-type(9):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -800%; }
           &:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -700%; }
           &:nth-of-type(7):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -600%; }
@@ -78,6 +78,7 @@ figcaption{
           &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) { box-shadow: 0px 0px 0px 3px $ece-primary; border-radius: 10px; }
           &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) { box-shadow: 0px 0px 0px 3px $ece-primary; border-radius: 10px; }
           &:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) { box-shadow: 0px 0px 0px 3px $ece-primary; border-radius: 10px; }
+
 
       }
   }
@@ -145,6 +146,7 @@ figcaption{
       padding: 0;
       margin: 0;
       display: flex;
+      flex-wrap: wrap;
       
       margin: 20px -10px;
       
@@ -154,8 +156,9 @@ figcaption{
       
       li {        
           flex: 1 1 auto;
-          max-width: calc((100% / 6) - 20px);  
+        max-width: calc((100% / 8) - 20px);  
           margin: 0 10px;
+          width: 50px;
           transition: all 300ms ease-in-out;
       }
       
@@ -171,6 +174,7 @@ figcaption{
               img {
                   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
                   transition: all 300ms ease-in-out;
+            
               }
           }
       }
@@ -184,6 +188,14 @@ figcaption{
           aspect-ratio: 16/9;
       }
   }
+
+  @media (max-width:1300px) {
+    .container {
+
+        max-width:700px;
+
+    }
+  }
   @media (max-width:700px) {
     .container {
         max-width:500px;
@@ -195,16 +207,27 @@ figcaption{
     }
    
   }
-  @media (max-width:500px) {
+  @media (max-width:550px) {
     .container {
-        height: 250px;
-        max-width:400px;
+        height: 300px;
+        max-width:370px;
+        
 
     }
     section {
         aspect-ratio: 16/9; 
         width: 100%;
     }
+   
+      .carousel__thumbnails {
+        li{
+            flex: 1 1 auto;
+            max-width: calc((100% / 8) + 10px);  
+              margin: 5px 12px;
+              width: 50px;
+              transition: all 300ms ease-in-out;
+          }
+      }
   }
   @media (max-width:400px) {
     .container {
@@ -214,6 +237,16 @@ figcaption{
     section {
        
         width: 100%;
+    }
+    .carousel__thumbnails {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       width: 300px;
+        
+      
+        
+        
     }
   }
   @media (max-width:350px) {

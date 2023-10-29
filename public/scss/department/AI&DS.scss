@@ -4,6 +4,8 @@
 @use '../nav/footer';
 @use "../carosal/_departement-carosal-aids.scss";
 @use "../department/response-dept";
+
+
 .departement-con{
     margin-top: 150px;
     row-gap: 100px;
@@ -306,6 +308,7 @@
      }
      .lab{
         width: 100%;
+       
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -336,7 +339,7 @@
             flex-direction: row;
             justify-content: center;    
             align-items: center;
-            margin: 10%;
+            margin: 30px;
            }
            .galary-text{
              color: gray;
@@ -345,25 +348,37 @@
            }
            
         }
+        
+            
+        
         &-info{
-            width: 20%;
-            text-align: start;
-             height: 100%;
-             padding: 20px;
+          
+         
+             line-height: 50px;
              ul{
+                
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items:flex-start;
+               
+                
+          
+                
              }
              li{
-                list-style: none;line-height: 50px;
+                cursor: pointer;
+              list-style: none;
+              font-size: 15px;
+               
              }
+             
              li:hover{
                 color: $aids-primary;
              }
             
         }
      }
+    
      .hod-con{
         width: 100%;
         display: flex;
@@ -437,8 +452,8 @@
             }
         }
      }
-}
 
+    }
 
 
 
@@ -535,26 +550,36 @@
           
           }
           .lab{
+            align-items: center;
+            p{
+                width: 80%;
+            }
             &-con{
                 flex-direction: column;
             }
             &-galary{
-                width: 90%;
+                width: 100%;
             }
             &-info{
-                width: 90%;
+                
                 padding: 0px;
-                text-align: center;
+                text-align: start;
                  li{
                  line-height: 30px;
+                 font-size: 15px;
+                
+                 i{
+                    padding-top: 7px;
                  }
+                 }
+                 
             }
          }
     }
 }
 @media (max-width:1000px) {
     .departement-con{
-        
+      
         &-info{
             flex-direction: column;
             row-gap: 20px;
@@ -585,11 +610,41 @@
                 grid-template-columns: repeat(2,280px);
             }
         }
+        .lab {
+            align-items: center;
+        p{
+            width: 80%;
+        }
+    }
+        .lab-galary{
+            width: 95%;
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;
+        }
+        .lab-info{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                
+                width: 100%;
+              
+
+            }
+            li{
+               display: flex;
+               font-size: 15px;
+            }
+        }
     }
 }
+
 @media (max-width:800px) {
     .departement-con{
        row-gap: 30px;
+      
        .vision-mission-con{
         flex-direction: column;
         justify-content: center;
@@ -610,13 +665,32 @@
             align-items: center;
             row-gap: 20px;
         }
+        
     }
+   
     }
 
 }
 @media (max-width:700px) {
     .departement-con{
     .hod-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+        align-items: center;
+        justify-content: space-around;
+        h2{
+            margin-bottom: 50px;
+        }
+        .hod{
+            width: 280px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
         .teachers{
             grid-template-columns: repeat(1,280px);
             .teacher{
@@ -628,6 +702,7 @@
             }
         }
     }
+  
 }
 }
 @media (max-width:600px) {

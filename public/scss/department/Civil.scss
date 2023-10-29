@@ -337,15 +337,16 @@
      }
      .lab{
         width: 100%;
+       
         display: flex;
         flex-direction: column;
         text-align: center;
         row-gap: 20px;
-        align-items: center;
+      
         justify-content: center;
-        .lab-para{
-            width: 70%;
-            text-align: center;
+        p{
+            width: 80%;
+            align-self: center;
         }
         &-con{
             display: flex;
@@ -357,17 +358,16 @@
             align-items: center;
         }
         &-galary{
-            width: 40%;
-             margin-right: 10%;
-             margin-left: 20%;
+             width: 60%;
              height: 100%;
-             padding: 50px;
+             padding: 20px;
              display: flex;
              flex-direction: row;
              justify-content: center;
              align-items: center;
              column-gap: 50px;
            .galary-photo{
+    
             display: flex;
             flex-direction: row;
             justify-content: center;    
@@ -377,29 +377,45 @@
            .galary-text{
              color: gray;
              font-size: 1.2rem;
+             
            }
            
         }
+        
+            
+        
         &-info{
-           
+         
+            width: 30%;
+            text-align: start;
+             height: 100%;
+             padding: 20px;
+             ul{
+                
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+               
+                
           
-             width: 20%;
-             text-align: start;
-              height: 100%;
-              padding: 20px;
-              ul{
-                 display: flex;
-                 flex-direction: column;
-                 align-items: flex-start;
-              }
-              li{
-                 list-style: none;line-height: 50px;
-              }
-              li:hover{
-                color: #c57d0a;
-              }
+                
+             }
+             li{
+                cursor: pointer;
+                list-style: none;
+                line-height: 50px;
+               
+             }
+             
+             li:hover{
+                
+                color: $civil-primary;
+             
+             }
+            
         }
      }
+    
      .hod-con{
         width: 100%;
         display: flex;
@@ -449,7 +465,7 @@
                 margin-bottom: 20px;
            } 
            .pro-images{
-            border-radius: 10px;
+          
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -520,12 +536,38 @@
         &-info{
             width: 90%;
         }
+        .lab-con{
+            column-gap: 50px;
+        }
+       
+        .lab-info{
+            width: 500px;
+            padding-left: 30px;
+           
+          
+        }
     }
 }
 @media (max-width:1200px) {
     .departement-con{
         &-info{
             width: 90%;
+            .head-img{
+                width: 300px;
+            }
+            .head-con{
+                row-gap: 0px;
+                .head-content{
+                    line-height: 25px;
+                }
+            }
+        }
+        .lab-info{
+     
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .head-img{
                 width: 300px;
             }
@@ -670,7 +712,7 @@
                 flex-direction:column;
                 column-gap: 30px;
             }
-            .aids-img2{
+            .civil-img2{
                 width: 90%;
             }
         }
@@ -688,6 +730,7 @@
                 }
             }
         }
+        
         h2{
             font-size: 1.1rem;
         }
@@ -707,6 +750,16 @@
             bottom: -10px;
             right: -10px;
             animation-name: move-down1;
+          }
+          .lab{
+            align-items: center;
+            p{ 
+                width: 80%;
+                font-size: 13px;
+            }
+          }
+          .lab-info li{
+                font-size: 13px;
           }
           .hod-con{
         .profile{

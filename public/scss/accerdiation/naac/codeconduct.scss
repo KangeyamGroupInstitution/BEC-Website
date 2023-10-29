@@ -209,12 +209,6 @@ strong{
         line-height: 1.2em;
       }
       
-      // .accordion label:hover,
-      // .accordion label:focus {
-      //   background: #d8d8d8;
-      //   color: $primary-text-color;
-      // }
-      
       .accordion .handle label:before {
         font-family: 'fontawesome';
         content: "\f054";
@@ -581,4 +575,39 @@ strong{
     .accordion p:last-child {
       margin-bottom: 0;
     }
+}
+
+@media (max-width:1000px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 600px;
+    }
+    .accordion{
+      width: 600px;
+    }
+  }
+
+}
+
+@media (max-width:700px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 500px;
+    }
+    .accordion{
+      width: 500px;
+    }
+  }
+
+}
+@media (max-width:500px) {
+  .code-of-conduct-for-students, .code-of-conduct-for-non-teaching-staff, .code-of-conduct-for-others,.code-of-conduct-for-the-teaching-staff{
+    .label-item{
+      width: 300px;
+    }
+    .accordion{
+      width: 300px;
+    }
+  }
+
 }
