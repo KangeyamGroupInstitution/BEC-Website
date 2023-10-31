@@ -5,702 +5,890 @@
 @use"../../abstract/mixin";
 @use"../../abstract/button";
 *{
-    font-family: Open Sans;
-  
-
+    // font-family: Open Sans;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body{
-    width: 100%;
-    
-    box-sizing: border-box;
-    display: flex;
-    margin-top: 200px;
-    background-color: #f3f5f7;
-    flex-direction: column;
-    margin: 200px 0px ;
-    align-items: center;
-    padding: 0px;
-   
-    h1{
-        margin-bottom: 5%;
-        text-decoration: underline;
-        color: #ae3333;
-    }
-
-    
-    .div1{
-        background-color: $main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-start;
-        height: 500px;
-        width: 70%;
-        top: 190vh;
-        transform: rotate(4deg);
-        left: -20px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-
-    }
-    .div2{
-        background-color: $main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-start;
-        height: 400px;
-        width: 70%;
-        top: 220vh;
-        transform: rotate(-4deg);
-        left: -20px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-    .div3{
-        background-color: $main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-start;
-        height: 591.5px;
-        width: 71%;
-        top: 195vh;
-        transform: rotate(0deg);
-        left: -20px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-    .div{
-
-        
-        position: absolute;
-        z-index: -1;
-        align-self: flex-start;
-        height: 100vh;
+    margin-top: 100px;
+    main{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        overflow: hidden;
-        margin: 0px;
-        top: 330vh;
-        
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 80px;
-    }
-    .div1-1{
-        background-color: $main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-end;
-        height: 400px;
-        width: 70%;
-        top: 15vh;
-        transform: rotate(-4deg);
-        right: -20px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-
-    }
-    .div2-1{
-        background-color:$main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-end;
-        height: 400px;
-        width: 70%;
-        top: 45vh;
-        transform: rotate(4deg);
-        right: -20px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-    }
-    .div3-1{
-        background-color: $main-color;
-        position: absolute;
-        z-index: -1;
-        align-self: flex-end;
-        height: 591.5px;
-        width: 71%;
-        top: 20vh;
-        transform: rotate(0deg);
-        right: -20px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-    }
-
-   
-}
-.bg-con-cap{
-    
-    display: flex;
-   
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-
-}
-.soft-skills{
-    width: 70%;
-    //   background-color: rgb(161, 177, 196);
-        box-shadow: $white-shadow;
-        // background-image: linear-gradient(to left,#001d3d,#003566,#ffc300);
-        //background-image: linear-gradient(to left,#616263,#8f8e8b,#141415);
-        padding: 5%;
-        flex-wrap: wrap;
-        display: flex;
-        border-radius: 50%;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background-size: cover;
-  
-}
-.naac{
-    width: 200px;
-   
-}
-.soft-skills-content{
-    display: flex;
-       
-        flex-direction: column;
-        align-items: center;
-        background-size: cover;
-    h1{
-        color: $form-blue;
-        font-size: 33px;
-        text-align: center;
-        font-weight: 700;
-        
-        
-    }
-    p{  width: 70%;
-        text-align: center;
-        color: $form-blue;
-        padding-top: 2%;
-        line-height: 32px;
-        font-weight: 700;
-        text-align: center;
-    }
-}
-.soft-skills-points{
-    width: 500px;
-    text-align: center;
-    ul{
-        list-style: none;
-        text-align: left;
-        padding-top: 15%;
-        
-    }
-    li{
-     color: $form-blue;
-        padding: 2%;
-        font-size: 15px;
-    }
-
-}
-.photo-con{
-    margin-top: 150px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    &-imgs{
-    
-        width: 65%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-       
-        .cap-card1{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
-            display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Leadership-Competency.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-              
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
-            }
-            
-            }
-            .cap-card1:hover{
-                p{
-                    display: none;
-                    
-                }
-        }
-        .cap-card2{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
-            display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Webinar.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-              
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
-            }
-            
-            }
-            .cap-card2:hover{
-                p{
-                    display: none;
-                    
-                }
-        }
-
-    }
-    .naac{
-        width: 23%;
-        height: 500px;
-        
-        margin-left: 10px;
-        padding-top: 20px;
-        padding-left: 20px;
-        border: 5px solid #968a50;
-        background-color: #001d3d;
-        border-radius: 8%;
-        h1{
+        .text-head{
             text-align: center;
-            color: #968a50;
             text-decoration: underline;
-            font-size: 30px;
-    
+            font-size: 1.75rem;
+            color: $primary-text-color;
+            font-family:$content-text;
+            padding: 20px 50px;
         }
-        ul{
-            padding-top: 2%;
-            list-style: none;
-        }
-        li{
-            padding: 2%;
+        .cap{
+            width: 100%;
             display: flex;
-        }
-        li a{
-          font-size: 15px;
-            color: #968a50;
-            font-weight: 700;
-        }
-        li a:hover{
-          font-size: 15px;
-            color: #ffc300;
-            font-weight: 700;
-            
-        }
-        i{
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
-            background-color: #968a50;
+            &-soft{
+                width: 60%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                -10px -10px 20px rgb(229, 228, 228);
+                padding: 30px;
+                border-radius: 20px;
+                // align-items: center;
+                &-head{
+                    text-align: center;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    color: $primary-nav-color;
+                    font-family:$content-text;
+                    padding: 20px 50px;
+                }
+                &-para{
+                    font-size: 1.5rem;
+                    color: $primary-text-color;
+                    font-family:$content-text;
+                    line-height: 35px;
+                }
+                &-list{
+                    li{
+                        list-style-type: circle;
+                        list-style: 30px;
+                        margin-left: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        color: $green-color;
+                        font-family:$content-text;
+                        line-height: 30px;
+                        padding: 10px;
+                        &:hover{
+                            color: $gold-color;
+                          }
+                    }
+                    li::marker {
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: black;
+                      }
+                }
+            }
+            &-img{
+                margin: 70px 0px;
+                display: flex;
+                flex-direction: row;
+                gap: 70px;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                align-items: center;
+                &-card{
+                    height: 550px;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    border: 5px solid $primary-text-color;
+                    border-radius: 10px;
+                    &-content{
+                        padding: 30px 10px;
+                        font-size: 1.5rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 35px;
+                        // border: 10px solid $primary-text-color;
+                    }
+                }
+            }
+            &-life{
+                width: 60%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                -10px -10px 20px rgb(229, 228, 228);
+                padding: 30px;
+                border-radius: 20px;
+                // align-items: center;
+                &-head{
+                    text-align: center;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    color: $primary-nav-color;
+                    font-family:$content-text;
+                    padding: 20px 50px;
+                }
+                &-para{
+                    font-size: 1.5rem;
+                    color: $primary-text-color;
+                    font-family:$content-text;
+                    line-height: 35px;
+                }
+                &-list{
+                    li{
+                        list-style-type: circle;
+                        list-style: 30px;
+                        margin-left: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        color: $green-color;
+                        font-family:$content-text;
+                        line-height: 30px;
+                        padding: 10px;
+                        &:hover{
+                            color: $gold-color;
+                          }
+                    }
+                    li::marker {
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: black;
+                      }
+                }
+            }
+            &-language{
+                width: 60%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                -10px -10px 20px rgb(229, 228, 228);
+                padding: 30px;
+                border-radius: 20px;
+                // align-items: center;
+                &-head{
+                    text-align: center;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    color: $primary-nav-color;
+                    font-family:$content-text;
+                    padding: 20px 50px;
+                }
+                &-para{
+                    font-size: 1.5rem;
+                    color: $primary-text-color;
+                    font-family:$content-text;
+                    line-height: 35px;
+                }
+                &-list{
+                    li{
+                        list-style-type: circle;
+                        list-style: 30px;
+                        margin-left: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        color: $green-color;
+                        font-family:$content-text;
+                        line-height: 30px;
+                        padding: 10px;
+                        &:hover{
+                            color: $gold-color;
+                          }
+                    }
+                    li::marker {
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: black;
+                      }
+                }
+            }
+            &-comp{
+                width: 60%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                -10px -10px 20px rgb(229, 228, 228);
+                padding: 30px;
+                border-radius: 20px;
+                // align-items: center;
+                &-head{
+                    text-align: center;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    color: $primary-nav-color;
+                    font-family:$content-text;
+                    padding: 20px 50px;
+                }
+                &-para{
+                    font-size: 1.5rem;
+                    color: $primary-text-color;
+                    font-family:$content-text;
+                    line-height: 35px;
+                }
+                &-list{
+                    li{
+                        list-style-type: circle;
+                        list-style: 30px;
+                        margin-left: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        color: $green-color;
+                        font-family:$content-text;
+                        line-height: 30px;
+                        padding: 10px;
+                        &:hover{
+                            color: $gold-color;
+                          }
+                    }
+                    li::marker {
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: black;
+                      }
+                }
+            }
+        }
+    }
+    .btn-star{
+        margin-top: 30px;
+        cursor: pointer;
+        position: relative;
+        padding: 12px 35px;
+        // background: $blue-color;
+        font-size: 17px;
+        font-weight: 800;
+        border: 3px solid $yellow-color;
+        border-radius: 8px;
+        box-shadow: 0 0 0 #fec1958c;
+        transition: all .3s ease-in-out;
+        font-family: $font-roboto;
+        letter-spacing: 0.2em;
+        background: $text-color;
+        color: $yellow-color;
+        .fil0 {
+          // fill: $blue-color;
+          fill: $yellow-color;
+        }
+        &:hover{
+          background: $blue-color;
+          // color: $blue-color;
+          // box-shadow: 0 0 25px $blue-color;
+          font-family: $font-roboto;
+          font-weight: 900;
+          color: $text-color;
+          border: 3px solid $text-color;
+          border-radius: 8px;
+        }
+        .star-1 {
+          position: absolute;
+          top: 20%;
+          left: 20%;
+          width: 25px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+          &:hover{
+            position: absolute;
+            top: -80%;
+            left: -30%;
+            width: 25px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
           }
-        
-    }
-    .life-style{
-        width: 800px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-right: 20%;
- 
-       h1{
-        color: #001d3d;
-       }
-       p{
-       text-indent: 50px;
-       color: #001d3d;
-        font-weight: 700;
-        line-height: 30px;
-       }
-       ul{
-        list-style: none;
-        margin: 10%;
-        line-height: 35px;
-       }
-       li{
-        color: #001d3d;
-        font-weight: 700;
-       }
-       li:hover{
-        color: #044b11;
-        font-weight: 700;
+        }
+        .star-2 {
+          position: absolute;
+          top: 45%;
+          left: 45%;
+          width: 15px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+          &:hover{
+            position: absolute;
+            top: -25%;
+            left: 10%;
+            width: 15px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
+          }
+        }
+        .star-3 {
+          position: absolute;
+          top: 40%;
+          left: 40%;
+          width: 5px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+          &:hover{
+            position: absolute;
+            top: 55%;
+            left: 25%;
+            width: 5px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
+          }
+        }
+        .star-4 {
+          position: absolute;
+          top: 20%;
+          left: 40%;
+          width: 8px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+          &:hover{
+            position: absolute;
+            top: 30%;
+            left: 80%;
+            width: 8px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
+          }
+        }
+        .star-5 {
+          position: absolute;
+          top: 25%;
+          left: 45%;
+          width: 15px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+          &:hover{
+            position: absolute;
+            top: 25%;
+            left: 115%;
+            width: 15px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
+          }
+        }
+        .star-6 {
+          position: absolute;
+          top: 5%;
+          left: 50%;
+          width: 5px;
+          height: auto;
+          filter: drop-shadow(0 0 0 $blue-color);
+          z-index: -5;
+          transition: all .8s ease;
+          &:hover{
+            position: absolute;
+            top: 5%;
+            left: 60%;
+            width: 5px;
+            height: auto;
+            filter: drop-shadow(0 0 10px #fffdef);
+            z-index: 2;
+          }
+        }
+      }
+}
 
-       }
-   
-    }
-    .life-style-img-con{
-        width: 380px;
-        height: 550PX;
-        margin-top: 7%;
-        margin-bottom: 10%;
-        // background-color: #001f54;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 50px;
-        justify-content: space-between;
-        .life-style-img1{
-            height: 250px;
-            width: 350px;
-            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Yoga1-1024x768.jpg");
-            align-self: flex-end;
-            background-size: cover;
-            border-radius: 20px;
-            transform: skewX(10deg);
-            border: 5px solid #968a50;
-            p{  display: none;
-                position: absolute;
-                z-index: 4;
-                height: 100px;
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #001d3d;
-                width: 340px;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-            }
-           
-        }
-        .life-style-img2{
-            height: 250px;
-            width: 350px;
-            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Yoga-1024x768.jpg");
-            align-self: flex-end;
-            background-size: cover;
-            border-radius: 20px;
-            transform: skewX(-10deg);
-            border: 5px solid #968a50;
-            p{    display: none;
-                position: absolute;
-                z-index: 4;
-                height: 100px;
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #001d3d;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-                width: 340px;
-            }
-        }
-        .life-style-img1:hover{
-            p{
-              display: block;
-            }
-        }
-        .life-style-img2:hover{
-            p{
-                display: block;
-            }
-        }
-   
-    }
-    &-imgs-1{
-    
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 13%;
-     
-        margin-top: 5%;
-       
-        .cap-card1{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
+
+@media (max-width: 1000px) {
+    body{
+        margin-top: 100px;
+        main{
             display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/English-is-Fun-600x338.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-                
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .text-head{
+                text-align: center;
+                text-decoration: underline;
+                font-size: 1.5rem;
+                color: $primary-text-color;
+                font-family:$content-text;
+                padding: 20px 50px;
             }
-            
-            }
-            .cap-card1:hover{
-                p{
-                    display: none;
-                    
+            .cap{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &-soft{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 30px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 30px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1.25rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 35px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1.25rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 30px;
+                            padding: 10px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.75rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
                 }
+                &-img{
+                    margin: 70px 0px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 70px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    align-items: center;
+                    &-card{
+                        height: 550px;
+                        width: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        border: 5px solid $primary-text-color;
+                        border-radius: 10px;
+                        &-content{
+                            padding: 30px 10px;
+                            font-size: 1.25rem;
+                            color: $primary-text-color;
+                            font-family:$content-text;
+                            line-height: 35px;
+                            // border: 10px solid $primary-text-color;
+                        }
+                    }
+                }
+                &-life{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 30px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 30px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1.25rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 35px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1.25rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 30px;
+                            padding: 10px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.75rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
+                }
+                &-language{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 30px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 30px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1.25rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 35px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1.25rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 30px;
+                            padding: 10px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.75rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
+                }
+                &-comp{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 30px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 30px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1.25rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 35px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1.25rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 30px;
+                            padding: 10px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.75rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
+                }
+            }
         }
-        .cap-card2{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
+    }   
+}
+
+
+@media (max-width: 600px) {
+    body{
+        margin-top: 100px;
+        main{
             display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Communication-Skill-scaled-e1651392035189-1024x566.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-              
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .text-head{
+                text-align: center;
+                text-decoration: underline;
+                font-size: 1.25rem;
+                color: $primary-text-color;
+                font-family:$content-text;
+                padding: 20px 50px;
             }
-            
-            }
-            .cap-card2:hover{
-                p{
-                    display: none;
-                    
+            .cap{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &-soft{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 20px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 20px;
+                            padding: 5px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
                 }
-        }
-
-    }
-    .life{
-        width: 100%;
-       padding-left: 10%;
-        display: flex;
-        justify-content: flex-start;
-        
-    }
-    .life-style-1{
-        
-        padding-left: 50px;
-        // background-color: #ffc300;
-        order: 1;
-        margin-left: 70px;
-        width: 40%;
-        margin-top:6%;
-        margin-bottom: 10%;
-        
-     
- 
-       h1{
-        color: #001d3d;
-       }
-       p{width: 900px;
-       text-indent: 50px;
-       color: #001d3d;
-        font-weight: 700;
-        line-height: 30px;
-       }
-       ul{
-      
-        list-style: none;
-        margin-top: 10%;
-        line-height: 35px;
-       }
-       li{
-        width: 600px;
-        color: #001d3d;
-        font-weight: 700;
-       }
-       li:hover{
-        color: #044b11;
-        font-weight: 700;
-
-       }
-   
-    }
-    .life-style-img-con-1{
-            width: 20%;
-        height: 550PX;
-        margin-top: 7%;
-        margin-bottom: 10%;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-        justify-content: space-between;
-        .life-style-img1{
-            height: 250px;
-            width: 350px;
-            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/English-is-Fun-600x338.jpg");
-            align-self: flex-end;
-            background-size: cover;
-            border-radius: 20px;
-            transform: skewX(-10deg);
-            border: 5px solid #968a50;
-            p{  display: none;
-                position: absolute;
-                z-index: 4;
-                height: 100px;
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #001d3d;
-                width: 340px;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-            }
-           
-        }
-        .life-style-img2{
-            height: 250px;
-            width: 350px;
-            background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Communication-Skill-scaled-e1651392035189-1024x566.jpg");
-            align-self: flex-end;
-            background-size: cover;
-            border-radius: 20px;
-            transform: skewX(10deg);
-            border: 5px solid #968a50;
-            p{    display: none;
-                position: absolute;
-                z-index: 4;
-                height: 100px;
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #001d3d;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-                width: 340px;
-            }
-        }
-        .life-style-img1:hover{
-            p{
-              display: block;
-            }
-        }
-        .life-style-img2:hover{
-            p{
-                display: block;
-            }
-        }
-   
-    }
-    &-imgs-2{
-      order: 3;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 13%;
-     
-        margin-top: 5%;
-       
-        .cap-card1{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
-            display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/BIM-1024x576.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-                
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
-            }
-            
-            }
-            .cap-card1:hover{
-                p{
-                    display: none;
-                    
+                &-img{
+                    margin: 70px 0px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 70px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    align-items: center;
+                    &-card{
+                        height: 550px;
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        border: 5px solid $primary-text-color;
+                        border-radius: 10px;
+                        &-content{
+                            padding: 30px 10px;
+                            font-size: 1.15rem;
+                            color: $primary-text-color;
+                            font-family:$content-text;
+                            line-height: 25px;
+                            // border: 10px solid $primary-text-color;
+                        }
+                    }
                 }
-        }
-        .cap-card2{
-            width:  530px;
-            margin: 0px;
-            padding: 0px;
-            height: 300px;
-            z-index: 1;
-            display: flex;
-            box-sizing: border-box;
-            background-size: cover;
-           
-            align-items: end;
-            // background-color: #001f54;
-             background-image: url("https://builderscollege.edu.in/wp-content/uploads/2022/05/Mechanical-Design-1024x576.jpg");
-           
-            p{  
-                position: absolute;
-                z-index: 4;
-              
-                font-size: 15PX;
-                color: #fff;
-                padding: 15px;
-                background-color: #034078;
-                width: inherit;
-            }
-            
-            }
-            .cap-card2:hover{
-                p{
-                    display: none;
-                    
+                &-life{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 20px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 20px;
+                            padding: 5px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
                 }
+                &-language{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 20px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 20px;
+                            padding: 5px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
+                }
+                &-comp{
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                    box-shadow: 10px 10px 20px rgb(229, 228, 228),
+                    -10px -10px 20px rgb(229, 228, 228);
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    // align-items: center;
+                    &-head{
+                        text-align: center;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: $primary-nav-color;
+                        font-family:$content-text;
+                        padding: 20px 50px;
+                    }
+                    &-para{
+                        font-size: 1rem;
+                        color: $primary-text-color;
+                        font-family:$content-text;
+                        line-height: 20px;
+                    }
+                    &-list{
+                        li{
+                            list-style-type: circle;
+                            list-style: 30px;
+                            margin-left: 40px;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            color: $green-color;
+                            font-family:$content-text;
+                            line-height: 20px;
+                            padding: 5px;
+                            &:hover{
+                                color: $gold-color;
+                              }
+                        }
+                        li::marker {
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            color: black;
+                          }
+                    }
+                }
+            }
         }
-
-    }
-    .bottom-para{
-        order: 5;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        p{
-            text-align: center;
-           border-radius: 10px;
-            width: 500px;
-            padding: 20px;
-            background-color: #001d3d;
-            border: 5px solid #968a50;
-            color: #968a50;
-        }
-    }
- 
-
+    }   
 }

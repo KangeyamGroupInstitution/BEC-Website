@@ -599,6 +599,7 @@ main .buttons .btn-star {
   margin-top: 30px;
   position: relative;
   padding: 12px 35px;
+  cursor: pointer;
   font-size: 17px;
   font-weight: 800;
   border: 3px solid white;
