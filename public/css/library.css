@@ -140,6 +140,7 @@ body {
     position: fixed;
     width: 100%;
     background: #fff;
+    min-height: 100vh;
     top: 80px;
     left: -100%;
     text-align: center;
