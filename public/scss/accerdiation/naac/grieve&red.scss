@@ -1,0 +1,97 @@
+@use "../../nav/nav1";
+@use "../../abstract/color" as *;
+@use "../../abstract/font" as *;
+@use "../../nav/footer";
+@use"../../abstract/mixin";
+@use"../../abstract/button";
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.grieve-red{
+    margin-top: 100px;
+    width: 100%;
+  //   text-align: center;
+    font-family:$primary-text;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    &-text{
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: 1.75rem;
+        color: $primary-text-color;
+        font-family:$primary-text;
+    }
+    .para{
+        font-size: 1.35rem;
+        color: $primary-text-color;
+        font-family:$content-text;
+        line-height: 30px;
+        padding: 20px 50px;
+    }
+    table{
+        width: 1200px;
+        font-size: 1.35rem;
+        font-family:$primary-text;
+        th{
+            background-color: $primary-text-color;
+            color: #fff;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+            // box-shadow: 1px 1px 10px  inset;
+        }
+        th,td{
+            padding: 20px 10px;
+            font-family:$primary-text;
+            font-weight: 500;
+        }
+    }
+  }
+  @media (max-width:1200px) {
+    .grieve-red{
+        table{
+            width: 95%;
+        }
+        &-text{
+            font-size: 1.2rem;
+        }
+    }
+  }
+  @media (max-width:800px) {
+    .grieve-red{
+        table{
+            width: 95%;
+            th,td{
+                font-size: 0.8rem;
+                padding: 15px 5px;
+            }
+        }
+        &-text{
+            font-size: 1rem;
+        }
+    }
+  }
+  @media (max-width:500px) {
+    .grieve-red{
+        table{
+            width: 95%;
+            th,td{
+                font-size: 0.6rem;
+                padding: 10px 3px;
+            }
+        }
+        &-text{
+            font-size: 0.9rem;
+        }
+    }
+  }

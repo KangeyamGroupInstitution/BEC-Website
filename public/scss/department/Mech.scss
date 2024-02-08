@@ -350,7 +350,9 @@
                 align-items: flex-start;
              }
              li{
-                list-style: none;line-height: 50px;
+                cursor: pointer;
+                list-style: none;
+                line-height: 50px;
              }
              li:hover{
                 color: $mech-primary;
@@ -468,12 +470,29 @@
          }
     }
 }
-@media (max-width:1400px) {
+@media (max-width:2200px) {
     .departement-con{
         &-info{
             width: 90%;
         }
     }
+    .lab{
+        &-con{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        &-info{
+            width: 800px !important;
+            display: flex;
+            flex-direction: column;
+         
+            height: 400px !important;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+    }
+
 }
 @media (max-width:1200px) {
     .departement-con{
@@ -521,20 +540,21 @@
           }
           .lab{
             &-con{
+                
+                display: flex;
                 flex-direction: column;
-            }
-            &-galary{
-                width: 90%;
+                
             }
             &-info{
-                width: 90%;
-                padding: 0px;
-                text-align: center;
-                 li{
-                 line-height: 30px;
-                 }
+                width: 800px !important;
+                display: flex;
+                flex-direction: column;
+             
+                height: 400px !important;
+                overflow: hidden;
+                flex-wrap: wrap;
             }
-         }
+        }
     }
 }
 @media (max-width:1000px) {
@@ -560,11 +580,13 @@
                 }
             }
         }
+       
         &-nav{
             .nav-li{
             flex-direction: column;
             }
         }
+        
         .hod-con{
             .teachers{
                 grid-template-columns: repeat(2,280px);
@@ -572,6 +594,7 @@
         }
     }
 }
+
 @media (max-width:800px) {
     .departement-con{
        row-gap: 30px;
@@ -596,6 +619,17 @@
             row-gap: 20px;
         }
     }
+    .lab{
+        align-items: center;
+        p{ 
+            width: 80%;
+            font-size: 13px;
+        }
+        &-info{
+            width: 650px !important;
+           
+        }
+      }
     }
 
 }
@@ -623,15 +657,23 @@
                 flex-direction:column;
                 column-gap: 30px;
             }
-            .aids-img2{
+            .mech-img2{
                 width: 90%;
             }
+        }
+    }
+    .lab{
+       
+        &-info{
+          
+            height: 800px !important;
+           
         }
     }
    
 }
 }
-@media (max-width:500px) {
+@media (max-width:550px) {
     .departement-con{
         &-info{
             .head-con{
@@ -641,6 +683,7 @@
                 }
             }
         }
+        
         h2{
             font-size: 1.1rem;
         }
@@ -661,8 +704,22 @@
             right: -10px;
             animation-name: move-down1;
           }
+          .lab{
+            align-items: center;
+            p{ 
+                width: 80%;
+                font-size: 13px;
+            }
+            &-info{
+                width: 300px !important;
+               
+            }
+          }
+          .lab-info li{
+                font-size: 13px;
+          }
           .hod-con{
-        .profile{
+          .profile{
           .pro-img{
             width: 150px;
             height: 150px;
